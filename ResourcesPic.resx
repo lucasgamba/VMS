@@ -136,6 +136,9 @@
   <data name="PlayBarLogoBTN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Pictures\PlayBarLogoBTN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PlayBarLogoLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\PlayBarLogoLarge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="VivantLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Pictures\VivantLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

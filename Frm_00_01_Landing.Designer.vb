@@ -22,23 +22,24 @@ Partial Class Frm_00_01_Landing
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_00_01_Landing))
         Logo = New PictureBox()
         MenuStrip1 = New MenuStrip()
         FileToolStripMenuItem = New ToolStripMenuItem()
+        VersionControlToolStripMenuItem = New ToolStripMenuItem()
+        TablesToolStripMenuItem = New ToolStripMenuItem()
         ExitToolStripMenuItem = New ToolStripMenuItem()
         ConfigToolStripMenuItem = New ToolStripMenuItem()
         BaseDeDatosToolStripMenuItem = New ToolStripMenuItem()
         SelectLanguageToolStripMenuItem = New ToolStripMenuItem()
         TranslationsToolStripMenuItem = New ToolStripMenuItem()
-        Btn_01_VMS = New Button()
-        Btn_02_Resto = New Button()
-        Lbl_01_WelcomeText = New Label()
         AdminToolStripMenuItem = New ToolStripMenuItem()
         NewUserToolStripMenuItem = New ToolStripMenuItem()
         ChanngeUserToolStripMenuItem = New ToolStripMenuItem()
         UsersRightsToolStripMenuItem = New ToolStripMenuItem()
-        VersionControlToolStripMenuItem = New ToolStripMenuItem()
-        TablesToolStripMenuItem = New ToolStripMenuItem()
+        Btn_01_VMS = New Button()
+        Btn_02_Resto = New Button()
+        Lbl_01_WelcomeText = New Label()
         CType(Logo, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
@@ -69,10 +70,22 @@ Partial Class Frm_00_01_Landing
         FileToolStripMenuItem.Size = New Size(37, 20)
         FileToolStripMenuItem.Text = "File"
         ' 
+        ' VersionControlToolStripMenuItem
+        ' 
+        VersionControlToolStripMenuItem.Name = "VersionControlToolStripMenuItem"
+        VersionControlToolStripMenuItem.Size = New Size(155, 22)
+        VersionControlToolStripMenuItem.Text = "Version Control"
+        ' 
+        ' TablesToolStripMenuItem
+        ' 
+        TablesToolStripMenuItem.Name = "TablesToolStripMenuItem"
+        TablesToolStripMenuItem.Size = New Size(155, 22)
+        TablesToolStripMenuItem.Text = "Tables"
+        ' 
         ' ExitToolStripMenuItem
         ' 
         ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        ExitToolStripMenuItem.Size = New Size(180, 22)
+        ExitToolStripMenuItem.Size = New Size(155, 22)
         ExitToolStripMenuItem.Text = "Exit"
         ' 
         ' ConfigToolStripMenuItem
@@ -85,20 +98,45 @@ Partial Class Frm_00_01_Landing
         ' BaseDeDatosToolStripMenuItem
         ' 
         BaseDeDatosToolStripMenuItem.Name = "BaseDeDatosToolStripMenuItem"
-        BaseDeDatosToolStripMenuItem.Size = New Size(180, 22)
+        BaseDeDatosToolStripMenuItem.Size = New Size(160, 22)
         BaseDeDatosToolStripMenuItem.Text = "Database"
         ' 
         ' SelectLanguageToolStripMenuItem
         ' 
         SelectLanguageToolStripMenuItem.Name = "SelectLanguageToolStripMenuItem"
-        SelectLanguageToolStripMenuItem.Size = New Size(180, 22)
+        SelectLanguageToolStripMenuItem.Size = New Size(160, 22)
         SelectLanguageToolStripMenuItem.Text = "Select Language"
         ' 
         ' TranslationsToolStripMenuItem
         ' 
         TranslationsToolStripMenuItem.Name = "TranslationsToolStripMenuItem"
-        TranslationsToolStripMenuItem.Size = New Size(180, 22)
+        TranslationsToolStripMenuItem.Size = New Size(160, 22)
         TranslationsToolStripMenuItem.Text = "Translations"
+        ' 
+        ' AdminToolStripMenuItem
+        ' 
+        AdminToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {NewUserToolStripMenuItem, ChanngeUserToolStripMenuItem, UsersRightsToolStripMenuItem})
+        AdminToolStripMenuItem.Name = "AdminToolStripMenuItem"
+        AdminToolStripMenuItem.Size = New Size(47, 20)
+        AdminToolStripMenuItem.Text = "Users"
+        ' 
+        ' NewUserToolStripMenuItem
+        ' 
+        NewUserToolStripMenuItem.Name = "NewUserToolStripMenuItem"
+        NewUserToolStripMenuItem.Size = New Size(148, 22)
+        NewUserToolStripMenuItem.Text = "New User"
+        ' 
+        ' ChanngeUserToolStripMenuItem
+        ' 
+        ChanngeUserToolStripMenuItem.Name = "ChanngeUserToolStripMenuItem"
+        ChanngeUserToolStripMenuItem.Size = New Size(148, 22)
+        ChanngeUserToolStripMenuItem.Text = "Channge User"
+        ' 
+        ' UsersRightsToolStripMenuItem
+        ' 
+        UsersRightsToolStripMenuItem.Name = "UsersRightsToolStripMenuItem"
+        UsersRightsToolStripMenuItem.Size = New Size(148, 22)
+        UsersRightsToolStripMenuItem.Text = "Users Rights"
         ' 
         ' Btn_01_VMS
         ' 
@@ -130,43 +168,6 @@ Partial Class Frm_00_01_Landing
         Lbl_01_WelcomeText.TabIndex = 3
         Lbl_01_WelcomeText.Text = "Lbl_01_WelcomeText"
         ' 
-        ' AdminToolStripMenuItem
-        ' 
-        AdminToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {NewUserToolStripMenuItem, ChanngeUserToolStripMenuItem, UsersRightsToolStripMenuItem})
-        AdminToolStripMenuItem.Name = "AdminToolStripMenuItem"
-        AdminToolStripMenuItem.Size = New Size(47, 20)
-        AdminToolStripMenuItem.Text = "Users"
-        ' 
-        ' NewUserToolStripMenuItem
-        ' 
-        NewUserToolStripMenuItem.Name = "NewUserToolStripMenuItem"
-        NewUserToolStripMenuItem.Size = New Size(180, 22)
-        NewUserToolStripMenuItem.Text = "New User"
-        ' 
-        ' ChanngeUserToolStripMenuItem
-        ' 
-        ChanngeUserToolStripMenuItem.Name = "ChanngeUserToolStripMenuItem"
-        ChanngeUserToolStripMenuItem.Size = New Size(180, 22)
-        ChanngeUserToolStripMenuItem.Text = "Channge User"
-        ' 
-        ' UsersRightsToolStripMenuItem
-        ' 
-        UsersRightsToolStripMenuItem.Name = "UsersRightsToolStripMenuItem"
-        UsersRightsToolStripMenuItem.Size = New Size(180, 22)
-        UsersRightsToolStripMenuItem.Text = "Users Rights"
-        ' 
-        ' VersionControlToolStripMenuItem
-        ' 
-        VersionControlToolStripMenuItem.Name = "VersionControlToolStripMenuItem"
-        VersionControlToolStripMenuItem.Size = New Size(180, 22)
-        VersionControlToolStripMenuItem.Text = "Version Control"
-        ' 
-        ' TablesToolStripMenuItem
-        ' 
-        TablesToolStripMenuItem.Name = "TablesToolStripMenuItem"
-        TablesToolStripMenuItem.Size = New Size(155, 22)
-        TablesToolStripMenuItem.Text = "Tables"
-        ' 
         ' Frm_00_01_Landing
         ' 
         AutoScaleDimensions = New SizeF(8F, 18F)
@@ -179,6 +180,7 @@ Partial Class Frm_00_01_Landing
         Controls.Add(MenuStrip1)
         Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MainMenuStrip = MenuStrip1
         Margin = New Padding(3, 4, 3, 4)
         Name = "Frm_00_01_Landing"

@@ -12,8 +12,4 @@ Public Class Frm_01_00_LandingVMS
         'Show main landing form when this form is closed
         Frm_00_01_Landing.Show()
     End Sub
-
-    Private Sub Logo_01_Click(sender As Object, e As EventArgs) Handles Logo_01.Click
-
-    End Sub
 End Class

@@ -19,8 +19,8 @@ Partial Class Frm_00_00_Login
     Friend WithEvents PasswordLabel As System.Windows.Forms.Label
     Friend WithEvents UsernameTextBox As System.Windows.Forms.TextBox
     Friend WithEvents PasswordTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents OK As System.Windows.Forms.Button
-    Friend WithEvents Cancel As System.Windows.Forms.Button
+    Friend WithEvents Btn_01_OK As System.Windows.Forms.Button
+    Friend WithEvents Btn_02_Cancel As System.Windows.Forms.Button
 
     'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
@@ -35,8 +35,8 @@ Partial Class Frm_00_00_Login
         PasswordLabel = New Label()
         UsernameTextBox = New TextBox()
         PasswordTextBox = New TextBox()
-        OK = New Button()
-        Cancel = New Button()
+        Btn_01_OK = New Button()
+        Btn_02_Cancel = New Button()
         CType(LogoPictureBox, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -56,7 +56,7 @@ Partial Class Frm_00_00_Login
         UsernameLabel.Name = "UsernameLabel"
         UsernameLabel.Size = New Size(251, 28)
         UsernameLabel.TabIndex = 0
-        UsernameLabel.Text = "&User name"
+        UsernameLabel.Text = "User name"
         UsernameLabel.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' PasswordLabel
@@ -65,11 +65,12 @@ Partial Class Frm_00_00_Login
         PasswordLabel.Name = "PasswordLabel"
         PasswordLabel.Size = New Size(251, 28)
         PasswordLabel.TabIndex = 2
-        PasswordLabel.Text = "&Password"
+        PasswordLabel.Text = "Password"
         PasswordLabel.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' UsernameTextBox
         ' 
+        UsernameTextBox.BorderStyle = BorderStyle.FixedSingle
         UsernameTextBox.Location = New Point(199, 53)
         UsernameTextBox.Margin = New Padding(3, 4, 3, 4)
         UsernameTextBox.Name = "UsernameTextBox"
@@ -78,6 +79,7 @@ Partial Class Frm_00_00_Login
         ' 
         ' PasswordTextBox
         ' 
+        PasswordTextBox.BorderStyle = BorderStyle.FixedSingle
         PasswordTextBox.Location = New Point(199, 122)
         PasswordTextBox.Margin = New Padding(3, 4, 3, 4)
         PasswordTextBox.Name = "PasswordTextBox"
@@ -85,34 +87,34 @@ Partial Class Frm_00_00_Login
         PasswordTextBox.Size = New Size(251, 26)
         PasswordTextBox.TabIndex = 3
         ' 
-        ' OK
+        ' Btn_01_OK
         ' 
-        OK.Location = New Point(225, 194)
-        OK.Margin = New Padding(3, 4, 3, 4)
-        OK.Name = "OK"
-        OK.Size = New Size(107, 28)
-        OK.TabIndex = 4
-        OK.Text = "&OK"
+        Btn_01_OK.Location = New Point(225, 194)
+        Btn_01_OK.Margin = New Padding(3, 4, 3, 4)
+        Btn_01_OK.Name = "Btn_01_OK"
+        Btn_01_OK.Size = New Size(107, 28)
+        Btn_01_OK.TabIndex = 4
+        Btn_01_OK.Text = "OK"
         ' 
-        ' Cancel
+        ' Btn_02_Cancel
         ' 
-        Cancel.DialogResult = DialogResult.Cancel
-        Cancel.Location = New Point(343, 194)
-        Cancel.Margin = New Padding(3, 4, 3, 4)
-        Cancel.Name = "Cancel"
-        Cancel.Size = New Size(107, 28)
-        Cancel.TabIndex = 5
-        Cancel.Text = "&Cancel"
+        Btn_02_Cancel.DialogResult = DialogResult.Cancel
+        Btn_02_Cancel.Location = New Point(343, 194)
+        Btn_02_Cancel.Margin = New Padding(3, 4, 3, 4)
+        Btn_02_Cancel.Name = "Btn_02_Cancel"
+        Btn_02_Cancel.Size = New Size(107, 28)
+        Btn_02_Cancel.TabIndex = 5
+        Btn_02_Cancel.Text = "Cancel"
         ' 
         ' Frm_00_00_Login
         ' 
-        AcceptButton = OK
+        AcceptButton = Btn_01_OK
         AutoScaleDimensions = New SizeF(8F, 18F)
         AutoScaleMode = AutoScaleMode.Font
-        CancelButton = Cancel
+        CancelButton = Btn_02_Cancel
         ClientSize = New Size(458, 230)
-        Controls.Add(Cancel)
-        Controls.Add(OK)
+        Controls.Add(Btn_02_Cancel)
+        Controls.Add(Btn_01_OK)
         Controls.Add(PasswordTextBox)
         Controls.Add(UsernameTextBox)
         Controls.Add(PasswordLabel)

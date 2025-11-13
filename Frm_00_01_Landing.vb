@@ -11,7 +11,7 @@ Public Class Frm_00_01_Landing
         Me.Text = String.Format("Login - VMS")
     End Sub
     Private Sub Frm_00_0_Landing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Icon = New Icon(".\icon.ico")
+        'Icon = New Icon(".\icon.ico")
         'Icon = New Icon(My.Resources.ResourcesPic.icon)
         Logo.Image = My.Resources.ResourcesPic.logo
         'Logo.Image = Image.FromFile(".\logo.png")

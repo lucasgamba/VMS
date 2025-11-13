@@ -25,26 +25,27 @@ Partial Class Frm_00_02_Translations
         Logo_01 = New PictureBox()
         RadioButton1 = New RadioButton()
         RadioButton2 = New RadioButton()
-        ListView1 = New ListView()
-        ListView2 = New ListView()
+        LstVw_01_Forms = New ListView()
+        LstVw_02_Objects = New ListView()
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
-        TextBox1 = New TextBox()
+        Txt_01_CurrentValue = New TextBox()
         Label4 = New Label()
-        TextBox2 = New TextBox()
+        Txt_02_CurrentTranslation = New TextBox()
         Label5 = New Label()
         Label6 = New Label()
-        TextBox3 = New TextBox()
-        ListView3 = New ListView()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
+        Txt_03_NewValue = New TextBox()
+        LstVw_03_Languages = New ListView()
+        Btn_01_Save = New Button()
+        Btn_02_Exit = New Button()
+        Btn_03_NewMsgBox = New Button()
         CType(Logo_01, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Logo_01
         ' 
+        Logo_01.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Logo_01.Location = New Point(634, 12)
         Logo_01.Name = "Logo_01"
         Logo_01.Size = New Size(100, 100)
@@ -73,30 +74,30 @@ Partial Class Frm_00_02_Translations
         RadioButton2.Text = "MsgBox"
         RadioButton2.UseVisualStyleBackColor = True
         ' 
-        ' ListView1
+        ' LstVw_01_Forms
         ' 
-        ListView1.CheckBoxes = True
-        ListView1.Location = New Point(12, 84)
-        ListView1.MultiSelect = False
-        ListView1.Name = "ListView1"
-        ListView1.Size = New Size(305, 300)
-        ListView1.TabIndex = 3
-        ListView1.UseCompatibleStateImageBehavior = False
+        LstVw_01_Forms.Location = New Point(10, 118)
+        LstVw_01_Forms.MultiSelect = False
+        LstVw_01_Forms.Name = "LstVw_01_Forms"
+        LstVw_01_Forms.Size = New Size(305, 300)
+        LstVw_01_Forms.TabIndex = 3
+        LstVw_01_Forms.UseCompatibleStateImageBehavior = False
         ' 
-        ' ListView2
+        ' LstVw_02_Objects
         ' 
-        ListView2.CheckBoxes = True
-        ListView2.Location = New Point(323, 84)
-        ListView2.MultiSelect = False
-        ListView2.Name = "ListView2"
-        ListView2.Size = New Size(305, 300)
-        ListView2.TabIndex = 4
-        ListView2.UseCompatibleStateImageBehavior = False
+        LstVw_02_Objects.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        LstVw_02_Objects.Location = New Point(321, 118)
+        LstVw_02_Objects.MultiSelect = False
+        LstVw_02_Objects.Name = "LstVw_02_Objects"
+        LstVw_02_Objects.Size = New Size(413, 300)
+        LstVw_02_Objects.Sorting = SortOrder.Ascending
+        LstVw_02_Objects.TabIndex = 4
+        LstVw_02_Objects.UseCompatibleStateImageBehavior = False
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(12, 65)
+        Label1.Location = New Point(10, 99)
         Label1.Name = "Label1"
         Label1.Size = New Size(46, 18)
         Label1.TabIndex = 3
@@ -105,7 +106,7 @@ Partial Class Frm_00_02_Translations
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(323, 63)
+        Label2.Location = New Point(321, 97)
         Label2.Name = "Label2"
         Label2.Size = New Size(55, 18)
         Label2.TabIndex = 3
@@ -114,45 +115,47 @@ Partial Class Frm_00_02_Translations
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(12, 398)
+        Label3.Location = New Point(10, 432)
         Label3.Name = "Label3"
-        Label3.Size = New Size(97, 18)
+        Label3.Size = New Size(120, 18)
         Label3.TabIndex = 3
-        Label3.Text = "Current Value:"
+        Label3.Text = "Object Text Value:"
         ' 
-        ' TextBox1
+        ' Txt_01_CurrentValue
         ' 
-        TextBox1.BorderStyle = BorderStyle.FixedSingle
-        TextBox1.Location = New Point(12, 419)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(305, 26)
-        TextBox1.TabIndex = 6
-        TextBox1.TabStop = False
-        TextBox1.WordWrap = False
+        Txt_01_CurrentValue.BackColor = Color.LightGray
+        Txt_01_CurrentValue.BorderStyle = BorderStyle.FixedSingle
+        Txt_01_CurrentValue.Location = New Point(10, 453)
+        Txt_01_CurrentValue.Name = "Txt_01_CurrentValue"
+        Txt_01_CurrentValue.Size = New Size(305, 26)
+        Txt_01_CurrentValue.TabIndex = 6
+        Txt_01_CurrentValue.TabStop = False
+        Txt_01_CurrentValue.WordWrap = False
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(12, 448)
+        Label4.Location = New Point(10, 482)
         Label4.Name = "Label4"
         Label4.Size = New Size(129, 18)
         Label4.TabIndex = 3
         Label4.Text = "Current Translation:"
         ' 
-        ' TextBox2
+        ' Txt_02_CurrentTranslation
         ' 
-        TextBox2.BorderStyle = BorderStyle.FixedSingle
-        TextBox2.Location = New Point(12, 469)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(305, 26)
-        TextBox2.TabIndex = 7
-        TextBox2.TabStop = False
-        TextBox2.WordWrap = False
+        Txt_02_CurrentTranslation.BackColor = Color.LightGray
+        Txt_02_CurrentTranslation.BorderStyle = BorderStyle.FixedSingle
+        Txt_02_CurrentTranslation.Location = New Point(10, 503)
+        Txt_02_CurrentTranslation.Name = "Txt_02_CurrentTranslation"
+        Txt_02_CurrentTranslation.Size = New Size(305, 26)
+        Txt_02_CurrentTranslation.TabIndex = 7
+        Txt_02_CurrentTranslation.TabStop = False
+        Txt_02_CurrentTranslation.WordWrap = False
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(323, 398)
+        Label5.Location = New Point(321, 432)
         Label5.Name = "Label5"
         Label5.Size = New Size(70, 18)
         Label5.TabIndex = 3
@@ -161,78 +164,78 @@ Partial Class Frm_00_02_Translations
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(12, 498)
+        Label6.Location = New Point(10, 532)
         Label6.Name = "Label6"
         Label6.Size = New Size(79, 18)
         Label6.TabIndex = 3
         Label6.Text = "New Value:"
         ' 
-        ' TextBox3
+        ' Txt_03_NewValue
         ' 
-        TextBox3.BorderStyle = BorderStyle.FixedSingle
-        TextBox3.Location = New Point(12, 519)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(305, 26)
-        TextBox3.TabIndex = 8
-        TextBox3.WordWrap = False
+        Txt_03_NewValue.BorderStyle = BorderStyle.FixedSingle
+        Txt_03_NewValue.Location = New Point(10, 553)
+        Txt_03_NewValue.Name = "Txt_03_NewValue"
+        Txt_03_NewValue.Size = New Size(305, 26)
+        Txt_03_NewValue.TabIndex = 8
+        Txt_03_NewValue.WordWrap = False
         ' 
-        ' ListView3
+        ' LstVw_03_Languages
         ' 
-        ListView3.CheckBoxes = True
-        ListView3.Location = New Point(323, 419)
-        ListView3.MultiSelect = False
-        ListView3.Name = "ListView3"
-        ListView3.Size = New Size(305, 126)
-        ListView3.TabIndex = 5
-        ListView3.UseCompatibleStateImageBehavior = False
+        LstVw_03_Languages.Location = New Point(321, 453)
+        LstVw_03_Languages.MultiSelect = False
+        LstVw_03_Languages.Name = "LstVw_03_Languages"
+        LstVw_03_Languages.Size = New Size(305, 126)
+        LstVw_03_Languages.TabIndex = 5
+        LstVw_03_Languages.UseCompatibleStateImageBehavior = False
+        LstVw_03_Languages.View = View.List
         ' 
-        ' Button1
+        ' Btn_01_Save
         ' 
-        Button1.Location = New Point(634, 467)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(100, 36)
-        Button1.TabIndex = 9
-        Button1.Text = "Save"
-        Button1.UseVisualStyleBackColor = True
+        Btn_01_Save.Location = New Point(632, 501)
+        Btn_01_Save.Name = "Btn_01_Save"
+        Btn_01_Save.Size = New Size(100, 36)
+        Btn_01_Save.TabIndex = 9
+        Btn_01_Save.Text = "Save"
+        Btn_01_Save.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' Btn_02_Exit
         ' 
-        Button2.Location = New Point(634, 509)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(100, 36)
-        Button2.TabIndex = 10
-        Button2.Text = "Exit"
-        Button2.UseVisualStyleBackColor = True
+        Btn_02_Exit.Location = New Point(632, 543)
+        Btn_02_Exit.Name = "Btn_02_Exit"
+        Btn_02_Exit.Size = New Size(100, 36)
+        Btn_02_Exit.TabIndex = 10
+        Btn_02_Exit.Text = "Exit"
+        Btn_02_Exit.UseVisualStyleBackColor = True
         ' 
-        ' Button3
+        ' Btn_03_NewMsgBox
         ' 
-        Button3.Location = New Point(92, 37)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(100, 29)
-        Button3.TabIndex = 2
-        Button3.Text = "New MsgBox"
-        Button3.UseVisualStyleBackColor = True
+        Btn_03_NewMsgBox.Location = New Point(92, 37)
+        Btn_03_NewMsgBox.Name = "Btn_03_NewMsgBox"
+        Btn_03_NewMsgBox.Size = New Size(100, 29)
+        Btn_03_NewMsgBox.TabIndex = 2
+        Btn_03_NewMsgBox.Text = "New MsgBox"
+        Btn_03_NewMsgBox.UseVisualStyleBackColor = True
         ' 
         ' Frm_00_02_Translations
         ' 
         AutoScaleDimensions = New SizeF(8F, 18F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(742, 551)
-        Controls.Add(Button2)
-        Controls.Add(Button3)
-        Controls.Add(Button1)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        ClientSize = New Size(742, 585)
+        Controls.Add(Btn_02_Exit)
+        Controls.Add(Btn_03_NewMsgBox)
+        Controls.Add(Btn_01_Save)
+        Controls.Add(Txt_03_NewValue)
+        Controls.Add(Txt_02_CurrentTranslation)
+        Controls.Add(Txt_01_CurrentValue)
         Controls.Add(Label6)
         Controls.Add(Label4)
         Controls.Add(Label2)
         Controls.Add(Label5)
         Controls.Add(Label3)
         Controls.Add(Label1)
-        Controls.Add(ListView3)
-        Controls.Add(ListView2)
-        Controls.Add(ListView1)
+        Controls.Add(LstVw_03_Languages)
+        Controls.Add(LstVw_02_Objects)
+        Controls.Add(LstVw_01_Forms)
         Controls.Add(RadioButton2)
         Controls.Add(RadioButton1)
         Controls.Add(Logo_01)
@@ -248,19 +251,19 @@ Partial Class Frm_00_02_Translations
     Friend WithEvents Logo_01 As PictureBox
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents ListView1 As ListView
-    Friend WithEvents ListView2 As ListView
+    Friend WithEvents LstVw_01_Forms As ListView
+    Friend WithEvents LstVw_02_Objects As ListView
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Txt_01_CurrentValue As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Txt_02_CurrentTranslation As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents ListView3 As ListView
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents Txt_03_NewValue As TextBox
+    Friend WithEvents LstVw_03_Languages As ListView
+    Friend WithEvents Btn_01_Save As Button
+    Friend WithEvents Btn_02_Exit As Button
+    Friend WithEvents Btn_03_NewMsgBox As Button
 End Class

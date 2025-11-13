@@ -1,4 +1,4 @@
-Imports Syncfusion.Licensing
+'Imports Syncfusion.Licensing
 
 Public Class Frm_00_00_Login
 
@@ -10,7 +10,7 @@ Public Class Frm_00_00_Login
     ' Subsequently, My.User will return identity information encapsulated in the CustomPrincipal object
     ' such as the username, display name, etc.
 
-    Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
+    Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_01_OK.Click
         Dim landingForm As New Frm_00_01_Landing
         landingForm.Show()
         Me.Hide()
@@ -23,7 +23,7 @@ Public Class Frm_00_00_Login
         'Close the application when the landing form is closed
         Me.Close()
     End Sub
-    Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
+    Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_02_Cancel.Click
         Me.Close()
     End Sub
 

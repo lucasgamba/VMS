@@ -187,9 +187,9 @@ Partial Class Frm_00_01_FileDbSetup
         Label8.Font = New Font("Calibri", 11.25F)
         Label8.Location = New Point(17, 62)
         Label8.Name = "Label8"
-        Label8.Size = New Size(57, 18)
+        Label8.Size = New Size(54, 18)
         Label8.TabIndex = 11
-        Label8.Text = "Service:"
+        Label8.Text = "Engine:"
         ' 
         ' Cbox_01_DbService
         ' 
