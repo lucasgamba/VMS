@@ -16,7 +16,7 @@
         ResizeLogo()
     End Sub
 
-    Private Sub Frm_02_00_LandingResto_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+    Private Sub Frm_02_00_LandingResto_Closed(sender As Object, e As EventArgs) Handles Me.FormClosed
         ' Show main landing form when this form is closed
         Frm_00_01_Landing.Show()
     End Sub

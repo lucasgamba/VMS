@@ -1,22 +1,20 @@
-'Imports Syncfusion.Licensing
+Imports Syncfusion.Licensing
 
 Public Class Frm_00_01_Landing
     Public Sub New()
         InitializeComponent()
         'Me.Text = String.Format("Login - {0}", My.Application.Info.AssemblyName)
 
-        ''SyncFusion License
-        'SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1JFaF5cXGRCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdmWH9ednVWQmVfWEV/WkpWYEg=")
+        'SyncFusion License
+        SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1JFaF5cXGRCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdmWH9ednVWQmVfWEV/WkpWYEg=")
 
         Me.Text = String.Format("Login - VMS")
     End Sub
     Private Sub Frm_00_0_Landing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Icon = New Icon(".\icon.ico")
-        'Icon = New Icon(My.Resources.ResourcesPic.icon)
         Logo.Image = My.Resources.ResourcesPic.logo
-        'Logo.Image = Image.FromFile(".\logo.png")
-        'Btn_01_VMS.Image = My.Resources.ResourcesPic.VivantLogo
-        'Btn_02_Resto.Image = My.Resources.ResourcesPic.PlayBarLogoBTN
+        'load Translation
+        Call Frm_00_02_Translations.LoadLocalTranslationDb()
+
         With Btn_01_VMS
             .BackgroundImage = My.Resources.ResourcesPic.VivantLogo
             .BackgroundImageLayout = ImageLayout.Stretch
@@ -56,7 +54,7 @@ Public Class Frm_00_01_Landing
         Frm_02_00_LandingResto.Show()
     End Sub
 
-    Private Sub Frm_00_01_Landing_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+    Private Sub Frm_00_01_Landing_Closed(sender As Object, e As EventArgs) Handles Me.FormClosed
         'Close all forms and exit application
         End
     End Sub

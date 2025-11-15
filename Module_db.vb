@@ -227,6 +227,24 @@ Module Module_db
 
         Return dt
     End Function
+    Public Sub ExecuteSQLite(SqlStr As String)
+        ' ExecuteSql_SQLite
+        ' Open the connection 
+        Using cnn As SqliteConnection = Module_db.DbOpen_SQLite()
+            Try
+                If cnn.State <> ConnectionState.Open Then
+                    cnn.Open()
+                End If
+                ' Execute the SQL command
+                Using command As New SqliteCommand(SqlStr, cnn)
+                    command.ExecuteNonQuery()
+                End Using
+            Catch ex As Exception
+                ' General exception handling for other exceptions
+                MessageBox.Show("Error executing query: " & ex.Message, "Query Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        End Using
+    End Sub
     Public Function QueryTable_Oracle(SqlStr As String, engineKey As String) As DataTable
         ' --- Execução ORACLE ---
         Dim dt As New DataTable()

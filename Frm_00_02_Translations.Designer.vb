@@ -40,6 +40,7 @@ Partial Class Frm_00_02_Translations
         Btn_01_Save = New Button()
         Btn_02_Exit = New Button()
         Btn_03_NewMsgBox = New Button()
+        Btn_04_UpdateLocalDB = New Button()
         CType(Logo_01, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -216,6 +217,15 @@ Partial Class Frm_00_02_Translations
         Btn_03_NewMsgBox.Text = "New MsgBox"
         Btn_03_NewMsgBox.UseVisualStyleBackColor = True
         ' 
+        ' Btn_04_UpdateLocalDB
+        ' 
+        Btn_04_UpdateLocalDB.Location = New Point(632, 446)
+        Btn_04_UpdateLocalDB.Name = "Btn_04_UpdateLocalDB"
+        Btn_04_UpdateLocalDB.Size = New Size(100, 49)
+        Btn_04_UpdateLocalDB.TabIndex = 9
+        Btn_04_UpdateLocalDB.Text = "Update Local DB"
+        Btn_04_UpdateLocalDB.UseVisualStyleBackColor = True
+        ' 
         ' Frm_00_02_Translations
         ' 
         AutoScaleDimensions = New SizeF(8F, 18F)
@@ -223,6 +233,7 @@ Partial Class Frm_00_02_Translations
         ClientSize = New Size(742, 585)
         Controls.Add(Btn_02_Exit)
         Controls.Add(Btn_03_NewMsgBox)
+        Controls.Add(Btn_04_UpdateLocalDB)
         Controls.Add(Btn_01_Save)
         Controls.Add(Txt_03_NewValue)
         Controls.Add(Txt_02_CurrentTranslation)
@@ -266,4 +277,5 @@ Partial Class Frm_00_02_Translations
     Friend WithEvents Btn_01_Save As Button
     Friend WithEvents Btn_02_Exit As Button
     Friend WithEvents Btn_03_NewMsgBox As Button
+    Friend WithEvents Btn_04_UpdateLocalDB As Button
 End Class

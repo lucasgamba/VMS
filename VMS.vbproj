@@ -35,6 +35,13 @@
 	<PackageReference Include="MySql.Data" Version="9.5.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.26.0" />
+    <PackageReference Include="Syncfusion.Core.WinForms" Version="31.2.10" />
+    <PackageReference Include="Syncfusion.Grid.Windows" Version="31.2.10" />
+    <PackageReference Include="Syncfusion.Pdf.WinForms" Version="31.2.10" />
+    <PackageReference Include="Syncfusion.SfDataGrid.WinForms" Version="31.2.10" />
+    <PackageReference Include="Syncfusion.SfInput.WinForms" Version="31.2.10" />
+    <PackageReference Include="Syncfusion.Tools.Windows" Version="31.2.10" />
+    <PackageReference Include="Syncfusion.XlsIO.WinForms" Version="31.2.10" />
   </ItemGroup>
 
   <ItemGroup>

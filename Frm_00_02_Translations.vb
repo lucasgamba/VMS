@@ -509,4 +509,46 @@ Public Class Frm_00_02_Translations
             Next
         End If
     End Sub
+    Public Sub LoadLocalTranslationDb()
+        'Delete previous translations
+        Dim sqlStr As String = "DROP TABLE IF EXISTS cfg_Translation"
+        ExecuteSQLite(sqlStr)
+
+        'Recreate translation table
+        sqlStr = "CREATE TABLE IF NOT EXISTS cfg_Translation (" &
+                 "ID INTEGER PRIMARY KEY AUTOINCREMENT," &
+                 "FormName TEXT NOT NULL," &
+                 "ObjectName TEXT NOT NULL," &
+                 "LanguageID INTEGER NOT NULL," &
+                 "TranslationText TEXT," &
+                 "UNIQUE(FormName, ObjectName, LanguageID)" &
+                 ");"
+        ExecuteSQLite(sqlStr)
+
+        'Load translation from database
+        Dim sp_ext As String = "VMS_cfg_Translation"
+        Dim action_ext As String = "Get_AllTranslations"
+        Dim param_ext As New Dictionary(Of String, String) From {
+            {"FormName_Ext", "0"}
+        }
+        sqlStr = GenSQL(sp_ext, action_ext, GenJson(param_ext))
+        Dim dt As DataTable = QueryTable_MySQL(sqlStr, 1)
+
+        'Insert translations into local database
+        For Each row As DataRow In dt.Rows
+            Dim formName As String = row("FormName").ToString().Replace("'", "''")
+            Dim objectName As String = row("ObjectName").ToString().Replace("'", "''")
+            Dim languageId As Integer = Convert.ToInt32(row("LanguageID"))
+            Dim translationText As String = row("TranslationText").ToString().Replace("'", "''")
+
+            Dim insertSql As String = String.Format("INSERT OR IGNORE INTO cfg_Translation (FormName, ObjectName, LanguageID, TranslationText) VALUES ('{0}', '{1}', {2}, '{3}');",
+                                                   formName, objectName, languageId, translationText)
+            ExecuteSQLite(insertSql)
+        Next
+    End Sub
+
+    Private Sub Btn_04_UpdateLocalDB_Click(sender As Object, e As EventArgs) Handles Btn_04_UpdateLocalDB.Click
+        'Update local translation database
+        LoadLocalTranslationDb()
+    End Sub
 End Class
