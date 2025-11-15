@@ -20,6 +20,9 @@ Public Class Frm_00_01_FileDbSetup
             '.Cbox_01_DbService.Enabled = False
             '.Btn_02_Test.Enabled = False
         End With
+
+        ' Apply translations to all form components
+        Module_fun.ApplyTranslations(Me)
     End Sub
     Private Sub SaveSettingsFromForm()
         Dim settings As New DatabaseSettings With {

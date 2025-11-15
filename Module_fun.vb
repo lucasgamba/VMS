@@ -88,14 +88,14 @@ Module Module_fun
         Try
             Dim sqlStr As String = "SELECT FieldText FROM tbl_User WHERE FieldName = 'Local_LanguageId';"
             Dim dt As DataTable = Module_db.QueryTable_SQLite(sqlStr)
-            
+
             If dt IsNot Nothing AndAlso dt.Rows.Count > 0 Then
                 Return dt.Rows(0)("FieldText").ToString()
             End If
         Catch ex As Exception
             Debug.WriteLine($"Erro ao obter ID do idioma: {ex.Message}")
         End Try
-        
+
         Return "0"
     End Function
 
@@ -110,7 +110,7 @@ Module Module_fun
                                   $"AND LanguageID = {languageId} " &
                                   $"AND TranslationText IS NOT NULL " &
                                   $"AND TranslationText <> '';"
-            
+
             Return Module_db.QueryTable_SQLite(sqlStr)
         Catch ex As Exception
             Debug.WriteLine($"Erro ao carregar traduções: {ex.Message}")
@@ -125,7 +125,7 @@ Module Module_fun
         Try
             ' Busca a tradução para este objeto
             Dim rows = translations.Select($"ObjectName = '{objectName.Replace("'", "''")}'")
-            
+
             If rows.Length > 0 Then
                 Dim translationText As String = rows(0)("TranslationText").ToString()
                 If Not String.IsNullOrEmpty(translationText) Then

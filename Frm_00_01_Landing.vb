@@ -12,7 +12,8 @@ Public Class Frm_00_01_Landing
     End Sub
     Private Sub Frm_00_0_Landing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Logo.Image = My.Resources.ResourcesPic.logo
-        'load Translation
+
+        'Load Translation database
         Call Frm_00_02_Translations.LoadLocalTranslationDb()
 
         With Btn_01_VMS
@@ -25,6 +26,9 @@ Public Class Frm_00_01_Landing
             .BackgroundImageLayout = ImageLayout.Stretch
             .Text = ""
         End With
+
+        'Apply translations to all form components
+        Module_fun.ApplyTranslations(Me)
 
         'Me.WindowState = FormWindowState.Maximized
 

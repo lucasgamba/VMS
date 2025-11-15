@@ -14,6 +14,9 @@
 
         ' Initial sizing/position of logo
         ResizeLogo()
+
+        ' Apply translations to all form components
+        Module_fun.ApplyTranslations(Me)
     End Sub
 
     Private Sub Frm_02_00_LandingResto_Closed(sender As Object, e As EventArgs) Handles Me.FormClosed

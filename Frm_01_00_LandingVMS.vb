@@ -6,6 +6,9 @@ Public Class Frm_01_00_LandingVMS
             .Image = My.Resources.ResourcesPic.VivantLogo
             .SizeMode = PictureBoxSizeMode.Zoom
         End With
+
+        ' Apply translations to all form components
+        Module_fun.ApplyTranslations(Me)
     End Sub
 
     Private Sub Frm_01_00_LandingVMS_Closed(sender As Object, e As EventArgs) Handles Me.FormClosed

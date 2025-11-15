@@ -142,7 +142,7 @@ Partial Class Frm_00_01_Landing
         ' 
         Btn_01_VMS.BackgroundImageLayout = ImageLayout.Zoom
         Btn_01_VMS.FlatAppearance.BorderSize = 2
-        Btn_01_VMS.Location = New Point(23, 261)
+        Btn_01_VMS.Location = New Point(55, 261)
         Btn_01_VMS.Name = "Btn_01_VMS"
         Btn_01_VMS.Size = New Size(90, 90)
         Btn_01_VMS.TabIndex = 2
@@ -152,7 +152,7 @@ Partial Class Frm_00_01_Landing
         ' Btn_02_Resto
         ' 
         Btn_02_Resto.BackgroundImageLayout = ImageLayout.Zoom
-        Btn_02_Resto.Location = New Point(241, 261)
+        Btn_02_Resto.Location = New Point(214, 261)
         Btn_02_Resto.Name = "Btn_02_Resto"
         Btn_02_Resto.Size = New Size(90, 90)
         Btn_02_Resto.TabIndex = 2
@@ -161,10 +161,9 @@ Partial Class Frm_00_01_Landing
         ' 
         ' Lbl_01_WelcomeText
         ' 
-        Lbl_01_WelcomeText.AutoSize = True
-        Lbl_01_WelcomeText.Location = New Point(23, 218)
+        Lbl_01_WelcomeText.Location = New Point(12, 207)
         Lbl_01_WelcomeText.Name = "Lbl_01_WelcomeText"
-        Lbl_01_WelcomeText.Size = New Size(138, 18)
+        Lbl_01_WelcomeText.Size = New Size(335, 40)
         Lbl_01_WelcomeText.TabIndex = 3
         Lbl_01_WelcomeText.Text = "Lbl_01_WelcomeText"
         ' 
@@ -172,7 +171,7 @@ Partial Class Frm_00_01_Landing
         ' 
         AutoScaleDimensions = New SizeF(8F, 18F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(359, 372)
+        ClientSize = New Size(359, 356)
         Controls.Add(Lbl_01_WelcomeText)
         Controls.Add(Btn_02_Resto)
         Controls.Add(Btn_01_VMS)

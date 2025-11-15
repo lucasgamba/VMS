@@ -192,7 +192,7 @@ Partial Class Frm_00_02_Translations
         ' 
         ' Btn_01_Save
         ' 
-        Btn_01_Save.Location = New Point(632, 501)
+        Btn_01_Save.Location = New Point(632, 504)
         Btn_01_Save.Name = "Btn_01_Save"
         Btn_01_Save.Size = New Size(100, 36)
         Btn_01_Save.TabIndex = 9
@@ -201,7 +201,7 @@ Partial Class Frm_00_02_Translations
         ' 
         ' Btn_02_Exit
         ' 
-        Btn_02_Exit.Location = New Point(632, 543)
+        Btn_02_Exit.Location = New Point(632, 542)
         Btn_02_Exit.Name = "Btn_02_Exit"
         Btn_02_Exit.Size = New Size(100, 36)
         Btn_02_Exit.TabIndex = 10
@@ -219,7 +219,7 @@ Partial Class Frm_00_02_Translations
         ' 
         ' Btn_04_UpdateLocalDB
         ' 
-        Btn_04_UpdateLocalDB.Location = New Point(632, 446)
+        Btn_04_UpdateLocalDB.Location = New Point(632, 453)
         Btn_04_UpdateLocalDB.Name = "Btn_04_UpdateLocalDB"
         Btn_04_UpdateLocalDB.Size = New Size(100, 49)
         Btn_04_UpdateLocalDB.TabIndex = 9
