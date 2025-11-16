@@ -99,17 +99,17 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel5 = New TableLayoutPanel()
         Label11 = New Label()
         Ts_Config_01_General = New ToolStrip()
-        ToolStripButton20 = New ToolStripButton()
-        ToolStripButton17 = New ToolStripButton()
+        Config_Btn_01_General_Tables = New ToolStripButton()
+        Config_Btn_02_General_Units = New ToolStripButton()
         Ts_Config_02_Personal = New ToolStrip()
-        ToolStripButton9 = New ToolStripButton()
-        ToolStripButton10 = New ToolStripButton()
+        Config_Btn_03_Personal_Employee = New ToolStripButton()
+        Config_Btn_04_Personal_Password = New ToolStripButton()
         Ts_Config_04_Operational = New ToolStrip()
-        ToolStripButton19 = New ToolStripButton()
-        ToolStripButton11 = New ToolStripButton()
-        ToolStripButton13 = New ToolStripButton()
+        Config_Btn_05_Operational_System = New ToolStripButton()
+        Config_Btn_06_Operational_Printers = New ToolStripButton()
+        Config_Btn_07_Operational_Logs = New ToolStripButton()
         ToolStripLabel1 = New ToolStripLabel()
-        ToolStripComboBox2 = New ToolStripComboBox()
+        Config_Cbox_01_Language = New ToolStripComboBox()
         Label12 = New Label()
         Label14 = New Label()
         ToolStripButton1 = New ToolStripButton()
@@ -1186,7 +1186,7 @@ Partial Class Frm_02_00_LandingResto
         ' 
         Ts_Config_01_General.BackColor = SystemColors.Control
         Ts_Config_01_General.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Config_01_General.Items.AddRange(New ToolStripItem() {ToolStripButton20, ToolStripButton17})
+        Ts_Config_01_General.Items.AddRange(New ToolStripItem() {Config_Btn_01_General_Tables, Config_Btn_02_General_Units})
         Ts_Config_01_General.Location = New Point(2, 2)
         Ts_Config_01_General.Name = "Ts_Config_01_General"
         Ts_Config_01_General.Padding = New Padding(0)
@@ -1195,39 +1195,39 @@ Partial Class Frm_02_00_LandingResto
         Ts_Config_01_General.TabIndex = 0
         Ts_Config_01_General.Text = "ToolStrip1"
         ' 
-        ' ToolStripButton20
+        ' Config_Btn_01_General_Tables
         ' 
-        ToolStripButton20.Font = New Font("Calibri", 11.25F)
-        ToolStripButton20.Image = CType(resources.GetObject("ToolStripButton20.Image"), Image)
-        ToolStripButton20.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton20.ImageTransparentColor = Color.Magenta
-        ToolStripButton20.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton20.Name = "ToolStripButton20"
-        ToolStripButton20.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton20.Size = New Size(98, 86)
-        ToolStripButton20.Text = "Tables"
-        ToolStripButton20.TextImageRelation = TextImageRelation.ImageAboveText
+        Config_Btn_01_General_Tables.Font = New Font("Calibri", 11.25F)
+        Config_Btn_01_General_Tables.Image = CType(resources.GetObject("Config_Btn_01_General_Tables.Image"), Image)
+        Config_Btn_01_General_Tables.ImageScaling = ToolStripItemImageScaling.None
+        Config_Btn_01_General_Tables.ImageTransparentColor = Color.Magenta
+        Config_Btn_01_General_Tables.Margin = New Padding(5, 2, 5, 2)
+        Config_Btn_01_General_Tables.Name = "Config_Btn_01_General_Tables"
+        Config_Btn_01_General_Tables.Padding = New Padding(15, 0, 15, 0)
+        Config_Btn_01_General_Tables.Size = New Size(98, 86)
+        Config_Btn_01_General_Tables.Text = "Tables"
+        Config_Btn_01_General_Tables.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripButton17
+        ' Config_Btn_02_General_Units
         ' 
-        ToolStripButton17.BackColor = SystemColors.Control
-        ToolStripButton17.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripButton17.Image = CType(resources.GetObject("ToolStripButton17.Image"), Image)
-        ToolStripButton17.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton17.ImageTransparentColor = Color.Magenta
-        ToolStripButton17.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton17.Name = "ToolStripButton17"
-        ToolStripButton17.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton17.Size = New Size(98, 86)
-        ToolStripButton17.Text = "Units"
-        ToolStripButton17.TextImageRelation = TextImageRelation.ImageAboveText
+        Config_Btn_02_General_Units.BackColor = SystemColors.Control
+        Config_Btn_02_General_Units.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Config_Btn_02_General_Units.Image = CType(resources.GetObject("Config_Btn_02_General_Units.Image"), Image)
+        Config_Btn_02_General_Units.ImageScaling = ToolStripItemImageScaling.None
+        Config_Btn_02_General_Units.ImageTransparentColor = Color.Magenta
+        Config_Btn_02_General_Units.Margin = New Padding(5, 2, 5, 2)
+        Config_Btn_02_General_Units.Name = "Config_Btn_02_General_Units"
+        Config_Btn_02_General_Units.Padding = New Padding(15, 0, 15, 0)
+        Config_Btn_02_General_Units.Size = New Size(98, 86)
+        Config_Btn_02_General_Units.Text = "Units"
+        Config_Btn_02_General_Units.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
         ' Ts_Config_02_Personal
         ' 
         Ts_Config_02_Personal.BackColor = SystemColors.Control
         Ts_Config_02_Personal.Dock = DockStyle.Fill
         Ts_Config_02_Personal.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Config_02_Personal.Items.AddRange(New ToolStripItem() {ToolStripButton9, ToolStripButton10})
+        Ts_Config_02_Personal.Items.AddRange(New ToolStripItem() {Config_Btn_03_Personal_Employee, Config_Btn_04_Personal_Password})
         Ts_Config_02_Personal.Location = New Point(222, 2)
         Ts_Config_02_Personal.Name = "Ts_Config_02_Personal"
         Ts_Config_02_Personal.Padding = New Padding(0)
@@ -1236,31 +1236,31 @@ Partial Class Frm_02_00_LandingResto
         Ts_Config_02_Personal.TabIndex = 1
         Ts_Config_02_Personal.Text = "ToolStrip6"
         ' 
-        ' ToolStripButton9
+        ' Config_Btn_03_Personal_Employee
         ' 
-        ToolStripButton9.Font = New Font("Calibri", 11.25F)
-        ToolStripButton9.Image = CType(resources.GetObject("ToolStripButton9.Image"), Image)
-        ToolStripButton9.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton9.ImageTransparentColor = Color.Magenta
-        ToolStripButton9.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton9.Name = "ToolStripButton9"
-        ToolStripButton9.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton9.Size = New Size(104, 86)
-        ToolStripButton9.Text = "Employee"
-        ToolStripButton9.TextImageRelation = TextImageRelation.ImageAboveText
+        Config_Btn_03_Personal_Employee.Font = New Font("Calibri", 11.25F)
+        Config_Btn_03_Personal_Employee.Image = CType(resources.GetObject("Config_Btn_03_Personal_Employee.Image"), Image)
+        Config_Btn_03_Personal_Employee.ImageScaling = ToolStripItemImageScaling.None
+        Config_Btn_03_Personal_Employee.ImageTransparentColor = Color.Magenta
+        Config_Btn_03_Personal_Employee.Margin = New Padding(5, 2, 5, 2)
+        Config_Btn_03_Personal_Employee.Name = "Config_Btn_03_Personal_Employee"
+        Config_Btn_03_Personal_Employee.Padding = New Padding(15, 0, 15, 0)
+        Config_Btn_03_Personal_Employee.Size = New Size(104, 86)
+        Config_Btn_03_Personal_Employee.Text = "Employee"
+        Config_Btn_03_Personal_Employee.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripButton10
+        ' Config_Btn_04_Personal_Password
         ' 
-        ToolStripButton10.Font = New Font("Calibri", 11.25F)
-        ToolStripButton10.Image = CType(resources.GetObject("ToolStripButton10.Image"), Image)
-        ToolStripButton10.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton10.ImageTransparentColor = Color.Magenta
-        ToolStripButton10.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton10.Name = "ToolStripButton10"
-        ToolStripButton10.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton10.Size = New Size(101, 86)
-        ToolStripButton10.Text = "Password"
-        ToolStripButton10.TextImageRelation = TextImageRelation.ImageAboveText
+        Config_Btn_04_Personal_Password.Font = New Font("Calibri", 11.25F)
+        Config_Btn_04_Personal_Password.Image = CType(resources.GetObject("Config_Btn_04_Personal_Password.Image"), Image)
+        Config_Btn_04_Personal_Password.ImageScaling = ToolStripItemImageScaling.None
+        Config_Btn_04_Personal_Password.ImageTransparentColor = Color.Magenta
+        Config_Btn_04_Personal_Password.Margin = New Padding(5, 2, 5, 2)
+        Config_Btn_04_Personal_Password.Name = "Config_Btn_04_Personal_Password"
+        Config_Btn_04_Personal_Password.Padding = New Padding(15, 0, 15, 0)
+        Config_Btn_04_Personal_Password.Size = New Size(101, 86)
+        Config_Btn_04_Personal_Password.Text = "Password"
+        Config_Btn_04_Personal_Password.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
         ' Ts_Config_04_Operational
         ' 
@@ -1269,7 +1269,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Config_04_Operational.Dock = DockStyle.Fill
         Ts_Config_04_Operational.Font = New Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Ts_Config_04_Operational.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Config_04_Operational.Items.AddRange(New ToolStripItem() {ToolStripButton19, ToolStripButton11, ToolStripButton13, ToolStripLabel1, ToolStripComboBox2})
+        Ts_Config_04_Operational.Items.AddRange(New ToolStripItem() {Config_Btn_05_Operational_System, Config_Btn_06_Operational_Printers, Config_Btn_07_Operational_Logs, ToolStripLabel1, Config_Cbox_01_Language})
         Ts_Config_04_Operational.Location = New Point(451, 2)
         Ts_Config_04_Operational.Name = "Ts_Config_04_Operational"
         Ts_Config_04_Operational.Padding = New Padding(0)
@@ -1278,44 +1278,44 @@ Partial Class Frm_02_00_LandingResto
         Ts_Config_04_Operational.TabIndex = 3
         Ts_Config_04_Operational.Text = "ToolStrip8"
         ' 
-        ' ToolStripButton19
+        ' Config_Btn_05_Operational_System
         ' 
-        ToolStripButton19.Font = New Font("Calibri", 11.25F)
-        ToolStripButton19.Image = CType(resources.GetObject("ToolStripButton19.Image"), Image)
-        ToolStripButton19.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton19.ImageTransparentColor = Color.Magenta
-        ToolStripButton19.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton19.Name = "ToolStripButton19"
-        ToolStripButton19.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton19.Size = New Size(98, 86)
-        ToolStripButton19.Text = "System"
-        ToolStripButton19.TextImageRelation = TextImageRelation.ImageAboveText
+        Config_Btn_05_Operational_System.Font = New Font("Calibri", 11.25F)
+        Config_Btn_05_Operational_System.Image = CType(resources.GetObject("Config_Btn_05_Operational_System.Image"), Image)
+        Config_Btn_05_Operational_System.ImageScaling = ToolStripItemImageScaling.None
+        Config_Btn_05_Operational_System.ImageTransparentColor = Color.Magenta
+        Config_Btn_05_Operational_System.Margin = New Padding(5, 2, 5, 2)
+        Config_Btn_05_Operational_System.Name = "Config_Btn_05_Operational_System"
+        Config_Btn_05_Operational_System.Padding = New Padding(15, 0, 15, 0)
+        Config_Btn_05_Operational_System.Size = New Size(98, 86)
+        Config_Btn_05_Operational_System.Text = "System"
+        Config_Btn_05_Operational_System.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripButton11
+        ' Config_Btn_06_Operational_Printers
         ' 
-        ToolStripButton11.Font = New Font("Calibri", 11.25F)
-        ToolStripButton11.Image = CType(resources.GetObject("ToolStripButton11.Image"), Image)
-        ToolStripButton11.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton11.ImageTransparentColor = Color.Magenta
-        ToolStripButton11.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton11.Name = "ToolStripButton11"
-        ToolStripButton11.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton11.Size = New Size(98, 86)
-        ToolStripButton11.Text = "Printers"
-        ToolStripButton11.TextImageRelation = TextImageRelation.ImageAboveText
+        Config_Btn_06_Operational_Printers.Font = New Font("Calibri", 11.25F)
+        Config_Btn_06_Operational_Printers.Image = CType(resources.GetObject("Config_Btn_06_Operational_Printers.Image"), Image)
+        Config_Btn_06_Operational_Printers.ImageScaling = ToolStripItemImageScaling.None
+        Config_Btn_06_Operational_Printers.ImageTransparentColor = Color.Magenta
+        Config_Btn_06_Operational_Printers.Margin = New Padding(5, 2, 5, 2)
+        Config_Btn_06_Operational_Printers.Name = "Config_Btn_06_Operational_Printers"
+        Config_Btn_06_Operational_Printers.Padding = New Padding(15, 0, 15, 0)
+        Config_Btn_06_Operational_Printers.Size = New Size(98, 86)
+        Config_Btn_06_Operational_Printers.Text = "Printers"
+        Config_Btn_06_Operational_Printers.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripButton13
+        ' Config_Btn_07_Operational_Logs
         ' 
-        ToolStripButton13.Font = New Font("Calibri", 11.25F)
-        ToolStripButton13.Image = CType(resources.GetObject("ToolStripButton13.Image"), Image)
-        ToolStripButton13.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton13.ImageTransparentColor = Color.Magenta
-        ToolStripButton13.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton13.Name = "ToolStripButton13"
-        ToolStripButton13.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton13.Size = New Size(98, 86)
-        ToolStripButton13.Text = "Logs"
-        ToolStripButton13.TextImageRelation = TextImageRelation.ImageAboveText
+        Config_Btn_07_Operational_Logs.Font = New Font("Calibri", 11.25F)
+        Config_Btn_07_Operational_Logs.Image = CType(resources.GetObject("Config_Btn_07_Operational_Logs.Image"), Image)
+        Config_Btn_07_Operational_Logs.ImageScaling = ToolStripItemImageScaling.None
+        Config_Btn_07_Operational_Logs.ImageTransparentColor = Color.Magenta
+        Config_Btn_07_Operational_Logs.Margin = New Padding(5, 2, 5, 2)
+        Config_Btn_07_Operational_Logs.Name = "Config_Btn_07_Operational_Logs"
+        Config_Btn_07_Operational_Logs.Padding = New Padding(15, 0, 15, 0)
+        Config_Btn_07_Operational_Logs.Size = New Size(98, 86)
+        Config_Btn_07_Operational_Logs.Text = "Logs"
+        Config_Btn_07_Operational_Logs.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
         ' ToolStripLabel1
         ' 
@@ -1324,11 +1324,11 @@ Partial Class Frm_02_00_LandingResto
         ToolStripLabel1.Size = New Size(70, 87)
         ToolStripLabel1.Text = "Language:"
         ' 
-        ' ToolStripComboBox2
+        ' Config_Cbox_01_Language
         ' 
-        ToolStripComboBox2.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripComboBox2.Name = "ToolStripComboBox2"
-        ToolStripComboBox2.Size = New Size(121, 90)
+        Config_Cbox_01_Language.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Config_Cbox_01_Language.Name = "Config_Cbox_01_Language"
+        Config_Cbox_01_Language.Size = New Size(121, 90)
         ' 
         ' Label12
         ' 
@@ -1502,7 +1502,7 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents ToolStrip_Products As ToolStrip
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ToolStripButton8 As ToolStripButton
-    Friend WithEvents ToolStripButton10 As ToolStripButton
+    Friend WithEvents Config_Btn_04_Personal_Password As ToolStripButton
     Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
     Friend WithEvents TabMain As TabPage
     Friend WithEvents ToolStrip_Main As ToolStrip
@@ -1605,14 +1605,14 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents OrderHistoryToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ItemsSoldToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ToolStripButton21 As ToolStripButton
-    Friend WithEvents ToolStripButton9 As ToolStripButton
+    Friend WithEvents Config_Btn_03_Personal_Employee As ToolStripButton
     Friend WithEvents Main_Btn_05_Orders_ClientOrder As ToolStripButton
-    Friend WithEvents ToolStripButton20 As ToolStripButton
-    Friend WithEvents ToolStripButton17 As ToolStripButton
-    Friend WithEvents ToolStripButton19 As ToolStripButton
-    Friend WithEvents ToolStripButton11 As ToolStripButton
+    Friend WithEvents Config_Btn_01_General_Tables As ToolStripButton
+    Friend WithEvents Config_Btn_02_General_Units As ToolStripButton
+    Friend WithEvents Config_Btn_05_Operational_System As ToolStripButton
+    Friend WithEvents Config_Btn_06_Operational_Printers As ToolStripButton
     Friend WithEvents ToolStripLabel1 As ToolStripLabel
-    Friend WithEvents ToolStripComboBox2 As ToolStripComboBox
-    Friend WithEvents ToolStripButton13 As ToolStripButton
+    Friend WithEvents Config_Cbox_01_Language As ToolStripComboBox
+    Friend WithEvents Config_Btn_07_Operational_Logs As ToolStripButton
 
 End Class
