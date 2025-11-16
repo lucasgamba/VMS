@@ -47,7 +47,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_05_Logout = New Label()
         TabProducts = New TabPage()
         TableLayoutPanel2 = New TableLayoutPanel()
-        Label1 = New Label()
+        Lbl_Prod_01_ProdOrg = New Label()
         Ts_Prod_01_Products = New ToolStrip()
         Prod_Btn_01_Products = New ToolStripButton()
         Ts_Prod_02_ProdOrg = New ToolStrip()
@@ -60,12 +60,12 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_07_Inputs_Category = New ToolStripButton()
         Ts_Prod_04_Stock = New ToolStrip()
         Prod_Btn_08_Stock_BatchChange = New ToolStripButton()
-        Label2 = New Label()
-        Label3 = New Label()
-        Label4 = New Label()
+        Lbl_Prod_02_Products = New Label()
+        Lbl_Prod_03_Inputs = New Label()
+        Lbl_Prod_04_Stock = New Label()
         TabMarketing = New TabPage()
         TableLayoutPanel3 = New TableLayoutPanel()
-        Label7 = New Label()
+        Lbl_Mkt_01_Loyalty = New Label()
         Ts_Mkt_01_Benefits = New ToolStrip()
         Mkt_Btn_01_Benefits_Promotions = New ToolStripButton()
         Mkt_Btn_02_Benefits_Vouchers = New ToolStripButton()
@@ -73,7 +73,7 @@ Partial Class Frm_02_00_LandingResto
         Mkt_Btn_03_Loyalty_Campaigns = New ToolStripButton()
         Mkt_Btn_04_Loyalty_Program = New ToolStripButton()
         Mkt_Btn_05_Loyalty_Birthdays = New ToolStripButton()
-        Label8 = New Label()
+        Lbl_Mkt_02_Benefits = New Label()
         TabReports = New TabPage()
         TableLayoutPanel4 = New TableLayoutPanel()
         Ts_Report_02_Performance = New ToolStrip()
@@ -85,19 +85,19 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_02_Sales_History = New ToolStripDropDownButton()
         OrderHistoryToolStripMenuItem = New ToolStripMenuItem()
         ItemsSoldToolStripMenuItem1 = New ToolStripMenuItem()
-        Label5 = New Label()
+        Lbl_Report_01_Performance = New Label()
         Ts_Report_03_Finance = New ToolStrip()
         Report_Btn_04_Finance_Summary = New ToolStripButton()
         Report_Btn_05_Finance_CashHistory = New ToolStripButton()
         Ts_Report_04_Stock = New ToolStrip()
         Report_Btn_06_Stock_InputsOutputs = New ToolStripButton()
         Report_Btn_07_Stock_PositionByDate = New ToolStripButton()
-        Label6 = New Label()
-        Label9 = New Label()
-        Label10 = New Label()
+        Lbl_Report_02_Sales = New Label()
+        Lbl_Report_03_Finance = New Label()
+        Lbl_Report_04_Stock = New Label()
         TabConfig = New TabPage()
         TableLayoutPanel5 = New TableLayoutPanel()
-        Label11 = New Label()
+        Lbl_Config_01_Personal = New Label()
         Ts_Config_01_General = New ToolStrip()
         Config_Btn_01_General_Tables = New ToolStripButton()
         Config_Btn_02_General_Units = New ToolStripButton()
@@ -108,10 +108,10 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_05_Operational_System = New ToolStripButton()
         Config_Btn_06_Operational_Printers = New ToolStripButton()
         Config_Btn_07_Operational_Logs = New ToolStripButton()
-        ToolStripLabel1 = New ToolStripLabel()
+        Config_Lbl_01_Language = New ToolStripLabel()
         Config_Cbox_01_Language = New ToolStripComboBox()
-        Label12 = New Label()
-        Label14 = New Label()
+        Lbl_Config_02_Operational = New Label()
+        Lbl_Config_03_General = New Label()
         ToolStripButton1 = New ToolStripButton()
         ToolStripButton18 = New ToolStripDropDownButton()
         OrdersToolStripMenuItem = New ToolStripMenuItem()
@@ -493,14 +493,14 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20.0F))
-        TableLayoutPanel2.Controls.Add(Label1, 1, 1)
+        TableLayoutPanel2.Controls.Add(Lbl_Prod_01_ProdOrg, 1, 1)
         TableLayoutPanel2.Controls.Add(Ts_Prod_01_Products, 0, 0)
         TableLayoutPanel2.Controls.Add(Ts_Prod_02_ProdOrg, 1, 0)
         TableLayoutPanel2.Controls.Add(Ts_Prod_03_Inpts, 2, 0)
         TableLayoutPanel2.Controls.Add(Ts_Prod_04_Stock, 3, 0)
-        TableLayoutPanel2.Controls.Add(Label2, 0, 1)
-        TableLayoutPanel2.Controls.Add(Label3, 2, 1)
-        TableLayoutPanel2.Controls.Add(Label4, 3, 1)
+        TableLayoutPanel2.Controls.Add(Lbl_Prod_02_Products, 0, 1)
+        TableLayoutPanel2.Controls.Add(Lbl_Prod_03_Inputs, 2, 1)
+        TableLayoutPanel2.Controls.Add(Lbl_Prod_04_Stock, 3, 1)
         TableLayoutPanel2.Dock = DockStyle.Fill
         TableLayoutPanel2.Location = New Point(0, 0)
         TableLayoutPanel2.Name = "TableLayoutPanel2"
@@ -510,17 +510,17 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel2.Size = New Size(1372, 122)
         TableLayoutPanel2.TabIndex = 1
         ' 
-        ' Label1
+        ' Lbl_Prod_01_ProdOrg
         ' 
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.Dock = DockStyle.Fill
-        Label1.Location = New Point(117, 94)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(452, 26)
-        Label1.TabIndex = 6
-        Label1.Text = "Product Organization"
-        Label1.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_Prod_01_ProdOrg.AutoSize = True
+        Lbl_Prod_01_ProdOrg.BackColor = Color.Transparent
+        Lbl_Prod_01_ProdOrg.Dock = DockStyle.Fill
+        Lbl_Prod_01_ProdOrg.Location = New Point(117, 94)
+        Lbl_Prod_01_ProdOrg.Name = "Lbl_Prod_01_ProdOrg"
+        Lbl_Prod_01_ProdOrg.Size = New Size(452, 26)
+        Lbl_Prod_01_ProdOrg.TabIndex = 6
+        Lbl_Prod_01_ProdOrg.Text = "Product Organization"
+        Lbl_Prod_01_ProdOrg.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Ts_Prod_01_Products
         ' 
@@ -684,41 +684,41 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_08_Stock_BatchChange.Text = "Batch Cahnge"
         Prod_Btn_08_Stock_BatchChange.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' Label2
+        ' Lbl_Prod_02_Products
         ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.Dock = DockStyle.Fill
-        Label2.Location = New Point(5, 94)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(104, 26)
-        Label2.TabIndex = 5
-        Label2.Text = "Products"
-        Label2.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_Prod_02_Products.AutoSize = True
+        Lbl_Prod_02_Products.BackColor = Color.Transparent
+        Lbl_Prod_02_Products.Dock = DockStyle.Fill
+        Lbl_Prod_02_Products.Location = New Point(5, 94)
+        Lbl_Prod_02_Products.Name = "Lbl_Prod_02_Products"
+        Lbl_Prod_02_Products.Size = New Size(104, 26)
+        Lbl_Prod_02_Products.TabIndex = 5
+        Lbl_Prod_02_Products.Text = "Products"
+        Lbl_Prod_02_Products.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label3
+        ' Lbl_Prod_03_Inputs
         ' 
-        Label3.AutoSize = True
-        Label3.BackColor = Color.Transparent
-        Label3.Dock = DockStyle.Fill
-        Label3.Location = New Point(577, 94)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(212, 26)
-        Label3.TabIndex = 6
-        Label3.Text = "Inputs"
-        Label3.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_Prod_03_Inputs.AutoSize = True
+        Lbl_Prod_03_Inputs.BackColor = Color.Transparent
+        Lbl_Prod_03_Inputs.Dock = DockStyle.Fill
+        Lbl_Prod_03_Inputs.Location = New Point(577, 94)
+        Lbl_Prod_03_Inputs.Name = "Lbl_Prod_03_Inputs"
+        Lbl_Prod_03_Inputs.Size = New Size(212, 26)
+        Lbl_Prod_03_Inputs.TabIndex = 6
+        Lbl_Prod_03_Inputs.Text = "Inputs"
+        Lbl_Prod_03_Inputs.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label4
+        ' Lbl_Prod_04_Stock
         ' 
-        Label4.AutoSize = True
-        Label4.BackColor = Color.Transparent
-        Label4.Dock = DockStyle.Fill
-        Label4.Location = New Point(797, 94)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(131, 26)
-        Label4.TabIndex = 6
-        Label4.Text = "Stock"
-        Label4.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_Prod_04_Stock.AutoSize = True
+        Lbl_Prod_04_Stock.BackColor = Color.Transparent
+        Lbl_Prod_04_Stock.Dock = DockStyle.Fill
+        Lbl_Prod_04_Stock.Location = New Point(797, 94)
+        Lbl_Prod_04_Stock.Name = "Lbl_Prod_04_Stock"
+        Lbl_Prod_04_Stock.Size = New Size(131, 26)
+        Lbl_Prod_04_Stock.TabIndex = 6
+        Lbl_Prod_04_Stock.Text = "Stock"
+        Lbl_Prod_04_Stock.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' TabMarketing
         ' 
@@ -741,10 +741,10 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20.0F))
         TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20.0F))
-        TableLayoutPanel3.Controls.Add(Label7, 1, 1)
+        TableLayoutPanel3.Controls.Add(Lbl_Mkt_01_Loyalty, 1, 1)
         TableLayoutPanel3.Controls.Add(Ts_Mkt_01_Benefits, 0, 0)
         TableLayoutPanel3.Controls.Add(Ts_Mkt_02_Loyalty, 1, 0)
-        TableLayoutPanel3.Controls.Add(Label8, 0, 1)
+        TableLayoutPanel3.Controls.Add(Lbl_Mkt_02_Benefits, 0, 1)
         TableLayoutPanel3.Dock = DockStyle.Fill
         TableLayoutPanel3.Location = New Point(0, 0)
         TableLayoutPanel3.Name = "TableLayoutPanel3"
@@ -754,17 +754,17 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel3.Size = New Size(1372, 122)
         TableLayoutPanel3.TabIndex = 2
         ' 
-        ' Label7
+        ' Lbl_Mkt_01_Loyalty
         ' 
-        Label7.AutoSize = True
-        Label7.BackColor = Color.Transparent
-        Label7.Dock = DockStyle.Fill
-        Label7.Location = New Point(241, 94)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(364, 26)
-        Label7.TabIndex = 6
-        Label7.Text = "Loyalty"
-        Label7.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_Mkt_01_Loyalty.AutoSize = True
+        Lbl_Mkt_01_Loyalty.BackColor = Color.Transparent
+        Lbl_Mkt_01_Loyalty.Dock = DockStyle.Fill
+        Lbl_Mkt_01_Loyalty.Location = New Point(241, 94)
+        Lbl_Mkt_01_Loyalty.Name = "Lbl_Mkt_01_Loyalty"
+        Lbl_Mkt_01_Loyalty.Size = New Size(333, 26)
+        Lbl_Mkt_01_Loyalty.TabIndex = 6
+        Lbl_Mkt_01_Loyalty.Text = "Loyalty"
+        Lbl_Mkt_01_Loyalty.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Ts_Mkt_01_Benefits
         ' 
@@ -815,7 +815,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Mkt_02_Loyalty.Name = "Ts_Mkt_02_Loyalty"
         Ts_Mkt_02_Loyalty.Padding = New Padding(0)
         Ts_Mkt_02_Loyalty.RenderMode = ToolStripRenderMode.Professional
-        Ts_Mkt_02_Loyalty.Size = New Size(370, 90)
+        Ts_Mkt_02_Loyalty.Size = New Size(339, 90)
         Ts_Mkt_02_Loyalty.TabIndex = 1
         Ts_Mkt_02_Loyalty.Text = "ToolStrip3"
         ' 
@@ -858,17 +858,17 @@ Partial Class Frm_02_00_LandingResto
         Mkt_Btn_05_Loyalty_Birthdays.Text = "Birthdays"
         Mkt_Btn_05_Loyalty_Birthdays.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' Label8
+        ' Lbl_Mkt_02_Benefits
         ' 
-        Label8.AutoSize = True
-        Label8.BackColor = Color.Transparent
-        Label8.Dock = DockStyle.Fill
-        Label8.Location = New Point(5, 94)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(228, 26)
-        Label8.TabIndex = 5
-        Label8.Text = "Benefits"
-        Label8.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_Mkt_02_Benefits.AutoSize = True
+        Lbl_Mkt_02_Benefits.BackColor = Color.Transparent
+        Lbl_Mkt_02_Benefits.Dock = DockStyle.Fill
+        Lbl_Mkt_02_Benefits.Location = New Point(5, 94)
+        Lbl_Mkt_02_Benefits.Name = "Lbl_Mkt_02_Benefits"
+        Lbl_Mkt_02_Benefits.Size = New Size(228, 26)
+        Lbl_Mkt_02_Benefits.TabIndex = 5
+        Lbl_Mkt_02_Benefits.Text = "Benefits"
+        Lbl_Mkt_02_Benefits.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' TabReports
         ' 
@@ -894,12 +894,12 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20.0F))
         TableLayoutPanel4.Controls.Add(Ts_Report_02_Performance, 1, 0)
         TableLayoutPanel4.Controls.Add(Ts_Report_01_Sales, 0, 0)
-        TableLayoutPanel4.Controls.Add(Label5, 1, 1)
+        TableLayoutPanel4.Controls.Add(Lbl_Report_01_Performance, 1, 1)
         TableLayoutPanel4.Controls.Add(Ts_Report_03_Finance, 2, 0)
         TableLayoutPanel4.Controls.Add(Ts_Report_04_Stock, 3, 0)
-        TableLayoutPanel4.Controls.Add(Label6, 0, 1)
-        TableLayoutPanel4.Controls.Add(Label9, 2, 1)
-        TableLayoutPanel4.Controls.Add(Label10, 3, 1)
+        TableLayoutPanel4.Controls.Add(Lbl_Report_02_Sales, 0, 1)
+        TableLayoutPanel4.Controls.Add(Lbl_Report_03_Finance, 2, 1)
+        TableLayoutPanel4.Controls.Add(Lbl_Report_04_Stock, 3, 1)
         TableLayoutPanel4.Dock = DockStyle.Fill
         TableLayoutPanel4.Location = New Point(0, 0)
         TableLayoutPanel4.Name = "TableLayoutPanel4"
@@ -1002,17 +1002,17 @@ Partial Class Frm_02_00_LandingResto
         ItemsSoldToolStripMenuItem1.Size = New Size(159, 22)
         ItemsSoldToolStripMenuItem1.Text = "Items Sold"
         ' 
-        ' Label5
+        ' Lbl_Report_01_Performance
         ' 
-        Label5.AutoSize = True
-        Label5.BackColor = Color.Transparent
-        Label5.Dock = DockStyle.Fill
-        Label5.Location = New Point(243, 94)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(114, 26)
-        Label5.TabIndex = 6
-        Label5.Text = "Performance"
-        Label5.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_Report_01_Performance.AutoSize = True
+        Lbl_Report_01_Performance.BackColor = Color.Transparent
+        Lbl_Report_01_Performance.Dock = DockStyle.Fill
+        Lbl_Report_01_Performance.Location = New Point(243, 94)
+        Lbl_Report_01_Performance.Name = "Lbl_Report_01_Performance"
+        Lbl_Report_01_Performance.Size = New Size(114, 26)
+        Lbl_Report_01_Performance.TabIndex = 6
+        Lbl_Report_01_Performance.Text = "Performance"
+        Lbl_Report_01_Performance.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Ts_Report_03_Finance
         ' 
@@ -1098,41 +1098,41 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_07_Stock_PositionByDate.Text = "Position by date"
         Report_Btn_07_Stock_PositionByDate.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' Label6
+        ' Lbl_Report_02_Sales
         ' 
-        Label6.AutoSize = True
-        Label6.BackColor = Color.Transparent
-        Label6.Dock = DockStyle.Fill
-        Label6.Location = New Point(5, 94)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(230, 26)
-        Label6.TabIndex = 5
-        Label6.Text = "Sales"
-        Label6.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_Report_02_Sales.AutoSize = True
+        Lbl_Report_02_Sales.BackColor = Color.Transparent
+        Lbl_Report_02_Sales.Dock = DockStyle.Fill
+        Lbl_Report_02_Sales.Location = New Point(5, 94)
+        Lbl_Report_02_Sales.Name = "Lbl_Report_02_Sales"
+        Lbl_Report_02_Sales.Size = New Size(230, 26)
+        Lbl_Report_02_Sales.TabIndex = 5
+        Lbl_Report_02_Sales.Text = "Sales"
+        Lbl_Report_02_Sales.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label9
+        ' Lbl_Report_03_Finance
         ' 
-        Label9.AutoSize = True
-        Label9.BackColor = Color.Transparent
-        Label9.Dock = DockStyle.Fill
-        Label9.Location = New Point(365, 94)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(292, 26)
-        Label9.TabIndex = 6
-        Label9.Text = "Finance"
-        Label9.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_Report_03_Finance.AutoSize = True
+        Lbl_Report_03_Finance.BackColor = Color.Transparent
+        Lbl_Report_03_Finance.Dock = DockStyle.Fill
+        Lbl_Report_03_Finance.Location = New Point(365, 94)
+        Lbl_Report_03_Finance.Name = "Lbl_Report_03_Finance"
+        Lbl_Report_03_Finance.Size = New Size(292, 26)
+        Lbl_Report_03_Finance.TabIndex = 6
+        Lbl_Report_03_Finance.Text = "Finance"
+        Lbl_Report_03_Finance.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label10
+        ' Lbl_Report_04_Stock
         ' 
-        Label10.AutoSize = True
-        Label10.BackColor = Color.Transparent
-        Label10.Dock = DockStyle.Fill
-        Label10.Location = New Point(665, 94)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(293, 26)
-        Label10.TabIndex = 6
-        Label10.Text = "Stock"
-        Label10.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_Report_04_Stock.AutoSize = True
+        Lbl_Report_04_Stock.BackColor = Color.Transparent
+        Lbl_Report_04_Stock.Dock = DockStyle.Fill
+        Lbl_Report_04_Stock.Location = New Point(665, 94)
+        Lbl_Report_04_Stock.Name = "Lbl_Report_04_Stock"
+        Lbl_Report_04_Stock.Size = New Size(293, 26)
+        Lbl_Report_04_Stock.TabIndex = 6
+        Lbl_Report_04_Stock.Text = "Stock"
+        Lbl_Report_04_Stock.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' TabConfig
         ' 
@@ -1155,12 +1155,12 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20.0F))
-        TableLayoutPanel5.Controls.Add(Label11, 1, 1)
+        TableLayoutPanel5.Controls.Add(Lbl_Config_01_Personal, 1, 1)
         TableLayoutPanel5.Controls.Add(Ts_Config_01_General, 0, 0)
         TableLayoutPanel5.Controls.Add(Ts_Config_02_Personal, 1, 0)
         TableLayoutPanel5.Controls.Add(Ts_Config_04_Operational, 2, 0)
-        TableLayoutPanel5.Controls.Add(Label12, 0, 1)
-        TableLayoutPanel5.Controls.Add(Label14, 2, 1)
+        TableLayoutPanel5.Controls.Add(Lbl_Config_02_Operational, 0, 1)
+        TableLayoutPanel5.Controls.Add(Lbl_Config_03_General, 2, 1)
         TableLayoutPanel5.Dock = DockStyle.Fill
         TableLayoutPanel5.Location = New Point(0, 0)
         TableLayoutPanel5.Name = "TableLayoutPanel5"
@@ -1170,17 +1170,17 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel5.Size = New Size(1372, 122)
         TableLayoutPanel5.TabIndex = 2
         ' 
-        ' Label11
+        ' Lbl_Config_01_Personal
         ' 
-        Label11.AutoSize = True
-        Label11.BackColor = Color.Transparent
-        Label11.Dock = DockStyle.Fill
-        Label11.Location = New Point(225, 94)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(221, 26)
-        Label11.TabIndex = 6
-        Label11.Text = "Personal"
-        Label11.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_Config_01_Personal.AutoSize = True
+        Lbl_Config_01_Personal.BackColor = Color.Transparent
+        Lbl_Config_01_Personal.Dock = DockStyle.Fill
+        Lbl_Config_01_Personal.Location = New Point(225, 94)
+        Lbl_Config_01_Personal.Name = "Lbl_Config_01_Personal"
+        Lbl_Config_01_Personal.Size = New Size(221, 26)
+        Lbl_Config_01_Personal.TabIndex = 6
+        Lbl_Config_01_Personal.Text = "Personal"
+        Lbl_Config_01_Personal.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Ts_Config_01_General
         ' 
@@ -1269,12 +1269,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Config_04_Operational.Dock = DockStyle.Fill
         Ts_Config_04_Operational.Font = New Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Ts_Config_04_Operational.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Config_04_Operational.Items.AddRange(New ToolStripItem() {Config_Btn_05_Operational_System, Config_Btn_06_Operational_Printers, Config_Btn_07_Operational_Logs, ToolStripLabel1, Config_Cbox_01_Language})
+        Ts_Config_04_Operational.Items.AddRange(New ToolStripItem() {Config_Btn_05_Operational_System, Config_Btn_06_Operational_Printers, Config_Btn_07_Operational_Logs, Config_Lbl_01_Language, Config_Cbox_01_Language})
         Ts_Config_04_Operational.Location = New Point(451, 2)
         Ts_Config_04_Operational.Name = "Ts_Config_04_Operational"
         Ts_Config_04_Operational.Padding = New Padding(0)
         Ts_Config_04_Operational.RenderMode = ToolStripRenderMode.Professional
-        Ts_Config_04_Operational.Size = New Size(519, 90)
+        Ts_Config_04_Operational.Size = New Size(552, 90)
         Ts_Config_04_Operational.TabIndex = 3
         Ts_Config_04_Operational.Text = "ToolStrip8"
         ' 
@@ -1317,12 +1317,12 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_07_Operational_Logs.Text = "Logs"
         Config_Btn_07_Operational_Logs.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripLabel1
+        ' Config_Lbl_01_Language
         ' 
-        ToolStripLabel1.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripLabel1.Name = "ToolStripLabel1"
-        ToolStripLabel1.Size = New Size(70, 87)
-        ToolStripLabel1.Text = "Language:"
+        Config_Lbl_01_Language.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Config_Lbl_01_Language.Name = "Config_Lbl_01_Language"
+        Config_Lbl_01_Language.Size = New Size(70, 87)
+        Config_Lbl_01_Language.Text = "Language:"
         ' 
         ' Config_Cbox_01_Language
         ' 
@@ -1330,29 +1330,29 @@ Partial Class Frm_02_00_LandingResto
         Config_Cbox_01_Language.Name = "Config_Cbox_01_Language"
         Config_Cbox_01_Language.Size = New Size(121, 90)
         ' 
-        ' Label12
+        ' Lbl_Config_02_Operational
         ' 
-        Label12.AutoSize = True
-        Label12.BackColor = Color.Transparent
-        Label12.Dock = DockStyle.Fill
-        Label12.Location = New Point(5, 94)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(212, 26)
-        Label12.TabIndex = 5
-        Label12.Text = "Operational"
-        Label12.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_Config_02_Operational.AutoSize = True
+        Lbl_Config_02_Operational.BackColor = Color.Transparent
+        Lbl_Config_02_Operational.Dock = DockStyle.Fill
+        Lbl_Config_02_Operational.Location = New Point(5, 94)
+        Lbl_Config_02_Operational.Name = "Lbl_Config_02_Operational"
+        Lbl_Config_02_Operational.Size = New Size(212, 26)
+        Lbl_Config_02_Operational.TabIndex = 5
+        Lbl_Config_02_Operational.Text = "Operational"
+        Lbl_Config_02_Operational.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label14
+        ' Lbl_Config_03_General
         ' 
-        Label14.AutoSize = True
-        Label14.BackColor = Color.Transparent
-        Label14.Dock = DockStyle.Fill
-        Label14.Location = New Point(454, 94)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(513, 26)
-        Label14.TabIndex = 6
-        Label14.Text = "General"
-        Label14.TextAlign = ContentAlignment.MiddleCenter
+        Lbl_Config_03_General.AutoSize = True
+        Lbl_Config_03_General.BackColor = Color.Transparent
+        Lbl_Config_03_General.Dock = DockStyle.Fill
+        Lbl_Config_03_General.Location = New Point(454, 94)
+        Lbl_Config_03_General.Name = "Lbl_Config_03_General"
+        Lbl_Config_03_General.Size = New Size(546, 26)
+        Lbl_Config_03_General.TabIndex = 6
+        Lbl_Config_03_General.Text = "General"
+        Lbl_Config_03_General.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' ToolStripButton1
         ' 
@@ -1538,8 +1538,8 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents Lbl_Main_04_Customers As Label
     Friend WithEvents Lbl_Main_05_Logout As Label
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Lbl_Report_02_Sales As Label
+    Friend WithEvents Lbl_Prod_01_ProdOrg As Label
     Friend WithEvents Ts_Prod_01_Products As ToolStrip
     Friend WithEvents Prod_Btn_01_Products As ToolStripButton
     Friend WithEvents Ts_Prod_02_ProdOrg As ToolStrip
@@ -1553,12 +1553,12 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents Ts_Prod_04_Stock As ToolStrip
     Friend WithEvents Prod_Btn_08_Stock_BatchChange As ToolStripButton
     Friend WithEvents ToolStripButton46 As ToolStripButton
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents Lbl_Prod_02_Products As Label
+    Friend WithEvents Lbl_Prod_03_Inputs As Label
+    Friend WithEvents Lbl_Prod_04_Stock As Label
+    Friend WithEvents Lbl_Report_01_Performance As Label
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
-    Friend WithEvents Label7 As Label
+    Friend WithEvents Lbl_Mkt_01_Loyalty As Label
     Friend WithEvents Ts_Mkt_01_Benefits As ToolStrip
     Friend WithEvents Mkt_Btn_01_Benefits_Promotions As ToolStripButton
     Friend WithEvents Mkt_Btn_02_Benefits_Vouchers As ToolStripButton
@@ -1566,21 +1566,21 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents Mkt_Btn_03_Loyalty_Campaigns As ToolStripButton
     Friend WithEvents Mkt_Btn_04_Loyalty_Program As ToolStripButton
     Friend WithEvents Mkt_Btn_05_Loyalty_Birthdays As ToolStripButton
-    Friend WithEvents Label8 As Label
+    Friend WithEvents Lbl_Mkt_02_Benefits As Label
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
     Friend WithEvents Ts_Report_01_Sales As ToolStrip
     Friend WithEvents ToolStrip2 As ToolStrip
     Friend WithEvents Ts_Report_03_Finance As ToolStrip
     Friend WithEvents Ts_Report_04_Stock As ToolStrip
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
+    Friend WithEvents Lbl_Report_03_Finance As Label
+    Friend WithEvents Lbl_Report_04_Stock As Label
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
-    Friend WithEvents Label11 As Label
+    Friend WithEvents Lbl_Config_01_Personal As Label
     Friend WithEvents Ts_Config_01_General As ToolStrip
     Friend WithEvents Ts_Config_02_Personal As ToolStrip
     Friend WithEvents Ts_Config_04_Operational As ToolStrip
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label14 As Label
+    Friend WithEvents Lbl_Config_02_Operational As Label
+    Friend WithEvents Lbl_Config_03_General As Label
     Friend WithEvents ToolStripSplitButton1 As ToolStripSplitButton
     Friend WithEvents ToolStripButton32 As ToolStripDropDownButton
     Friend WithEvents SToolStripMenuItem As ToolStripMenuItem
@@ -1611,7 +1611,7 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents Config_Btn_02_General_Units As ToolStripButton
     Friend WithEvents Config_Btn_05_Operational_System As ToolStripButton
     Friend WithEvents Config_Btn_06_Operational_Printers As ToolStripButton
-    Friend WithEvents ToolStripLabel1 As ToolStripLabel
+    Friend WithEvents Config_Lbl_01_Language As ToolStripLabel
     Friend WithEvents Config_Cbox_01_Language As ToolStripComboBox
     Friend WithEvents Config_Btn_07_Operational_Logs As ToolStripButton
 
