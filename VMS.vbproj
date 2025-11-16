@@ -68,6 +68,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Frm_02_00_LandingResto.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

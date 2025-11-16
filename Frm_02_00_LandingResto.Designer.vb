@@ -49,17 +49,17 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel2 = New TableLayoutPanel()
         Label1 = New Label()
         Ts_Prod_01_Products = New ToolStrip()
-        ToolStripButton47 = New ToolStripButton()
+        Prod_Btn_01_Products = New ToolStripButton()
         Ts_Prod_02_ProdOrg = New ToolStrip()
-        ToolStripButton40 = New ToolStripButton()
-        ToolStripButton48 = New ToolStripButton()
-        ToolStripButton49 = New ToolStripButton()
-        ToolStripButton50 = New ToolStripButton()
+        Prod_Btn_02_ProdOrg_AddOn = New ToolStripButton()
+        Prod_Btn_03_ProdOrg_Comments = New ToolStripButton()
+        Prod_Btn_04_ProdOrg_Category = New ToolStripButton()
+        Prod_Btn_05_ProdOrg_TypesSizes = New ToolStripButton()
         Ts_Prod_03_Inpts = New ToolStrip()
-        ToolStripButton41 = New ToolStripButton()
-        ToolStripButton42 = New ToolStripButton()
+        Prod_Btn_06_Inputs = New ToolStripButton()
+        Prod_Btn_07_Inputs_Category = New ToolStripButton()
         Ts_Prod_04_Stock = New ToolStrip()
-        ToolStripButton45 = New ToolStripButton()
+        Prod_Btn_08_Stock_BatchChange = New ToolStripButton()
         Label2 = New Label()
         Label3 = New Label()
         Label4 = New Label()
@@ -209,7 +209,7 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle())
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20.0F))
         TableLayoutPanel1.Controls.Add(Lbl_Main_02_Orders, 1, 1)
         TableLayoutPanel1.Controls.Add(Ts_Main_01_Cashier, 0, 0)
         TableLayoutPanel1.Controls.Add(Ts_Main_02_Orders, 1, 0)
@@ -224,8 +224,8 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel1.Location = New Point(0, 0)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
         TableLayoutPanel1.RowCount = 2
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 78F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 22F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 78.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 22.0F))
         TableLayoutPanel1.Size = New Size(1372, 122)
         TableLayoutPanel1.TabIndex = 0
         ' 
@@ -236,7 +236,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_02_Orders.Dock = DockStyle.Fill
         Lbl_Main_02_Orders.Location = New Point(141, 94)
         Lbl_Main_02_Orders.Name = "Lbl_Main_02_Orders"
-        Lbl_Main_02_Orders.Size = New Size(494, 26)
+        Lbl_Main_02_Orders.Size = New Size(463, 26)
         Lbl_Main_02_Orders.TabIndex = 6
         Lbl_Main_02_Orders.Text = "Orders"
         Lbl_Main_02_Orders.TextAlign = ContentAlignment.MiddleCenter
@@ -278,7 +278,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_02_Orders.Name = "Ts_Main_02_Orders"
         Ts_Main_02_Orders.Padding = New Padding(0)
         Ts_Main_02_Orders.RenderMode = ToolStripRenderMode.Professional
-        Ts_Main_02_Orders.Size = New Size(500, 90)
+        Ts_Main_02_Orders.Size = New Size(469, 90)
         Ts_Main_02_Orders.TabIndex = 1
         Ts_Main_02_Orders.Text = "ToolStrip2"
         ' 
@@ -344,7 +344,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_03_Reservation.Dock = DockStyle.Fill
         Ts_Main_03_Reservation.GripStyle = ToolStripGripStyle.Hidden
         Ts_Main_03_Reservation.Items.AddRange(New ToolStripItem() {Main_Btn_06_Reservation_Calendar})
-        Ts_Main_03_Reservation.Location = New Point(640, 2)
+        Ts_Main_03_Reservation.Location = New Point(609, 2)
         Ts_Main_03_Reservation.Name = "Ts_Main_03_Reservation"
         Ts_Main_03_Reservation.Padding = New Padding(0)
         Ts_Main_03_Reservation.RenderMode = ToolStripRenderMode.Professional
@@ -374,7 +374,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_04_Customers.Font = New Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Ts_Main_04_Customers.GripStyle = ToolStripGripStyle.Hidden
         Ts_Main_04_Customers.Items.AddRange(New ToolStripItem() {Main_Btn_07_Customers_Clients})
-        Ts_Main_04_Customers.Location = New Point(752, 2)
+        Ts_Main_04_Customers.Location = New Point(721, 2)
         Ts_Main_04_Customers.Name = "Ts_Main_04_Customers"
         Ts_Main_04_Customers.Padding = New Padding(0)
         Ts_Main_04_Customers.RenderMode = ToolStripRenderMode.Professional
@@ -402,7 +402,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_05_Logout.Dock = DockStyle.Fill
         Ts_Main_05_Logout.GripStyle = ToolStripGripStyle.Hidden
         Ts_Main_05_Logout.Items.AddRange(New ToolStripItem() {Main_Btn_08_Logout})
-        Ts_Main_05_Logout.Location = New Point(864, 2)
+        Ts_Main_05_Logout.Location = New Point(833, 2)
         Ts_Main_05_Logout.Name = "Ts_Main_05_Logout"
         Ts_Main_05_Logout.Padding = New Padding(0)
         Ts_Main_05_Logout.RenderMode = ToolStripRenderMode.Professional
@@ -440,7 +440,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_03_Reservation.AutoSize = True
         Lbl_Main_03_Reservation.BackColor = Color.Transparent
         Lbl_Main_03_Reservation.Dock = DockStyle.Fill
-        Lbl_Main_03_Reservation.Location = New Point(643, 94)
+        Lbl_Main_03_Reservation.Location = New Point(612, 94)
         Lbl_Main_03_Reservation.Name = "Lbl_Main_03_Reservation"
         Lbl_Main_03_Reservation.Size = New Size(104, 26)
         Lbl_Main_03_Reservation.TabIndex = 6
@@ -452,7 +452,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_04_Customers.AutoSize = True
         Lbl_Main_04_Customers.BackColor = Color.Transparent
         Lbl_Main_04_Customers.Dock = DockStyle.Fill
-        Lbl_Main_04_Customers.Location = New Point(755, 94)
+        Lbl_Main_04_Customers.Location = New Point(724, 94)
         Lbl_Main_04_Customers.Name = "Lbl_Main_04_Customers"
         Lbl_Main_04_Customers.Size = New Size(104, 26)
         Lbl_Main_04_Customers.TabIndex = 6
@@ -464,7 +464,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_05_Logout.AutoSize = True
         Lbl_Main_05_Logout.BackColor = Color.Transparent
         Lbl_Main_05_Logout.Dock = DockStyle.Fill
-        Lbl_Main_05_Logout.Location = New Point(867, 94)
+        Lbl_Main_05_Logout.Location = New Point(836, 94)
         Lbl_Main_05_Logout.Name = "Lbl_Main_05_Logout"
         Lbl_Main_05_Logout.Size = New Size(104, 26)
         Lbl_Main_05_Logout.TabIndex = 6
@@ -492,7 +492,7 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle())
-        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20F))
+        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20.0F))
         TableLayoutPanel2.Controls.Add(Label1, 1, 1)
         TableLayoutPanel2.Controls.Add(Ts_Prod_01_Products, 0, 0)
         TableLayoutPanel2.Controls.Add(Ts_Prod_02_ProdOrg, 1, 0)
@@ -505,8 +505,8 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel2.Location = New Point(0, 0)
         TableLayoutPanel2.Name = "TableLayoutPanel2"
         TableLayoutPanel2.RowCount = 2
-        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 78F))
-        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 22F))
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 78.0F))
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 22.0F))
         TableLayoutPanel2.Size = New Size(1372, 122)
         TableLayoutPanel2.TabIndex = 1
         ' 
@@ -526,7 +526,7 @@ Partial Class Frm_02_00_LandingResto
         ' 
         Ts_Prod_01_Products.BackColor = SystemColors.Control
         Ts_Prod_01_Products.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Prod_01_Products.Items.AddRange(New ToolStripItem() {ToolStripButton47})
+        Ts_Prod_01_Products.Items.AddRange(New ToolStripItem() {Prod_Btn_01_Products})
         Ts_Prod_01_Products.Location = New Point(2, 2)
         Ts_Prod_01_Products.Name = "Ts_Prod_01_Products"
         Ts_Prod_01_Products.Padding = New Padding(0)
@@ -535,25 +535,25 @@ Partial Class Frm_02_00_LandingResto
         Ts_Prod_01_Products.TabIndex = 0
         Ts_Prod_01_Products.Text = "ToolStrip1"
         ' 
-        ' ToolStripButton47
+        ' Prod_Btn_01_Products
         ' 
-        ToolStripButton47.Font = New Font("Calibri", 11.25F)
-        ToolStripButton47.Image = CType(resources.GetObject("ToolStripButton47.Image"), Image)
-        ToolStripButton47.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton47.ImageTransparentColor = Color.Magenta
-        ToolStripButton47.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton47.Name = "ToolStripButton47"
-        ToolStripButton47.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton47.Size = New Size(98, 86)
-        ToolStripButton47.Text = "Products"
-        ToolStripButton47.TextImageRelation = TextImageRelation.ImageAboveText
+        Prod_Btn_01_Products.Font = New Font("Calibri", 11.25F)
+        Prod_Btn_01_Products.Image = CType(resources.GetObject("Prod_Btn_01_Products.Image"), Image)
+        Prod_Btn_01_Products.ImageScaling = ToolStripItemImageScaling.None
+        Prod_Btn_01_Products.ImageTransparentColor = Color.Magenta
+        Prod_Btn_01_Products.Margin = New Padding(5, 2, 5, 2)
+        Prod_Btn_01_Products.Name = "Prod_Btn_01_Products"
+        Prod_Btn_01_Products.Padding = New Padding(15, 0, 15, 0)
+        Prod_Btn_01_Products.Size = New Size(98, 86)
+        Prod_Btn_01_Products.Text = "Products"
+        Prod_Btn_01_Products.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
         ' Ts_Prod_02_ProdOrg
         ' 
         Ts_Prod_02_ProdOrg.BackColor = SystemColors.Control
         Ts_Prod_02_ProdOrg.Dock = DockStyle.Fill
         Ts_Prod_02_ProdOrg.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Prod_02_ProdOrg.Items.AddRange(New ToolStripItem() {ToolStripButton40, ToolStripButton48, ToolStripButton49, ToolStripButton50})
+        Ts_Prod_02_ProdOrg.Items.AddRange(New ToolStripItem() {Prod_Btn_02_ProdOrg_AddOn, Prod_Btn_03_ProdOrg_Comments, Prod_Btn_04_ProdOrg_Category, Prod_Btn_05_ProdOrg_TypesSizes})
         Ts_Prod_02_ProdOrg.Location = New Point(114, 2)
         Ts_Prod_02_ProdOrg.Name = "Ts_Prod_02_ProdOrg"
         Ts_Prod_02_ProdOrg.Padding = New Padding(0)
@@ -562,64 +562,64 @@ Partial Class Frm_02_00_LandingResto
         Ts_Prod_02_ProdOrg.TabIndex = 1
         Ts_Prod_02_ProdOrg.Text = "ToolStrip6"
         ' 
-        ' ToolStripButton40
+        ' Prod_Btn_02_ProdOrg_AddOn
         ' 
-        ToolStripButton40.Font = New Font("Calibri", 11.25F)
-        ToolStripButton40.Image = CType(resources.GetObject("ToolStripButton40.Image"), Image)
-        ToolStripButton40.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton40.ImageTransparentColor = Color.Magenta
-        ToolStripButton40.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton40.Name = "ToolStripButton40"
-        ToolStripButton40.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton40.Size = New Size(98, 86)
-        ToolStripButton40.Text = "Add-on"
-        ToolStripButton40.TextImageRelation = TextImageRelation.ImageAboveText
+        Prod_Btn_02_ProdOrg_AddOn.Font = New Font("Calibri", 11.25F)
+        Prod_Btn_02_ProdOrg_AddOn.Image = CType(resources.GetObject("Prod_Btn_02_ProdOrg_AddOn.Image"), Image)
+        Prod_Btn_02_ProdOrg_AddOn.ImageScaling = ToolStripItemImageScaling.None
+        Prod_Btn_02_ProdOrg_AddOn.ImageTransparentColor = Color.Magenta
+        Prod_Btn_02_ProdOrg_AddOn.Margin = New Padding(5, 2, 5, 2)
+        Prod_Btn_02_ProdOrg_AddOn.Name = "Prod_Btn_02_ProdOrg_AddOn"
+        Prod_Btn_02_ProdOrg_AddOn.Padding = New Padding(15, 0, 15, 0)
+        Prod_Btn_02_ProdOrg_AddOn.Size = New Size(98, 86)
+        Prod_Btn_02_ProdOrg_AddOn.Text = "Add-on"
+        Prod_Btn_02_ProdOrg_AddOn.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripButton48
+        ' Prod_Btn_03_ProdOrg_Comments
         ' 
-        ToolStripButton48.Font = New Font("Calibri", 11.25F)
-        ToolStripButton48.Image = CType(resources.GetObject("ToolStripButton48.Image"), Image)
-        ToolStripButton48.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton48.ImageTransparentColor = Color.Magenta
-        ToolStripButton48.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton48.Name = "ToolStripButton48"
-        ToolStripButton48.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton48.Size = New Size(109, 86)
-        ToolStripButton48.Text = "Comments"
-        ToolStripButton48.TextImageRelation = TextImageRelation.ImageAboveText
+        Prod_Btn_03_ProdOrg_Comments.Font = New Font("Calibri", 11.25F)
+        Prod_Btn_03_ProdOrg_Comments.Image = CType(resources.GetObject("Prod_Btn_03_ProdOrg_Comments.Image"), Image)
+        Prod_Btn_03_ProdOrg_Comments.ImageScaling = ToolStripItemImageScaling.None
+        Prod_Btn_03_ProdOrg_Comments.ImageTransparentColor = Color.Magenta
+        Prod_Btn_03_ProdOrg_Comments.Margin = New Padding(5, 2, 5, 2)
+        Prod_Btn_03_ProdOrg_Comments.Name = "Prod_Btn_03_ProdOrg_Comments"
+        Prod_Btn_03_ProdOrg_Comments.Padding = New Padding(15, 0, 15, 0)
+        Prod_Btn_03_ProdOrg_Comments.Size = New Size(109, 86)
+        Prod_Btn_03_ProdOrg_Comments.Text = "Comments"
+        Prod_Btn_03_ProdOrg_Comments.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripButton49
+        ' Prod_Btn_04_ProdOrg_Category
         ' 
-        ToolStripButton49.Font = New Font("Calibri", 11.25F)
-        ToolStripButton49.Image = CType(resources.GetObject("ToolStripButton49.Image"), Image)
-        ToolStripButton49.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton49.ImageTransparentColor = Color.Magenta
-        ToolStripButton49.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton49.Name = "ToolStripButton49"
-        ToolStripButton49.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton49.Size = New Size(98, 86)
-        ToolStripButton49.Text = "Category"
-        ToolStripButton49.TextImageRelation = TextImageRelation.ImageAboveText
+        Prod_Btn_04_ProdOrg_Category.Font = New Font("Calibri", 11.25F)
+        Prod_Btn_04_ProdOrg_Category.Image = CType(resources.GetObject("Prod_Btn_04_ProdOrg_Category.Image"), Image)
+        Prod_Btn_04_ProdOrg_Category.ImageScaling = ToolStripItemImageScaling.None
+        Prod_Btn_04_ProdOrg_Category.ImageTransparentColor = Color.Magenta
+        Prod_Btn_04_ProdOrg_Category.Margin = New Padding(5, 2, 5, 2)
+        Prod_Btn_04_ProdOrg_Category.Name = "Prod_Btn_04_ProdOrg_Category"
+        Prod_Btn_04_ProdOrg_Category.Padding = New Padding(15, 0, 15, 0)
+        Prod_Btn_04_ProdOrg_Category.Size = New Size(98, 86)
+        Prod_Btn_04_ProdOrg_Category.Text = "Category"
+        Prod_Btn_04_ProdOrg_Category.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripButton50
+        ' Prod_Btn_05_ProdOrg_TypesSizes
         ' 
-        ToolStripButton50.Font = New Font("Calibri", 11.25F)
-        ToolStripButton50.Image = CType(resources.GetObject("ToolStripButton50.Image"), Image)
-        ToolStripButton50.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton50.ImageTransparentColor = Color.Magenta
-        ToolStripButton50.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton50.Name = "ToolStripButton50"
-        ToolStripButton50.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton50.Size = New Size(111, 86)
-        ToolStripButton50.Text = "Types Sizes"
-        ToolStripButton50.TextImageRelation = TextImageRelation.ImageAboveText
+        Prod_Btn_05_ProdOrg_TypesSizes.Font = New Font("Calibri", 11.25F)
+        Prod_Btn_05_ProdOrg_TypesSizes.Image = CType(resources.GetObject("Prod_Btn_05_ProdOrg_TypesSizes.Image"), Image)
+        Prod_Btn_05_ProdOrg_TypesSizes.ImageScaling = ToolStripItemImageScaling.None
+        Prod_Btn_05_ProdOrg_TypesSizes.ImageTransparentColor = Color.Magenta
+        Prod_Btn_05_ProdOrg_TypesSizes.Margin = New Padding(5, 2, 5, 2)
+        Prod_Btn_05_ProdOrg_TypesSizes.Name = "Prod_Btn_05_ProdOrg_TypesSizes"
+        Prod_Btn_05_ProdOrg_TypesSizes.Padding = New Padding(15, 0, 15, 0)
+        Prod_Btn_05_ProdOrg_TypesSizes.Size = New Size(111, 86)
+        Prod_Btn_05_ProdOrg_TypesSizes.Text = "Types Sizes"
+        Prod_Btn_05_ProdOrg_TypesSizes.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
         ' Ts_Prod_03_Inpts
         ' 
         Ts_Prod_03_Inpts.BackColor = SystemColors.Control
         Ts_Prod_03_Inpts.Dock = DockStyle.Fill
         Ts_Prod_03_Inpts.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Prod_03_Inpts.Items.AddRange(New ToolStripItem() {ToolStripButton41, ToolStripButton42})
+        Ts_Prod_03_Inpts.Items.AddRange(New ToolStripItem() {Prod_Btn_06_Inputs, Prod_Btn_07_Inputs_Category})
         Ts_Prod_03_Inpts.Location = New Point(574, 2)
         Ts_Prod_03_Inpts.Name = "Ts_Prod_03_Inpts"
         Ts_Prod_03_Inpts.Padding = New Padding(0)
@@ -628,31 +628,31 @@ Partial Class Frm_02_00_LandingResto
         Ts_Prod_03_Inpts.TabIndex = 2
         Ts_Prod_03_Inpts.Text = "ToolStrip7"
         ' 
-        ' ToolStripButton41
+        ' Prod_Btn_06_Inputs
         ' 
-        ToolStripButton41.Font = New Font("Calibri", 11.25F)
-        ToolStripButton41.Image = CType(resources.GetObject("ToolStripButton41.Image"), Image)
-        ToolStripButton41.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton41.ImageTransparentColor = Color.Magenta
-        ToolStripButton41.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton41.Name = "ToolStripButton41"
-        ToolStripButton41.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton41.Size = New Size(98, 86)
-        ToolStripButton41.Text = "Inuts"
-        ToolStripButton41.TextImageRelation = TextImageRelation.ImageAboveText
+        Prod_Btn_06_Inputs.Font = New Font("Calibri", 11.25F)
+        Prod_Btn_06_Inputs.Image = CType(resources.GetObject("Prod_Btn_06_Inputs.Image"), Image)
+        Prod_Btn_06_Inputs.ImageScaling = ToolStripItemImageScaling.None
+        Prod_Btn_06_Inputs.ImageTransparentColor = Color.Magenta
+        Prod_Btn_06_Inputs.Margin = New Padding(5, 2, 5, 2)
+        Prod_Btn_06_Inputs.Name = "Prod_Btn_06_Inputs"
+        Prod_Btn_06_Inputs.Padding = New Padding(15, 0, 15, 0)
+        Prod_Btn_06_Inputs.Size = New Size(98, 86)
+        Prod_Btn_06_Inputs.Text = "Inuts"
+        Prod_Btn_06_Inputs.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripButton42
+        ' Prod_Btn_07_Inputs_Category
         ' 
-        ToolStripButton42.Font = New Font("Calibri", 11.25F)
-        ToolStripButton42.Image = CType(resources.GetObject("ToolStripButton42.Image"), Image)
-        ToolStripButton42.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton42.ImageTransparentColor = Color.Magenta
-        ToolStripButton42.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton42.Name = "ToolStripButton42"
-        ToolStripButton42.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton42.Size = New Size(98, 86)
-        ToolStripButton42.Text = "Category"
-        ToolStripButton42.TextImageRelation = TextImageRelation.ImageAboveText
+        Prod_Btn_07_Inputs_Category.Font = New Font("Calibri", 11.25F)
+        Prod_Btn_07_Inputs_Category.Image = CType(resources.GetObject("Prod_Btn_07_Inputs_Category.Image"), Image)
+        Prod_Btn_07_Inputs_Category.ImageScaling = ToolStripItemImageScaling.None
+        Prod_Btn_07_Inputs_Category.ImageTransparentColor = Color.Magenta
+        Prod_Btn_07_Inputs_Category.Margin = New Padding(5, 2, 5, 2)
+        Prod_Btn_07_Inputs_Category.Name = "Prod_Btn_07_Inputs_Category"
+        Prod_Btn_07_Inputs_Category.Padding = New Padding(15, 0, 15, 0)
+        Prod_Btn_07_Inputs_Category.Size = New Size(98, 86)
+        Prod_Btn_07_Inputs_Category.Text = "Category"
+        Prod_Btn_07_Inputs_Category.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
         ' Ts_Prod_04_Stock
         ' 
@@ -661,7 +661,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Prod_04_Stock.Dock = DockStyle.Fill
         Ts_Prod_04_Stock.Font = New Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Ts_Prod_04_Stock.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Prod_04_Stock.Items.AddRange(New ToolStripItem() {ToolStripButton45})
+        Ts_Prod_04_Stock.Items.AddRange(New ToolStripItem() {Prod_Btn_08_Stock_BatchChange})
         Ts_Prod_04_Stock.Location = New Point(794, 2)
         Ts_Prod_04_Stock.Name = "Ts_Prod_04_Stock"
         Ts_Prod_04_Stock.Padding = New Padding(0)
@@ -670,19 +670,19 @@ Partial Class Frm_02_00_LandingResto
         Ts_Prod_04_Stock.TabIndex = 3
         Ts_Prod_04_Stock.Text = "ToolStrip8"
         ' 
-        ' ToolStripButton45
+        ' Prod_Btn_08_Stock_BatchChange
         ' 
-        ToolStripButton45.BackColor = SystemColors.Control
-        ToolStripButton45.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripButton45.Image = CType(resources.GetObject("ToolStripButton45.Image"), Image)
-        ToolStripButton45.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton45.ImageTransparentColor = Color.Magenta
-        ToolStripButton45.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton45.Name = "ToolStripButton45"
-        ToolStripButton45.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton45.Size = New Size(125, 86)
-        ToolStripButton45.Text = "Batch Cahnge"
-        ToolStripButton45.TextImageRelation = TextImageRelation.ImageAboveText
+        Prod_Btn_08_Stock_BatchChange.BackColor = SystemColors.Control
+        Prod_Btn_08_Stock_BatchChange.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Prod_Btn_08_Stock_BatchChange.Image = CType(resources.GetObject("Prod_Btn_08_Stock_BatchChange.Image"), Image)
+        Prod_Btn_08_Stock_BatchChange.ImageScaling = ToolStripItemImageScaling.None
+        Prod_Btn_08_Stock_BatchChange.ImageTransparentColor = Color.Magenta
+        Prod_Btn_08_Stock_BatchChange.Margin = New Padding(5, 2, 5, 2)
+        Prod_Btn_08_Stock_BatchChange.Name = "Prod_Btn_08_Stock_BatchChange"
+        Prod_Btn_08_Stock_BatchChange.Padding = New Padding(15, 0, 15, 0)
+        Prod_Btn_08_Stock_BatchChange.Size = New Size(125, 86)
+        Prod_Btn_08_Stock_BatchChange.Text = "Batch Cahnge"
+        Prod_Btn_08_Stock_BatchChange.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
         ' Label2
         ' 
@@ -739,8 +739,8 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle())
-        TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20F))
-        TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20F))
+        TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20.0F))
+        TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20.0F))
         TableLayoutPanel3.Controls.Add(Label7, 1, 1)
         TableLayoutPanel3.Controls.Add(Ts_Mkt_01_Benefits, 0, 0)
         TableLayoutPanel3.Controls.Add(Ts_Mkt_02_Loyalty, 1, 0)
@@ -749,8 +749,8 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel3.Location = New Point(0, 0)
         TableLayoutPanel3.Name = "TableLayoutPanel3"
         TableLayoutPanel3.RowCount = 2
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 78F))
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 22F))
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 78.0F))
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 22.0F))
         TableLayoutPanel3.Size = New Size(1372, 122)
         TableLayoutPanel3.TabIndex = 2
         ' 
@@ -891,7 +891,7 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle())
-        TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20F))
+        TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20.0F))
         TableLayoutPanel4.Controls.Add(Ts_Report_02_Performance, 1, 0)
         TableLayoutPanel4.Controls.Add(Ts_Report_01_Sales, 0, 0)
         TableLayoutPanel4.Controls.Add(Label5, 1, 1)
@@ -904,8 +904,8 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel4.Location = New Point(0, 0)
         TableLayoutPanel4.Name = "TableLayoutPanel4"
         TableLayoutPanel4.RowCount = 2
-        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 78F))
-        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 22F))
+        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 78.0F))
+        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 22.0F))
         TableLayoutPanel4.Size = New Size(1372, 122)
         TableLayoutPanel4.TabIndex = 2
         ' 
@@ -1154,7 +1154,7 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle())
         TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle())
-        TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20F))
+        TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20.0F))
         TableLayoutPanel5.Controls.Add(Label11, 1, 1)
         TableLayoutPanel5.Controls.Add(Ts_Config_01_General, 0, 0)
         TableLayoutPanel5.Controls.Add(Ts_Config_02_Personal, 1, 0)
@@ -1165,8 +1165,8 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel5.Location = New Point(0, 0)
         TableLayoutPanel5.Name = "TableLayoutPanel5"
         TableLayoutPanel5.RowCount = 2
-        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 78F))
-        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 22F))
+        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 78.0F))
+        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 22.0F))
         TableLayoutPanel5.Size = New Size(1372, 122)
         TableLayoutPanel5.TabIndex = 2
         ' 
@@ -1424,7 +1424,7 @@ Partial Class Frm_02_00_LandingResto
         ' 
         ' Frm_02_00_LandingResto
         ' 
-        AutoScaleDimensions = New SizeF(8F, 18F)
+        AutoScaleDimensions = New SizeF(8.0F, 18.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1380, 784)
         Controls.Add(Logo_01)
@@ -1541,17 +1541,17 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents Label6 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Ts_Prod_01_Products As ToolStrip
-    Friend WithEvents ToolStripButton47 As ToolStripButton
+    Friend WithEvents Prod_Btn_01_Products As ToolStripButton
     Friend WithEvents Ts_Prod_02_ProdOrg As ToolStrip
-    Friend WithEvents ToolStripButton40 As ToolStripButton
-    Friend WithEvents ToolStripButton48 As ToolStripButton
-    Friend WithEvents ToolStripButton49 As ToolStripButton
-    Friend WithEvents ToolStripButton50 As ToolStripButton
+    Friend WithEvents Prod_Btn_02_ProdOrg_AddOn As ToolStripButton
+    Friend WithEvents Prod_Btn_03_ProdOrg_Comments As ToolStripButton
+    Friend WithEvents Prod_Btn_04_ProdOrg_Category As ToolStripButton
+    Friend WithEvents Prod_Btn_05_ProdOrg_TypesSizes As ToolStripButton
     Friend WithEvents Ts_Prod_03_Inpts As ToolStrip
-    Friend WithEvents ToolStripButton41 As ToolStripButton
-    Friend WithEvents ToolStripButton42 As ToolStripButton
+    Friend WithEvents Prod_Btn_06_Inputs As ToolStripButton
+    Friend WithEvents Prod_Btn_07_Inputs_Category As ToolStripButton
     Friend WithEvents Ts_Prod_04_Stock As ToolStrip
-    Friend WithEvents ToolStripButton45 As ToolStripButton
+    Friend WithEvents Prod_Btn_08_Stock_BatchChange As ToolStripButton
     Friend WithEvents ToolStripButton46 As ToolStripButton
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
