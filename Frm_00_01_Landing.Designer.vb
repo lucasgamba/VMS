@@ -166,6 +166,7 @@ Partial Class Frm_00_01_Landing
         Lbl_01_WelcomeText.Size = New Size(335, 40)
         Lbl_01_WelcomeText.TabIndex = 3
         Lbl_01_WelcomeText.Text = "Lbl_01_WelcomeText"
+        Lbl_01_WelcomeText.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' Frm_00_01_Landing
         ' 

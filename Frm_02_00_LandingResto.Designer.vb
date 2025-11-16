@@ -234,7 +234,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_02_Orders.AutoSize = True
         Lbl_Main_02_Orders.BackColor = Color.Transparent
         Lbl_Main_02_Orders.Dock = DockStyle.Fill
-        Lbl_Main_02_Orders.Location = New Point(172, 94)
+        Lbl_Main_02_Orders.Location = New Point(141, 94)
         Lbl_Main_02_Orders.Name = "Lbl_Main_02_Orders"
         Lbl_Main_02_Orders.Size = New Size(463, 26)
         Lbl_Main_02_Orders.TabIndex = 6
@@ -250,7 +250,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_01_Cashier.Name = "Ts_Main_01_Cashier"
         Ts_Main_01_Cashier.Padding = New Padding(0)
         Ts_Main_01_Cashier.RenderMode = ToolStripRenderMode.Professional
-        Ts_Main_01_Cashier.Size = New Size(165, 90)
+        Ts_Main_01_Cashier.Size = New Size(134, 90)
         Ts_Main_01_Cashier.TabIndex = 0
         Ts_Main_01_Cashier.Text = "ToolStrip1"
         ' 
@@ -274,7 +274,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_02_Orders.Dock = DockStyle.Fill
         Ts_Main_02_Orders.GripStyle = ToolStripGripStyle.Hidden
         Ts_Main_02_Orders.Items.AddRange(New ToolStripItem() {ToolStripButton34, ToolStripButton35, ToolStripButton36, ToolStripButton12})
-        Ts_Main_02_Orders.Location = New Point(169, 2)
+        Ts_Main_02_Orders.Location = New Point(138, 2)
         Ts_Main_02_Orders.Name = "Ts_Main_02_Orders"
         Ts_Main_02_Orders.Padding = New Padding(0)
         Ts_Main_02_Orders.RenderMode = ToolStripRenderMode.Professional
@@ -344,7 +344,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_03_Reservation.Dock = DockStyle.Fill
         Ts_Main_03_Reservation.GripStyle = ToolStripGripStyle.Hidden
         Ts_Main_03_Reservation.Items.AddRange(New ToolStripItem() {ToolStripButton37})
-        Ts_Main_03_Reservation.Location = New Point(640, 2)
+        Ts_Main_03_Reservation.Location = New Point(609, 2)
         Ts_Main_03_Reservation.Name = "Ts_Main_03_Reservation"
         Ts_Main_03_Reservation.Padding = New Padding(0)
         Ts_Main_03_Reservation.RenderMode = ToolStripRenderMode.Professional
@@ -374,7 +374,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_04_Customers.Font = New Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Ts_Main_04_Customers.GripStyle = ToolStripGripStyle.Hidden
         Ts_Main_04_Customers.Items.AddRange(New ToolStripItem() {ToolStripButton38})
-        Ts_Main_04_Customers.Location = New Point(752, 2)
+        Ts_Main_04_Customers.Location = New Point(721, 2)
         Ts_Main_04_Customers.Name = "Ts_Main_04_Customers"
         Ts_Main_04_Customers.Padding = New Padding(0)
         Ts_Main_04_Customers.RenderMode = ToolStripRenderMode.Professional
@@ -402,7 +402,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_05_Logout.Dock = DockStyle.Fill
         Ts_Main_05_Logout.GripStyle = ToolStripGripStyle.Hidden
         Ts_Main_05_Logout.Items.AddRange(New ToolStripItem() {ToolStripButton39})
-        Ts_Main_05_Logout.Location = New Point(864, 2)
+        Ts_Main_05_Logout.Location = New Point(833, 2)
         Ts_Main_05_Logout.Name = "Ts_Main_05_Logout"
         Ts_Main_05_Logout.Padding = New Padding(0)
         Ts_Main_05_Logout.RenderMode = ToolStripRenderMode.Professional
@@ -430,7 +430,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_01_Cashier.Dock = DockStyle.Fill
         Lbl_Main_01_Cashier.Location = New Point(5, 94)
         Lbl_Main_01_Cashier.Name = "Lbl_Main_01_Cashier"
-        Lbl_Main_01_Cashier.Size = New Size(159, 26)
+        Lbl_Main_01_Cashier.Size = New Size(128, 26)
         Lbl_Main_01_Cashier.TabIndex = 5
         Lbl_Main_01_Cashier.Text = "Cashier"
         Lbl_Main_01_Cashier.TextAlign = ContentAlignment.MiddleCenter
@@ -440,7 +440,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_03_Reservation.AutoSize = True
         Lbl_Main_03_Reservation.BackColor = Color.Transparent
         Lbl_Main_03_Reservation.Dock = DockStyle.Fill
-        Lbl_Main_03_Reservation.Location = New Point(643, 94)
+        Lbl_Main_03_Reservation.Location = New Point(612, 94)
         Lbl_Main_03_Reservation.Name = "Lbl_Main_03_Reservation"
         Lbl_Main_03_Reservation.Size = New Size(104, 26)
         Lbl_Main_03_Reservation.TabIndex = 6
@@ -452,7 +452,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_04_Customers.AutoSize = True
         Lbl_Main_04_Customers.BackColor = Color.Transparent
         Lbl_Main_04_Customers.Dock = DockStyle.Fill
-        Lbl_Main_04_Customers.Location = New Point(755, 94)
+        Lbl_Main_04_Customers.Location = New Point(724, 94)
         Lbl_Main_04_Customers.Name = "Lbl_Main_04_Customers"
         Lbl_Main_04_Customers.Size = New Size(104, 26)
         Lbl_Main_04_Customers.TabIndex = 6
@@ -464,7 +464,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_05_Logout.AutoSize = True
         Lbl_Main_05_Logout.BackColor = Color.Transparent
         Lbl_Main_05_Logout.Dock = DockStyle.Fill
-        Lbl_Main_05_Logout.Location = New Point(867, 94)
+        Lbl_Main_05_Logout.Location = New Point(836, 94)
         Lbl_Main_05_Logout.Name = "Lbl_Main_05_Logout"
         Lbl_Main_05_Logout.Size = New Size(104, 26)
         Lbl_Main_05_Logout.TabIndex = 6
