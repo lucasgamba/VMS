@@ -24,7 +24,7 @@
         Frm_00_01_Landing.Show()
     End Sub
 
-    Private Sub ToolStripButton33_Click(sender As Object, e As EventArgs) Handles ToolStripButton33.Click
+    Private Sub Main_Btn_01_Cashier_OpenClose_Click(sender As Object, e As EventArgs) Handles Main_Btn_01_Cashier_OpenClose.Click
         MsgBox("This feature is not yet implemented.", MsgBoxStyle.Information, "Info")
     End Sub
 

@@ -29,18 +29,18 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel1 = New TableLayoutPanel()
         Lbl_Main_02_Orders = New Label()
         Ts_Main_01_Cashier = New ToolStrip()
-        ToolStripButton33 = New ToolStripButton()
+        Main_Btn_01_Cashier_OpenClose = New ToolStripButton()
         Ts_Main_02_Orders = New ToolStrip()
-        ToolStripButton34 = New ToolStripButton()
-        ToolStripButton35 = New ToolStripButton()
-        ToolStripButton36 = New ToolStripButton()
-        ToolStripButton12 = New ToolStripButton()
+        Main_Btn_02_Orders_Tables = New ToolStripButton()
+        Main_Btn_03_Orders_Delivery = New ToolStripButton()
+        Main_Btn_04_Orders_DirectSales = New ToolStripButton()
+        Main_Btn_05_Orders_ClientOrder = New ToolStripButton()
         Ts_Main_03_Reservation = New ToolStrip()
-        ToolStripButton37 = New ToolStripButton()
+        Main_Btn_06_Reservation_Calendar = New ToolStripButton()
         Ts_Main_04_Customers = New ToolStrip()
-        ToolStripButton38 = New ToolStripButton()
+        Main_Btn_07_Customers_Clients = New ToolStripButton()
         Ts_Main_05_Logout = New ToolStrip()
-        ToolStripButton39 = New ToolStripButton()
+        Main_Btn_08_Logout = New ToolStripButton()
         Lbl_Main_01_Cashier = New Label()
         Lbl_Main_03_Reservation = New Label()
         Lbl_Main_04_Customers = New Label()
@@ -236,7 +236,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_02_Orders.Dock = DockStyle.Fill
         Lbl_Main_02_Orders.Location = New Point(141, 94)
         Lbl_Main_02_Orders.Name = "Lbl_Main_02_Orders"
-        Lbl_Main_02_Orders.Size = New Size(463, 26)
+        Lbl_Main_02_Orders.Size = New Size(494, 26)
         Lbl_Main_02_Orders.TabIndex = 6
         Lbl_Main_02_Orders.Text = "Orders"
         Lbl_Main_02_Orders.TextAlign = ContentAlignment.MiddleCenter
@@ -245,7 +245,7 @@ Partial Class Frm_02_00_LandingResto
         ' 
         Ts_Main_01_Cashier.BackColor = SystemColors.Control
         Ts_Main_01_Cashier.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Main_01_Cashier.Items.AddRange(New ToolStripItem() {ToolStripButton33})
+        Ts_Main_01_Cashier.Items.AddRange(New ToolStripItem() {Main_Btn_01_Cashier_OpenClose})
         Ts_Main_01_Cashier.Location = New Point(2, 2)
         Ts_Main_01_Cashier.Name = "Ts_Main_01_Cashier"
         Ts_Main_01_Cashier.Padding = New Padding(0)
@@ -254,97 +254,97 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_01_Cashier.TabIndex = 0
         Ts_Main_01_Cashier.Text = "ToolStrip1"
         ' 
-        ' ToolStripButton33
+        ' Main_Btn_01_Cashier_OpenClose
         ' 
-        ToolStripButton33.BackColor = SystemColors.Control
-        ToolStripButton33.Font = New Font("Calibri", 11.25F)
-        ToolStripButton33.Image = CType(resources.GetObject("ToolStripButton33.Image"), Image)
-        ToolStripButton33.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton33.ImageTransparentColor = Color.Magenta
-        ToolStripButton33.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton33.Name = "ToolStripButton33"
-        ToolStripButton33.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton33.Size = New Size(122, 86)
-        ToolStripButton33.Text = "Open / Close"
-        ToolStripButton33.TextImageRelation = TextImageRelation.ImageAboveText
+        Main_Btn_01_Cashier_OpenClose.BackColor = SystemColors.Control
+        Main_Btn_01_Cashier_OpenClose.Font = New Font("Calibri", 11.25F)
+        Main_Btn_01_Cashier_OpenClose.Image = CType(resources.GetObject("Main_Btn_01_Cashier_OpenClose.Image"), Image)
+        Main_Btn_01_Cashier_OpenClose.ImageScaling = ToolStripItemImageScaling.None
+        Main_Btn_01_Cashier_OpenClose.ImageTransparentColor = Color.Magenta
+        Main_Btn_01_Cashier_OpenClose.Margin = New Padding(5, 2, 5, 2)
+        Main_Btn_01_Cashier_OpenClose.Name = "Main_Btn_01_Cashier_OpenClose"
+        Main_Btn_01_Cashier_OpenClose.Padding = New Padding(15, 0, 15, 0)
+        Main_Btn_01_Cashier_OpenClose.Size = New Size(122, 86)
+        Main_Btn_01_Cashier_OpenClose.Text = "Open / Close"
+        Main_Btn_01_Cashier_OpenClose.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
         ' Ts_Main_02_Orders
         ' 
         Ts_Main_02_Orders.BackColor = SystemColors.Control
         Ts_Main_02_Orders.Dock = DockStyle.Fill
         Ts_Main_02_Orders.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Main_02_Orders.Items.AddRange(New ToolStripItem() {ToolStripButton34, ToolStripButton35, ToolStripButton36, ToolStripButton12})
+        Ts_Main_02_Orders.Items.AddRange(New ToolStripItem() {Main_Btn_02_Orders_Tables, Main_Btn_03_Orders_Delivery, Main_Btn_04_Orders_DirectSales, Main_Btn_05_Orders_ClientOrder})
         Ts_Main_02_Orders.Location = New Point(138, 2)
         Ts_Main_02_Orders.Name = "Ts_Main_02_Orders"
         Ts_Main_02_Orders.Padding = New Padding(0)
         Ts_Main_02_Orders.RenderMode = ToolStripRenderMode.Professional
-        Ts_Main_02_Orders.Size = New Size(469, 90)
+        Ts_Main_02_Orders.Size = New Size(500, 90)
         Ts_Main_02_Orders.TabIndex = 1
         Ts_Main_02_Orders.Text = "ToolStrip2"
         ' 
-        ' ToolStripButton34
+        ' Main_Btn_02_Orders_Tables
         ' 
-        ToolStripButton34.BackColor = SystemColors.Control
-        ToolStripButton34.Font = New Font("Calibri", 11.25F)
-        ToolStripButton34.Image = CType(resources.GetObject("ToolStripButton34.Image"), Image)
-        ToolStripButton34.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton34.ImageTransparentColor = Color.Magenta
-        ToolStripButton34.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton34.Name = "ToolStripButton34"
-        ToolStripButton34.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton34.Size = New Size(98, 86)
-        ToolStripButton34.Text = "Tables"
-        ToolStripButton34.TextImageRelation = TextImageRelation.ImageAboveText
+        Main_Btn_02_Orders_Tables.BackColor = SystemColors.Control
+        Main_Btn_02_Orders_Tables.Font = New Font("Calibri", 11.25F)
+        Main_Btn_02_Orders_Tables.Image = CType(resources.GetObject("Main_Btn_02_Orders_Tables.Image"), Image)
+        Main_Btn_02_Orders_Tables.ImageScaling = ToolStripItemImageScaling.None
+        Main_Btn_02_Orders_Tables.ImageTransparentColor = Color.Magenta
+        Main_Btn_02_Orders_Tables.Margin = New Padding(5, 2, 5, 2)
+        Main_Btn_02_Orders_Tables.Name = "Main_Btn_02_Orders_Tables"
+        Main_Btn_02_Orders_Tables.Padding = New Padding(15, 0, 15, 0)
+        Main_Btn_02_Orders_Tables.Size = New Size(98, 86)
+        Main_Btn_02_Orders_Tables.Text = "Tables"
+        Main_Btn_02_Orders_Tables.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripButton35
+        ' Main_Btn_03_Orders_Delivery
         ' 
-        ToolStripButton35.BackColor = SystemColors.Control
-        ToolStripButton35.Font = New Font("Calibri", 11.25F)
-        ToolStripButton35.Image = CType(resources.GetObject("ToolStripButton35.Image"), Image)
-        ToolStripButton35.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton35.ImageTransparentColor = Color.Magenta
-        ToolStripButton35.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton35.Name = "ToolStripButton35"
-        ToolStripButton35.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton35.Size = New Size(98, 86)
-        ToolStripButton35.Text = "Delivery"
-        ToolStripButton35.TextImageRelation = TextImageRelation.ImageAboveText
+        Main_Btn_03_Orders_Delivery.BackColor = SystemColors.Control
+        Main_Btn_03_Orders_Delivery.Font = New Font("Calibri", 11.25F)
+        Main_Btn_03_Orders_Delivery.Image = CType(resources.GetObject("Main_Btn_03_Orders_Delivery.Image"), Image)
+        Main_Btn_03_Orders_Delivery.ImageScaling = ToolStripItemImageScaling.None
+        Main_Btn_03_Orders_Delivery.ImageTransparentColor = Color.Magenta
+        Main_Btn_03_Orders_Delivery.Margin = New Padding(5, 2, 5, 2)
+        Main_Btn_03_Orders_Delivery.Name = "Main_Btn_03_Orders_Delivery"
+        Main_Btn_03_Orders_Delivery.Padding = New Padding(15, 0, 15, 0)
+        Main_Btn_03_Orders_Delivery.Size = New Size(98, 86)
+        Main_Btn_03_Orders_Delivery.Text = "Delivery"
+        Main_Btn_03_Orders_Delivery.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripButton36
+        ' Main_Btn_04_Orders_DirectSales
         ' 
-        ToolStripButton36.BackColor = SystemColors.Control
-        ToolStripButton36.Font = New Font("Calibri", 11.25F)
-        ToolStripButton36.Image = CType(resources.GetObject("ToolStripButton36.Image"), Image)
-        ToolStripButton36.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton36.ImageTransparentColor = Color.Magenta
-        ToolStripButton36.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton36.Name = "ToolStripButton36"
-        ToolStripButton36.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton36.Size = New Size(113, 86)
-        ToolStripButton36.Text = "Direct sales"
-        ToolStripButton36.TextImageRelation = TextImageRelation.ImageAboveText
+        Main_Btn_04_Orders_DirectSales.BackColor = SystemColors.Control
+        Main_Btn_04_Orders_DirectSales.Font = New Font("Calibri", 11.25F)
+        Main_Btn_04_Orders_DirectSales.Image = CType(resources.GetObject("Main_Btn_04_Orders_DirectSales.Image"), Image)
+        Main_Btn_04_Orders_DirectSales.ImageScaling = ToolStripItemImageScaling.None
+        Main_Btn_04_Orders_DirectSales.ImageTransparentColor = Color.Magenta
+        Main_Btn_04_Orders_DirectSales.Margin = New Padding(5, 2, 5, 2)
+        Main_Btn_04_Orders_DirectSales.Name = "Main_Btn_04_Orders_DirectSales"
+        Main_Btn_04_Orders_DirectSales.Padding = New Padding(15, 0, 15, 0)
+        Main_Btn_04_Orders_DirectSales.Size = New Size(113, 86)
+        Main_Btn_04_Orders_DirectSales.Text = "Direct sales"
+        Main_Btn_04_Orders_DirectSales.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripButton12
+        ' Main_Btn_05_Orders_ClientOrder
         ' 
-        ToolStripButton12.BackColor = SystemColors.Control
-        ToolStripButton12.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripButton12.Image = CType(resources.GetObject("ToolStripButton12.Image"), Image)
-        ToolStripButton12.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton12.ImageTransparentColor = Color.Magenta
-        ToolStripButton12.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton12.Name = "ToolStripButton12"
-        ToolStripButton12.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton12.Size = New Size(118, 86)
-        ToolStripButton12.Text = "Client Order"
-        ToolStripButton12.TextImageRelation = TextImageRelation.ImageAboveText
+        Main_Btn_05_Orders_ClientOrder.BackColor = SystemColors.Control
+        Main_Btn_05_Orders_ClientOrder.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Main_Btn_05_Orders_ClientOrder.Image = CType(resources.GetObject("Main_Btn_05_Orders_ClientOrder.Image"), Image)
+        Main_Btn_05_Orders_ClientOrder.ImageScaling = ToolStripItemImageScaling.None
+        Main_Btn_05_Orders_ClientOrder.ImageTransparentColor = Color.Magenta
+        Main_Btn_05_Orders_ClientOrder.Margin = New Padding(5, 2, 5, 2)
+        Main_Btn_05_Orders_ClientOrder.Name = "Main_Btn_05_Orders_ClientOrder"
+        Main_Btn_05_Orders_ClientOrder.Padding = New Padding(15, 0, 15, 0)
+        Main_Btn_05_Orders_ClientOrder.Size = New Size(118, 86)
+        Main_Btn_05_Orders_ClientOrder.Text = "Client Order"
+        Main_Btn_05_Orders_ClientOrder.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
         ' Ts_Main_03_Reservation
         ' 
         Ts_Main_03_Reservation.BackColor = SystemColors.Control
         Ts_Main_03_Reservation.Dock = DockStyle.Fill
         Ts_Main_03_Reservation.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Main_03_Reservation.Items.AddRange(New ToolStripItem() {ToolStripButton37})
-        Ts_Main_03_Reservation.Location = New Point(609, 2)
+        Ts_Main_03_Reservation.Items.AddRange(New ToolStripItem() {Main_Btn_06_Reservation_Calendar})
+        Ts_Main_03_Reservation.Location = New Point(640, 2)
         Ts_Main_03_Reservation.Name = "Ts_Main_03_Reservation"
         Ts_Main_03_Reservation.Padding = New Padding(0)
         Ts_Main_03_Reservation.RenderMode = ToolStripRenderMode.Professional
@@ -352,19 +352,19 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_03_Reservation.TabIndex = 2
         Ts_Main_03_Reservation.Text = "ToolStrip3"
         ' 
-        ' ToolStripButton37
+        ' Main_Btn_06_Reservation_Calendar
         ' 
-        ToolStripButton37.BackColor = SystemColors.Control
-        ToolStripButton37.Font = New Font("Calibri", 11.25F)
-        ToolStripButton37.Image = CType(resources.GetObject("ToolStripButton37.Image"), Image)
-        ToolStripButton37.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton37.ImageTransparentColor = Color.Magenta
-        ToolStripButton37.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton37.Name = "ToolStripButton37"
-        ToolStripButton37.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton37.Size = New Size(98, 86)
-        ToolStripButton37.Text = "Calendar"
-        ToolStripButton37.TextImageRelation = TextImageRelation.ImageAboveText
+        Main_Btn_06_Reservation_Calendar.BackColor = SystemColors.Control
+        Main_Btn_06_Reservation_Calendar.Font = New Font("Calibri", 11.25F)
+        Main_Btn_06_Reservation_Calendar.Image = CType(resources.GetObject("Main_Btn_06_Reservation_Calendar.Image"), Image)
+        Main_Btn_06_Reservation_Calendar.ImageScaling = ToolStripItemImageScaling.None
+        Main_Btn_06_Reservation_Calendar.ImageTransparentColor = Color.Magenta
+        Main_Btn_06_Reservation_Calendar.Margin = New Padding(5, 2, 5, 2)
+        Main_Btn_06_Reservation_Calendar.Name = "Main_Btn_06_Reservation_Calendar"
+        Main_Btn_06_Reservation_Calendar.Padding = New Padding(15, 0, 15, 0)
+        Main_Btn_06_Reservation_Calendar.Size = New Size(98, 86)
+        Main_Btn_06_Reservation_Calendar.Text = "Calendar"
+        Main_Btn_06_Reservation_Calendar.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
         ' Ts_Main_04_Customers
         ' 
@@ -373,8 +373,8 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_04_Customers.Dock = DockStyle.Fill
         Ts_Main_04_Customers.Font = New Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Ts_Main_04_Customers.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Main_04_Customers.Items.AddRange(New ToolStripItem() {ToolStripButton38})
-        Ts_Main_04_Customers.Location = New Point(721, 2)
+        Ts_Main_04_Customers.Items.AddRange(New ToolStripItem() {Main_Btn_07_Customers_Clients})
+        Ts_Main_04_Customers.Location = New Point(752, 2)
         Ts_Main_04_Customers.Name = "Ts_Main_04_Customers"
         Ts_Main_04_Customers.Padding = New Padding(0)
         Ts_Main_04_Customers.RenderMode = ToolStripRenderMode.Professional
@@ -382,27 +382,27 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_04_Customers.TabIndex = 3
         Ts_Main_04_Customers.Text = "ToolStrip4"
         ' 
-        ' ToolStripButton38
+        ' Main_Btn_07_Customers_Clients
         ' 
-        ToolStripButton38.BackColor = SystemColors.Control
-        ToolStripButton38.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripButton38.Image = CType(resources.GetObject("ToolStripButton38.Image"), Image)
-        ToolStripButton38.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton38.ImageTransparentColor = Color.Magenta
-        ToolStripButton38.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton38.Name = "ToolStripButton38"
-        ToolStripButton38.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton38.Size = New Size(98, 86)
-        ToolStripButton38.Text = "Clients"
-        ToolStripButton38.TextImageRelation = TextImageRelation.ImageAboveText
+        Main_Btn_07_Customers_Clients.BackColor = SystemColors.Control
+        Main_Btn_07_Customers_Clients.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Main_Btn_07_Customers_Clients.Image = CType(resources.GetObject("Main_Btn_07_Customers_Clients.Image"), Image)
+        Main_Btn_07_Customers_Clients.ImageScaling = ToolStripItemImageScaling.None
+        Main_Btn_07_Customers_Clients.ImageTransparentColor = Color.Magenta
+        Main_Btn_07_Customers_Clients.Margin = New Padding(5, 2, 5, 2)
+        Main_Btn_07_Customers_Clients.Name = "Main_Btn_07_Customers_Clients"
+        Main_Btn_07_Customers_Clients.Padding = New Padding(15, 0, 15, 0)
+        Main_Btn_07_Customers_Clients.Size = New Size(98, 86)
+        Main_Btn_07_Customers_Clients.Text = "Clients"
+        Main_Btn_07_Customers_Clients.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
         ' Ts_Main_05_Logout
         ' 
         Ts_Main_05_Logout.BackColor = SystemColors.Control
         Ts_Main_05_Logout.Dock = DockStyle.Fill
         Ts_Main_05_Logout.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Main_05_Logout.Items.AddRange(New ToolStripItem() {ToolStripButton39})
-        Ts_Main_05_Logout.Location = New Point(833, 2)
+        Ts_Main_05_Logout.Items.AddRange(New ToolStripItem() {Main_Btn_08_Logout})
+        Ts_Main_05_Logout.Location = New Point(864, 2)
         Ts_Main_05_Logout.Name = "Ts_Main_05_Logout"
         Ts_Main_05_Logout.Padding = New Padding(0)
         Ts_Main_05_Logout.RenderMode = ToolStripRenderMode.Professional
@@ -410,18 +410,18 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_05_Logout.TabIndex = 4
         Ts_Main_05_Logout.Text = "ToolStrip5"
         ' 
-        ' ToolStripButton39
+        ' Main_Btn_08_Logout
         ' 
-        ToolStripButton39.Font = New Font("Calibri", 11.25F)
-        ToolStripButton39.Image = CType(resources.GetObject("ToolStripButton39.Image"), Image)
-        ToolStripButton39.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripButton39.ImageTransparentColor = Color.Magenta
-        ToolStripButton39.Margin = New Padding(5, 2, 5, 2)
-        ToolStripButton39.Name = "ToolStripButton39"
-        ToolStripButton39.Padding = New Padding(15, 0, 15, 0)
-        ToolStripButton39.Size = New Size(98, 86)
-        ToolStripButton39.Text = "Logout"
-        ToolStripButton39.TextImageRelation = TextImageRelation.ImageAboveText
+        Main_Btn_08_Logout.Font = New Font("Calibri", 11.25F)
+        Main_Btn_08_Logout.Image = CType(resources.GetObject("Main_Btn_08_Logout.Image"), Image)
+        Main_Btn_08_Logout.ImageScaling = ToolStripItemImageScaling.None
+        Main_Btn_08_Logout.ImageTransparentColor = Color.Magenta
+        Main_Btn_08_Logout.Margin = New Padding(5, 2, 5, 2)
+        Main_Btn_08_Logout.Name = "Main_Btn_08_Logout"
+        Main_Btn_08_Logout.Padding = New Padding(15, 0, 15, 0)
+        Main_Btn_08_Logout.Size = New Size(98, 86)
+        Main_Btn_08_Logout.Text = "Logout"
+        Main_Btn_08_Logout.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
         ' Lbl_Main_01_Cashier
         ' 
@@ -440,7 +440,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_03_Reservation.AutoSize = True
         Lbl_Main_03_Reservation.BackColor = Color.Transparent
         Lbl_Main_03_Reservation.Dock = DockStyle.Fill
-        Lbl_Main_03_Reservation.Location = New Point(612, 94)
+        Lbl_Main_03_Reservation.Location = New Point(643, 94)
         Lbl_Main_03_Reservation.Name = "Lbl_Main_03_Reservation"
         Lbl_Main_03_Reservation.Size = New Size(104, 26)
         Lbl_Main_03_Reservation.TabIndex = 6
@@ -452,7 +452,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_04_Customers.AutoSize = True
         Lbl_Main_04_Customers.BackColor = Color.Transparent
         Lbl_Main_04_Customers.Dock = DockStyle.Fill
-        Lbl_Main_04_Customers.Location = New Point(724, 94)
+        Lbl_Main_04_Customers.Location = New Point(755, 94)
         Lbl_Main_04_Customers.Name = "Lbl_Main_04_Customers"
         Lbl_Main_04_Customers.Size = New Size(104, 26)
         Lbl_Main_04_Customers.TabIndex = 6
@@ -464,7 +464,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Main_05_Logout.AutoSize = True
         Lbl_Main_05_Logout.BackColor = Color.Transparent
         Lbl_Main_05_Logout.Dock = DockStyle.Fill
-        Lbl_Main_05_Logout.Location = New Point(836, 94)
+        Lbl_Main_05_Logout.Location = New Point(867, 94)
         Lbl_Main_05_Logout.Name = "Lbl_Main_05_Logout"
         Lbl_Main_05_Logout.Size = New Size(104, 26)
         Lbl_Main_05_Logout.TabIndex = 6
@@ -1521,17 +1521,17 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents ToolStripSeparator17 As ToolStripSeparator
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Ts_Main_01_Cashier As ToolStrip
-    Friend WithEvents ToolStripButton33 As ToolStripButton
+    Friend WithEvents Main_Btn_01_Cashier_OpenClose As ToolStripButton
     Friend WithEvents Ts_Main_02_Orders As ToolStrip
-    Friend WithEvents ToolStripButton34 As ToolStripButton
-    Friend WithEvents ToolStripButton35 As ToolStripButton
-    Friend WithEvents ToolStripButton36 As ToolStripButton
+    Friend WithEvents Main_Btn_02_Orders_Tables As ToolStripButton
+    Friend WithEvents Main_Btn_03_Orders_Delivery As ToolStripButton
+    Friend WithEvents Main_Btn_04_Orders_DirectSales As ToolStripButton
     Friend WithEvents Ts_Main_03_Reservation As ToolStrip
-    Friend WithEvents ToolStripButton37 As ToolStripButton
+    Friend WithEvents Main_Btn_06_Reservation_Calendar As ToolStripButton
     Friend WithEvents Ts_Main_04_Customers As ToolStrip
-    Friend WithEvents ToolStripButton38 As ToolStripButton
+    Friend WithEvents Main_Btn_07_Customers_Clients As ToolStripButton
     Friend WithEvents Ts_Main_05_Logout As ToolStrip
-    Friend WithEvents ToolStripButton39 As ToolStripButton
+    Friend WithEvents Main_Btn_08_Logout As ToolStripButton
     Friend WithEvents Lbl_Main_01_Cashier As Label
     Friend WithEvents Lbl_Main_02_Orders As Label
     Friend WithEvents Lbl_Main_03_Reservation As Label
@@ -1606,7 +1606,7 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents ItemsSoldToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ToolStripButton21 As ToolStripButton
     Friend WithEvents ToolStripButton9 As ToolStripButton
-    Friend WithEvents ToolStripButton12 As ToolStripButton
+    Friend WithEvents Main_Btn_05_Orders_ClientOrder As ToolStripButton
     Friend WithEvents ToolStripButton20 As ToolStripButton
     Friend WithEvents ToolStripButton17 As ToolStripButton
     Friend WithEvents ToolStripButton19 As ToolStripButton
