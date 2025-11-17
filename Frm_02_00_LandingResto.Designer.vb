@@ -47,17 +47,17 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_05_Logout = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Main_Btn_08_Logout = New ToolStripButton()
         Ts_Tab_02_Products = New Syncfusion.Windows.Forms.Tools.ToolStripTabItem()
-        ToolStripEx6 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Ts_Prod_01_Products = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Prod_Btn_01_Products = New ToolStripButton()
-        ToolStripEx7 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Ts_Prod_02_ProdOrg = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Prod_Btn_02_ProdOrg_AddOn = New ToolStripButton()
         Prod_Btn_03_ProdOrg_Comments = New ToolStripButton()
         Prod_Btn_04_ProdOrg_Category = New ToolStripButton()
         Prod_Btn_05_ProdOrg_TypesSizes = New ToolStripButton()
-        ToolStripEx8 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Ts_Prod_03_Inputs = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Prod_Btn_06_Inputs = New ToolStripButton()
         Prod_Btn_07_Inputs_Category = New ToolStripButton()
-        ToolStripEx9 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Ts_Prod_04_Stock = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Prod_Btn_08_Stock_BatchChange = New ToolStripButton()
         Ts_Tab_03_Marketing = New Syncfusion.Windows.Forms.Tools.ToolStripTabItem()
         ToolStripEx10 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
@@ -106,10 +106,10 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_04_Customers.SuspendLayout()
         Ts_Main_05_Logout.SuspendLayout()
         Ts_Tab_02_Products.Panel.SuspendLayout()
-        ToolStripEx6.SuspendLayout()
-        ToolStripEx7.SuspendLayout()
-        ToolStripEx8.SuspendLayout()
-        ToolStripEx9.SuspendLayout()
+        Ts_Prod_01_Products.SuspendLayout()
+        Ts_Prod_02_ProdOrg.SuspendLayout()
+        Ts_Prod_03_Inputs.SuspendLayout()
+        Ts_Prod_04_Stock.SuspendLayout()
         Ts_Tab_03_Marketing.Panel.SuspendLayout()
         ToolStripEx10.SuspendLayout()
         ToolStripEx11.SuspendLayout()
@@ -231,7 +231,7 @@ Partial Class Frm_02_00_LandingResto
         RibbonControlAdv1.QuickPanelImageLayout = PictureBoxSizeMode.StretchImage
         RibbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None
         RibbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2013
-        RibbonControlAdv1.SelectedTab = Ts_Tab_01_Main
+        RibbonControlAdv1.SelectedTab = Ts_Tab_02_Products
         RibbonControlAdv1.ShowRibbonDisplayOptionButton = True
         RibbonControlAdv1.Size = New Size(1380, 180)
         RibbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu"
@@ -407,7 +407,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_04_Customers.Name = "Ts_Main_04_Customers"
         Ts_Main_04_Customers.Office12Mode = False
         Ts_Main_04_Customers.RightToLeft = RightToLeft.No
-        Ts_Main_04_Customers.Size = New Size(146, 124)
+        Ts_Main_04_Customers.Size = New Size(115, 124)
         Ts_Main_04_Customers.TabIndex = 4
         Ts_Main_04_Customers.Text = "Customers"
         ' 
@@ -433,7 +433,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_05_Logout.GripStyle = ToolStripGripStyle.Hidden
         Ts_Main_05_Logout.Image = Nothing
         Ts_Main_05_Logout.Items.AddRange(New ToolStripItem() {Main_Btn_08_Logout})
-        Ts_Main_05_Logout.Location = New Point(882, 1)
+        Ts_Main_05_Logout.Location = New Point(851, 1)
         Ts_Main_05_Logout.Name = "Ts_Main_05_Logout"
         Ts_Main_05_Logout.Office12Mode = False
         Ts_Main_05_Logout.RightToLeft = RightToLeft.No
@@ -461,10 +461,10 @@ Partial Class Frm_02_00_LandingResto
         ' 
         ' RibbonControlAdv1.RibbonPanel2
         ' 
-        Ts_Tab_02_Products.Panel.Controls.Add(ToolStripEx6)
-        Ts_Tab_02_Products.Panel.Controls.Add(ToolStripEx7)
-        Ts_Tab_02_Products.Panel.Controls.Add(ToolStripEx8)
-        Ts_Tab_02_Products.Panel.Controls.Add(ToolStripEx9)
+        Ts_Tab_02_Products.Panel.Controls.Add(Ts_Prod_01_Products)
+        Ts_Tab_02_Products.Panel.Controls.Add(Ts_Prod_02_ProdOrg)
+        Ts_Tab_02_Products.Panel.Controls.Add(Ts_Prod_03_Inputs)
+        Ts_Tab_02_Products.Panel.Controls.Add(Ts_Prod_04_Stock)
         Ts_Tab_02_Products.Panel.Name = "RibbonPanel2"
         Ts_Tab_02_Products.Panel.ScrollPosition = 0
         Ts_Tab_02_Products.Panel.TabIndex = 3
@@ -475,22 +475,22 @@ Partial Class Frm_02_00_LandingResto
         Ts_Tab_02_Products.Tag = "2"
         Ts_Tab_02_Products.Text = "Products"
         ' 
-        ' ToolStripEx6
+        ' Ts_Prod_01_Products
         ' 
-        ToolStripEx6.CaptionFont = New Font("Calibri", 11.25F)
-        ToolStripEx6.Dock = DockStyle.None
-        ToolStripEx6.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripEx6.ForeColor = Color.MidnightBlue
-        ToolStripEx6.GripStyle = ToolStripGripStyle.Hidden
-        ToolStripEx6.Image = Nothing
-        ToolStripEx6.Items.AddRange(New ToolStripItem() {Prod_Btn_01_Products})
-        ToolStripEx6.Location = New Point(0, 1)
-        ToolStripEx6.Name = "ToolStripEx6"
-        ToolStripEx6.Office12Mode = False
-        ToolStripEx6.RightToLeft = RightToLeft.No
-        ToolStripEx6.Size = New Size(40, 124)
-        ToolStripEx6.TabIndex = 1
-        ToolStripEx6.Text = "Products"
+        Ts_Prod_01_Products.CaptionFont = New Font("Calibri", 11.25F)
+        Ts_Prod_01_Products.Dock = DockStyle.None
+        Ts_Prod_01_Products.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Ts_Prod_01_Products.ForeColor = Color.MidnightBlue
+        Ts_Prod_01_Products.GripStyle = ToolStripGripStyle.Hidden
+        Ts_Prod_01_Products.Image = Nothing
+        Ts_Prod_01_Products.Items.AddRange(New ToolStripItem() {Prod_Btn_01_Products})
+        Ts_Prod_01_Products.Location = New Point(0, 1)
+        Ts_Prod_01_Products.Name = "Ts_Prod_01_Products"
+        Ts_Prod_01_Products.Office12Mode = False
+        Ts_Prod_01_Products.RightToLeft = RightToLeft.No
+        Ts_Prod_01_Products.Size = New Size(115, 124)
+        Ts_Prod_01_Products.TabIndex = 1
+        Ts_Prod_01_Products.Text = "Products"
         ' 
         ' Prod_Btn_01_Products
         ' 
@@ -501,26 +501,26 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_01_Products.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_01_Products.Name = "Prod_Btn_01_Products"
         Prod_Btn_01_Products.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_01_Products.Size = New Size(98, 120)
+        Prod_Btn_01_Products.Size = New Size(98, 102)
         Prod_Btn_01_Products.Text = "Products"
         Prod_Btn_01_Products.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripEx7
+        ' Ts_Prod_02_ProdOrg
         ' 
-        ToolStripEx7.CaptionFont = New Font("Calibri", 11.25F)
-        ToolStripEx7.Dock = DockStyle.None
-        ToolStripEx7.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripEx7.ForeColor = Color.MidnightBlue
-        ToolStripEx7.GripStyle = ToolStripGripStyle.Hidden
-        ToolStripEx7.Image = Nothing
-        ToolStripEx7.Items.AddRange(New ToolStripItem() {Prod_Btn_02_ProdOrg_AddOn, Prod_Btn_03_ProdOrg_Comments, Prod_Btn_04_ProdOrg_Category, Prod_Btn_05_ProdOrg_TypesSizes})
-        ToolStripEx7.Location = New Point(42, 1)
-        ToolStripEx7.Name = "ToolStripEx7"
-        ToolStripEx7.Office12Mode = False
-        ToolStripEx7.RightToLeft = RightToLeft.No
-        ToolStripEx7.Size = New Size(40, 124)
-        ToolStripEx7.TabIndex = 2
-        ToolStripEx7.Text = "Product Organization"
+        Ts_Prod_02_ProdOrg.CaptionFont = New Font("Calibri", 11.25F)
+        Ts_Prod_02_ProdOrg.Dock = DockStyle.None
+        Ts_Prod_02_ProdOrg.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Ts_Prod_02_ProdOrg.ForeColor = Color.MidnightBlue
+        Ts_Prod_02_ProdOrg.GripStyle = ToolStripGripStyle.Hidden
+        Ts_Prod_02_ProdOrg.Image = Nothing
+        Ts_Prod_02_ProdOrg.Items.AddRange(New ToolStripItem() {Prod_Btn_02_ProdOrg_AddOn, Prod_Btn_03_ProdOrg_Comments, Prod_Btn_04_ProdOrg_Category, Prod_Btn_05_ProdOrg_TypesSizes})
+        Ts_Prod_02_ProdOrg.Location = New Point(117, 1)
+        Ts_Prod_02_ProdOrg.Name = "Ts_Prod_02_ProdOrg"
+        Ts_Prod_02_ProdOrg.Office12Mode = False
+        Ts_Prod_02_ProdOrg.RightToLeft = RightToLeft.No
+        Ts_Prod_02_ProdOrg.Size = New Size(463, 124)
+        Ts_Prod_02_ProdOrg.TabIndex = 2
+        Ts_Prod_02_ProdOrg.Text = "Product Organization"
         ' 
         ' Prod_Btn_02_ProdOrg_AddOn
         ' 
@@ -531,7 +531,7 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_02_ProdOrg_AddOn.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_02_ProdOrg_AddOn.Name = "Prod_Btn_02_ProdOrg_AddOn"
         Prod_Btn_02_ProdOrg_AddOn.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_02_ProdOrg_AddOn.Size = New Size(98, 120)
+        Prod_Btn_02_ProdOrg_AddOn.Size = New Size(98, 102)
         Prod_Btn_02_ProdOrg_AddOn.Text = "Add-on"
         Prod_Btn_02_ProdOrg_AddOn.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -544,7 +544,7 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_03_ProdOrg_Comments.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_03_ProdOrg_Comments.Name = "Prod_Btn_03_ProdOrg_Comments"
         Prod_Btn_03_ProdOrg_Comments.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_03_ProdOrg_Comments.Size = New Size(109, 120)
+        Prod_Btn_03_ProdOrg_Comments.Size = New Size(109, 102)
         Prod_Btn_03_ProdOrg_Comments.Text = "Comments"
         Prod_Btn_03_ProdOrg_Comments.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -557,7 +557,7 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_04_ProdOrg_Category.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_04_ProdOrg_Category.Name = "Prod_Btn_04_ProdOrg_Category"
         Prod_Btn_04_ProdOrg_Category.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_04_ProdOrg_Category.Size = New Size(98, 120)
+        Prod_Btn_04_ProdOrg_Category.Size = New Size(98, 102)
         Prod_Btn_04_ProdOrg_Category.Text = "Category"
         Prod_Btn_04_ProdOrg_Category.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -570,26 +570,26 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_05_ProdOrg_TypesSizes.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_05_ProdOrg_TypesSizes.Name = "Prod_Btn_05_ProdOrg_TypesSizes"
         Prod_Btn_05_ProdOrg_TypesSizes.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_05_ProdOrg_TypesSizes.Size = New Size(111, 120)
+        Prod_Btn_05_ProdOrg_TypesSizes.Size = New Size(111, 102)
         Prod_Btn_05_ProdOrg_TypesSizes.Text = "Types Sizes"
         Prod_Btn_05_ProdOrg_TypesSizes.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripEx8
+        ' Ts_Prod_03_Inputs
         ' 
-        ToolStripEx8.CaptionFont = New Font("Calibri", 11.25F)
-        ToolStripEx8.Dock = DockStyle.None
-        ToolStripEx8.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripEx8.ForeColor = Color.MidnightBlue
-        ToolStripEx8.GripStyle = ToolStripGripStyle.Hidden
-        ToolStripEx8.Image = Nothing
-        ToolStripEx8.Items.AddRange(New ToolStripItem() {Prod_Btn_06_Inputs, Prod_Btn_07_Inputs_Category})
-        ToolStripEx8.Location = New Point(84, 1)
-        ToolStripEx8.Name = "ToolStripEx8"
-        ToolStripEx8.Office12Mode = False
-        ToolStripEx8.RightToLeft = RightToLeft.No
-        ToolStripEx8.Size = New Size(40, 124)
-        ToolStripEx8.TabIndex = 3
-        ToolStripEx8.Text = "Inputs"
+        Ts_Prod_03_Inputs.CaptionFont = New Font("Calibri", 11.25F)
+        Ts_Prod_03_Inputs.Dock = DockStyle.None
+        Ts_Prod_03_Inputs.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Ts_Prod_03_Inputs.ForeColor = Color.MidnightBlue
+        Ts_Prod_03_Inputs.GripStyle = ToolStripGripStyle.Hidden
+        Ts_Prod_03_Inputs.Image = Nothing
+        Ts_Prod_03_Inputs.Items.AddRange(New ToolStripItem() {Prod_Btn_06_Inputs, Prod_Btn_07_Inputs_Category})
+        Ts_Prod_03_Inputs.Location = New Point(582, 1)
+        Ts_Prod_03_Inputs.Name = "Ts_Prod_03_Inputs"
+        Ts_Prod_03_Inputs.Office12Mode = False
+        Ts_Prod_03_Inputs.RightToLeft = RightToLeft.No
+        Ts_Prod_03_Inputs.Size = New Size(223, 124)
+        Ts_Prod_03_Inputs.TabIndex = 3
+        Ts_Prod_03_Inputs.Text = "Inputs"
         ' 
         ' Prod_Btn_06_Inputs
         ' 
@@ -600,7 +600,7 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_06_Inputs.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_06_Inputs.Name = "Prod_Btn_06_Inputs"
         Prod_Btn_06_Inputs.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_06_Inputs.Size = New Size(98, 120)
+        Prod_Btn_06_Inputs.Size = New Size(98, 102)
         Prod_Btn_06_Inputs.Text = "Inuts"
         Prod_Btn_06_Inputs.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -613,26 +613,26 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_07_Inputs_Category.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_07_Inputs_Category.Name = "Prod_Btn_07_Inputs_Category"
         Prod_Btn_07_Inputs_Category.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_07_Inputs_Category.Size = New Size(98, 120)
+        Prod_Btn_07_Inputs_Category.Size = New Size(98, 102)
         Prod_Btn_07_Inputs_Category.Text = "Category"
         Prod_Btn_07_Inputs_Category.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripEx9
+        ' Ts_Prod_04_Stock
         ' 
-        ToolStripEx9.CaptionFont = New Font("Calibri", 11.25F)
-        ToolStripEx9.Dock = DockStyle.None
-        ToolStripEx9.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripEx9.ForeColor = Color.MidnightBlue
-        ToolStripEx9.GripStyle = ToolStripGripStyle.Hidden
-        ToolStripEx9.Image = Nothing
-        ToolStripEx9.Items.AddRange(New ToolStripItem() {Prod_Btn_08_Stock_BatchChange})
-        ToolStripEx9.Location = New Point(126, 1)
-        ToolStripEx9.Name = "ToolStripEx9"
-        ToolStripEx9.Office12Mode = False
-        ToolStripEx9.RightToLeft = RightToLeft.No
-        ToolStripEx9.Size = New Size(40, 124)
-        ToolStripEx9.TabIndex = 4
-        ToolStripEx9.Text = "Stock"
+        Ts_Prod_04_Stock.CaptionFont = New Font("Calibri", 11.25F)
+        Ts_Prod_04_Stock.Dock = DockStyle.None
+        Ts_Prod_04_Stock.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Ts_Prod_04_Stock.ForeColor = Color.MidnightBlue
+        Ts_Prod_04_Stock.GripStyle = ToolStripGripStyle.Hidden
+        Ts_Prod_04_Stock.Image = Nothing
+        Ts_Prod_04_Stock.Items.AddRange(New ToolStripItem() {Prod_Btn_08_Stock_BatchChange})
+        Ts_Prod_04_Stock.Location = New Point(807, 1)
+        Ts_Prod_04_Stock.Name = "Ts_Prod_04_Stock"
+        Ts_Prod_04_Stock.Office12Mode = False
+        Ts_Prod_04_Stock.RightToLeft = RightToLeft.No
+        Ts_Prod_04_Stock.Size = New Size(173, 124)
+        Ts_Prod_04_Stock.TabIndex = 4
+        Ts_Prod_04_Stock.Text = "Stock"
         ' 
         ' Prod_Btn_08_Stock_BatchChange
         ' 
@@ -644,7 +644,7 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_08_Stock_BatchChange.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_08_Stock_BatchChange.Name = "Prod_Btn_08_Stock_BatchChange"
         Prod_Btn_08_Stock_BatchChange.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_08_Stock_BatchChange.Size = New Size(125, 120)
+        Prod_Btn_08_Stock_BatchChange.Size = New Size(125, 102)
         Prod_Btn_08_Stock_BatchChange.Text = "Batch Cahnge"
         Prod_Btn_08_Stock_BatchChange.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1182,14 +1182,14 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_05_Logout.PerformLayout()
         Ts_Tab_02_Products.Panel.ResumeLayout(False)
         Ts_Tab_02_Products.Panel.PerformLayout()
-        ToolStripEx6.ResumeLayout(False)
-        ToolStripEx6.PerformLayout()
-        ToolStripEx7.ResumeLayout(False)
-        ToolStripEx7.PerformLayout()
-        ToolStripEx8.ResumeLayout(False)
-        ToolStripEx8.PerformLayout()
-        ToolStripEx9.ResumeLayout(False)
-        ToolStripEx9.PerformLayout()
+        Ts_Prod_01_Products.ResumeLayout(False)
+        Ts_Prod_01_Products.PerformLayout()
+        Ts_Prod_02_ProdOrg.ResumeLayout(False)
+        Ts_Prod_02_ProdOrg.PerformLayout()
+        Ts_Prod_03_Inputs.ResumeLayout(False)
+        Ts_Prod_03_Inputs.PerformLayout()
+        Ts_Prod_04_Stock.ResumeLayout(False)
+        Ts_Prod_04_Stock.PerformLayout()
         Ts_Tab_03_Marketing.Panel.ResumeLayout(False)
         Ts_Tab_03_Marketing.Panel.PerformLayout()
         ToolStripEx10.ResumeLayout(False)
@@ -1259,10 +1259,10 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents Ts_Main_04_Customers As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents Ts_Main_05_Logout As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents Ts_Tab_02_Products As Syncfusion.Windows.Forms.Tools.ToolStripTabItem
-    Friend WithEvents ToolStripEx6 As Syncfusion.Windows.Forms.Tools.ToolStripEx
-    Friend WithEvents ToolStripEx7 As Syncfusion.Windows.Forms.Tools.ToolStripEx
-    Friend WithEvents ToolStripEx8 As Syncfusion.Windows.Forms.Tools.ToolStripEx
-    Friend WithEvents ToolStripEx9 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents Ts_Prod_01_Products As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents Ts_Prod_02_ProdOrg As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents Ts_Prod_03_Inputs As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents Ts_Prod_04_Stock As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents Ts_Tab_05_Config As Syncfusion.Windows.Forms.Tools.ToolStripTabItem
     Friend WithEvents ToolStripEx16 As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents ToolStripEx17 As Syncfusion.Windows.Forms.Tools.ToolStripEx
