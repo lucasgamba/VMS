@@ -69,8 +69,6 @@ Partial Class Frm_02_00_LandingResto
         Ts_Config_01_General = New ToolStrip()
         Ts_Config_02_Personal = New ToolStrip()
         Ts_Config_04_Operational = New ToolStrip()
-        Config_Lbl_01_Language = New ToolStripLabel()
-        Config_Cbox_01_Language = New ToolStripComboBox()
         Lbl_Config_02_Operational = New Label()
         Lbl_Config_03_General = New Label()
         ToolStripButton1 = New ToolStripButton()
@@ -143,6 +141,8 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_05_Operational_System = New ToolStripButton()
         Config_Btn_06_Operational_Printers = New ToolStripButton()
         Config_Btn_07_Operational_Logs = New ToolStripButton()
+        Config_Cbox_01_Language = New ToolStripComboBox()
+        Config_Lbl_01_Language = New ToolStripLabel()
         CType(Logo_01, ComponentModel.ISupportInitialize).BeginInit()
         TabControl1.SuspendLayout()
         TabMain.SuspendLayout()
@@ -155,7 +155,6 @@ Partial Class Frm_02_00_LandingResto
         TableLayoutPanel4.SuspendLayout()
         TabConfig.SuspendLayout()
         TableLayoutPanel5.SuspendLayout()
-        Ts_Config_04_Operational.SuspendLayout()
         CType(RibbonControlAdv1, ComponentModel.ISupportInitialize).BeginInit()
         RibbonControlAdv1.SuspendLayout()
         ToolStripTabItem1.Panel.SuspendLayout()
@@ -830,27 +829,13 @@ Partial Class Frm_02_00_LandingResto
         Ts_Config_04_Operational.Dock = DockStyle.Fill
         Ts_Config_04_Operational.Font = New Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Ts_Config_04_Operational.GripStyle = ToolStripGripStyle.Hidden
-        Ts_Config_04_Operational.Items.AddRange(New ToolStripItem() {Config_Lbl_01_Language, Config_Cbox_01_Language})
         Ts_Config_04_Operational.Location = New Point(210, 2)
         Ts_Config_04_Operational.Name = "Ts_Config_04_Operational"
         Ts_Config_04_Operational.Padding = New Padding(0)
         Ts_Config_04_Operational.RenderMode = ToolStripRenderMode.Professional
-        Ts_Config_04_Operational.Size = New Size(195, 90)
+        Ts_Config_04_Operational.Size = New Size(102, 90)
         Ts_Config_04_Operational.TabIndex = 3
         Ts_Config_04_Operational.Text = "ToolStrip8"
-        ' 
-        ' Config_Lbl_01_Language
-        ' 
-        Config_Lbl_01_Language.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Config_Lbl_01_Language.Name = "Config_Lbl_01_Language"
-        Config_Lbl_01_Language.Size = New Size(70, 87)
-        Config_Lbl_01_Language.Text = "Language:"
-        ' 
-        ' Config_Cbox_01_Language
-        ' 
-        Config_Cbox_01_Language.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Config_Cbox_01_Language.Name = "Config_Cbox_01_Language"
-        Config_Cbox_01_Language.Size = New Size(121, 90)
         ' 
         ' Lbl_Config_02_Operational
         ' 
@@ -871,7 +856,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Config_03_General.Dock = DockStyle.Fill
         Lbl_Config_03_General.Location = New Point(213, 94)
         Lbl_Config_03_General.Name = "Lbl_Config_03_General"
-        Lbl_Config_03_General.Size = New Size(189, 26)
+        Lbl_Config_03_General.Size = New Size(96, 26)
         Lbl_Config_03_General.TabIndex = 6
         Lbl_Config_03_General.Text = "General"
         Lbl_Config_03_General.TextAlign = ContentAlignment.MiddleCenter
@@ -1486,12 +1471,12 @@ Partial Class Frm_02_00_LandingResto
         ToolStripEx18.ForeColor = Color.MidnightBlue
         ToolStripEx18.GripStyle = ToolStripGripStyle.Hidden
         ToolStripEx18.Image = Nothing
-        ToolStripEx18.Items.AddRange(New ToolStripItem() {Config_Btn_05_Operational_System, Config_Btn_06_Operational_Printers, Config_Btn_07_Operational_Logs})
+        ToolStripEx18.Items.AddRange(New ToolStripItem() {Config_Btn_05_Operational_System, Config_Btn_06_Operational_Printers, Config_Btn_07_Operational_Logs, Config_Lbl_01_Language, Config_Cbox_01_Language})
         ToolStripEx18.Location = New Point(459, 1)
         ToolStripEx18.Name = "ToolStripEx18"
         ToolStripEx18.Office12Mode = False
         ToolStripEx18.RightToLeft = RightToLeft.No
-        ToolStripEx18.Size = New Size(331, 124)
+        ToolStripEx18.Size = New Size(555, 124)
         ToolStripEx18.TabIndex = 3
         ToolStripEx18.Text = "General"
         ' 
@@ -1876,6 +1861,19 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_07_Operational_Logs.Text = "Logs"
         Config_Btn_07_Operational_Logs.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
+        ' Config_Cbox_01_Language
+        ' 
+        Config_Cbox_01_Language.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Config_Cbox_01_Language.Name = "Config_Cbox_01_Language"
+        Config_Cbox_01_Language.Size = New Size(121, 106)
+        ' 
+        ' Config_Lbl_01_Language
+        ' 
+        Config_Lbl_01_Language.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Config_Lbl_01_Language.Name = "Config_Lbl_01_Language"
+        Config_Lbl_01_Language.Size = New Size(70, 103)
+        Config_Lbl_01_Language.Text = "Language:"
+        ' 
         ' Frm_02_00_LandingResto
         ' 
         AutoScaleDimensions = New SizeF(8F, 18F)
@@ -1908,8 +1906,6 @@ Partial Class Frm_02_00_LandingResto
         TabConfig.ResumeLayout(False)
         TableLayoutPanel5.ResumeLayout(False)
         TableLayoutPanel5.PerformLayout()
-        Ts_Config_04_Operational.ResumeLayout(False)
-        Ts_Config_04_Operational.PerformLayout()
         CType(RibbonControlAdv1, ComponentModel.ISupportInitialize).EndInit()
         RibbonControlAdv1.ResumeLayout(False)
         RibbonControlAdv1.PerformLayout()
@@ -2043,8 +2039,6 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents ItemsSoldToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CashierHistoryToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Ts_Report_02_Performance As ToolStrip
-    Friend WithEvents Config_Lbl_01_Language As ToolStripLabel
-    Friend WithEvents Config_Cbox_01_Language As ToolStripComboBox
     Friend WithEvents RibbonControlAdv1 As Syncfusion.Windows.Forms.Tools.RibbonControlAdv
     Friend WithEvents ToolStripTabItem1 As Syncfusion.Windows.Forms.Tools.ToolStripTabItem
     Friend WithEvents ToolStripEx1 As Syncfusion.Windows.Forms.Tools.ToolStripEx
@@ -2108,5 +2102,7 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents Report_Btn_05_Finance_CashHistory As ToolStripButton
     Friend WithEvents Report_Btn_06_Stock_InputsOutputs As ToolStripButton
     Friend WithEvents Report_Btn_07_Stock_PositionByDate As ToolStripButton
+    Friend WithEvents Config_Lbl_01_Language As ToolStripLabel
+    Friend WithEvents Config_Cbox_01_Language As ToolStripComboBox
 
 End Class
