@@ -119,6 +119,30 @@ Partial Class Frm_02_00_LandingResto
         CashierHistoryToolStripMenuItem = New ToolStripMenuItem()
         ToolStripDropDownButton1 = New ToolStripButton()
         ToolStripButton2 = New ToolStripButton()
+        RibbonControlAdv1 = New Syncfusion.Windows.Forms.Tools.RibbonControlAdv()
+        ToolStripTabItem1 = New Syncfusion.Windows.Forms.Tools.ToolStripTabItem()
+        ToolStripEx1 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripEx2 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripEx3 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripEx4 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripEx5 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripTabItem2 = New Syncfusion.Windows.Forms.Tools.ToolStripTabItem()
+        ToolStripEx6 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripEx7 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripEx8 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripEx9 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripTabItem3 = New Syncfusion.Windows.Forms.Tools.ToolStripTabItem()
+        ToolStripEx10 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripEx11 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripTabItem4 = New Syncfusion.Windows.Forms.Tools.ToolStripTabItem()
+        ToolStripEx12 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripEx13 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripEx14 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripEx15 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripTabItem5 = New Syncfusion.Windows.Forms.Tools.ToolStripTabItem()
+        ToolStripEx16 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripEx17 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        ToolStripEx18 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         CType(Logo_01, ComponentModel.ISupportInitialize).BeginInit()
         TabControl1.SuspendLayout()
         TabMain.SuspendLayout()
@@ -149,6 +173,13 @@ Partial Class Frm_02_00_LandingResto
         Ts_Config_01_General.SuspendLayout()
         Ts_Config_02_Personal.SuspendLayout()
         Ts_Config_04_Operational.SuspendLayout()
+        CType(RibbonControlAdv1, ComponentModel.ISupportInitialize).BeginInit()
+        RibbonControlAdv1.SuspendLayout()
+        ToolStripTabItem1.Panel.SuspendLayout()
+        ToolStripTabItem2.Panel.SuspendLayout()
+        ToolStripTabItem3.Panel.SuspendLayout()
+        ToolStripTabItem4.Panel.SuspendLayout()
+        ToolStripTabItem5.Panel.SuspendLayout()
         SuspendLayout()
         ' 
         ' Logo_01
@@ -173,12 +204,11 @@ Partial Class Frm_02_00_LandingResto
         TabControl1.Controls.Add(TabMarketing)
         TabControl1.Controls.Add(TabReports)
         TabControl1.Controls.Add(TabConfig)
-        TabControl1.Dock = DockStyle.Top
         TabControl1.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TabControl1.HotTrack = True
         TabControl1.ImeMode = ImeMode.NoControl
         TabControl1.ItemSize = New Size(96, 50)
-        TabControl1.Location = New Point(0, 0)
+        TabControl1.Location = New Point(0, 230)
         TabControl1.Name = "TabControl1"
         TabControl1.Padding = New Point(0, 0)
         TabControl1.RightToLeft = RightToLeft.No
@@ -1274,7 +1304,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Config_04_Operational.Name = "Ts_Config_04_Operational"
         Ts_Config_04_Operational.Padding = New Padding(0)
         Ts_Config_04_Operational.RenderMode = ToolStripRenderMode.Professional
-        Ts_Config_04_Operational.Size = New Size(552, 90)
+        Ts_Config_04_Operational.Size = New Size(519, 90)
         Ts_Config_04_Operational.TabIndex = 3
         Ts_Config_04_Operational.Text = "ToolStrip8"
         ' 
@@ -1349,7 +1379,7 @@ Partial Class Frm_02_00_LandingResto
         Lbl_Config_03_General.Dock = DockStyle.Fill
         Lbl_Config_03_General.Location = New Point(454, 94)
         Lbl_Config_03_General.Name = "Lbl_Config_03_General"
-        Lbl_Config_03_General.Size = New Size(546, 26)
+        Lbl_Config_03_General.Size = New Size(513, 26)
         Lbl_Config_03_General.TabIndex = 6
         Lbl_Config_03_General.Text = "General"
         Lbl_Config_03_General.TextAlign = ContentAlignment.MiddleCenter
@@ -1411,7 +1441,7 @@ Partial Class Frm_02_00_LandingResto
         ' 
         ' ToolStripButton2
         ' 
-        ToolStripButton2.Font = New Font("Calibri", 9.75F)
+        ToolStripButton2.Font = New Font("Calibri", 11.75F)
         ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), Image)
         ToolStripButton2.ImageScaling = ToolStripItemImageScaling.None
         ToolStripButton2.ImageTransparentColor = Color.Magenta
@@ -1422,13 +1452,436 @@ Partial Class Frm_02_00_LandingResto
         ToolStripButton2.Text = "Dashboard"
         ToolStripButton2.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
+        ' RibbonControlAdv1
+        ' 
+        RibbonControlAdv1.CaptionFont = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        RibbonControlAdv1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Top
+        RibbonControlAdv1.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        RibbonControlAdv1.Header.AddMainItem(ToolStripTabItem1)
+        RibbonControlAdv1.Header.AddMainItem(ToolStripTabItem2)
+        RibbonControlAdv1.Header.AddMainItem(ToolStripTabItem3)
+        RibbonControlAdv1.Header.AddMainItem(ToolStripTabItem4)
+        RibbonControlAdv1.Header.AddMainItem(ToolStripTabItem5)
+        RibbonControlAdv1.Location = New Point(0, 0)
+        RibbonControlAdv1.MenuButtonFont = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        RibbonControlAdv1.MenuButtonText = ""
+        RibbonControlAdv1.MenuButtonWidth = 56
+        RibbonControlAdv1.MenuColor = Color.FromArgb(CByte(0), CByte(114), CByte(198))
+        RibbonControlAdv1.Name = "RibbonControlAdv1"
+        RibbonControlAdv1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Managed
+        ' 
+        ' RibbonControlAdv1.OfficeMenu
+        ' 
+        RibbonControlAdv1.OfficeMenu.Name = "OfficeMenu"
+        RibbonControlAdv1.OfficeMenu.ShowItemToolTips = True
+        RibbonControlAdv1.OfficeMenu.Size = New Size(12, 65)
+        RibbonControlAdv1.QuickPanelImageLayout = PictureBoxSizeMode.StretchImage
+        RibbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None
+        RibbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2013
+        RibbonControlAdv1.SelectedTab = ToolStripTabItem1
+        RibbonControlAdv1.ShowRibbonDisplayOptionButton = True
+        RibbonControlAdv1.Size = New Size(1380, 180)
+        RibbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu"
+        RibbonControlAdv1.SystemText.RenameDisplayLabelText = "&Display Name:"
+        RibbonControlAdv1.TabIndex = 3
+        RibbonControlAdv1.Text = "RibbonControlAdv1"
+        RibbonControlAdv1.ThemeName = "Office2013"
+        ' 
+        ' ToolStripTabItem1
+        ' 
+        ToolStripTabItem1.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripTabItem1.Name = "ToolStripTabItem1"
+        ' 
+        ' RibbonControlAdv1.RibbonPanel1
+        ' 
+        ToolStripTabItem1.Panel.CaptionFont = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripTabItem1.Panel.Controls.Add(ToolStripEx1)
+        ToolStripTabItem1.Panel.Controls.Add(ToolStripEx2)
+        ToolStripTabItem1.Panel.Controls.Add(ToolStripEx3)
+        ToolStripTabItem1.Panel.Controls.Add(ToolStripEx4)
+        ToolStripTabItem1.Panel.Controls.Add(ToolStripEx5)
+        ToolStripTabItem1.Panel.Name = "RibbonPanel1"
+        ToolStripTabItem1.Panel.ScrollPosition = 0
+        ToolStripTabItem1.Panel.TabIndex = 2
+        ToolStripTabItem1.Panel.Text = "Main"
+        ToolStripTabItem1.Position = 0
+        ToolStripTabItem1.Size = New Size(59, 25)
+        RibbonControlAdv1.TabGroups.SetTabGroup(ToolStripTabItem1, Nothing)
+        ToolStripTabItem1.Tag = "1"
+        ToolStripTabItem1.Text = "Main"
+        ' 
+        ' ToolStripEx1
+        ' 
+        ToolStripEx1.Dock = DockStyle.None
+        ToolStripEx1.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx1.ForeColor = Color.MidnightBlue
+        ToolStripEx1.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx1.Image = Nothing
+        ToolStripEx1.Location = New Point(0, 1)
+        ToolStripEx1.Name = "ToolStripEx1"
+        ToolStripEx1.Office12Mode = False
+        ToolStripEx1.RightToLeft = RightToLeft.No
+        ToolStripEx1.Size = New Size(106, 124)
+        ToolStripEx1.TabIndex = 1
+        ToolStripEx1.Text = "Cashier"
+        ' 
+        ' ToolStripEx2
+        ' 
+        ToolStripEx2.Dock = DockStyle.None
+        ToolStripEx2.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx2.ForeColor = Color.MidnightBlue
+        ToolStripEx2.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx2.Image = Nothing
+        ToolStripEx2.Location = New Point(108, 1)
+        ToolStripEx2.Name = "ToolStripEx2"
+        ToolStripEx2.Office12Mode = False
+        ToolStripEx2.RightToLeft = RightToLeft.No
+        ToolStripEx2.Size = New Size(106, 124)
+        ToolStripEx2.TabIndex = 2
+        ToolStripEx2.Text = "Orders"
+        ' 
+        ' ToolStripEx3
+        ' 
+        ToolStripEx3.Dock = DockStyle.None
+        ToolStripEx3.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx3.ForeColor = Color.MidnightBlue
+        ToolStripEx3.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx3.Image = Nothing
+        ToolStripEx3.Location = New Point(216, 1)
+        ToolStripEx3.Name = "ToolStripEx3"
+        ToolStripEx3.Office12Mode = False
+        ToolStripEx3.RightToLeft = RightToLeft.No
+        ToolStripEx3.Size = New Size(106, 124)
+        ToolStripEx3.TabIndex = 3
+        ToolStripEx3.Text = "Reservation"
+        ' 
+        ' ToolStripEx4
+        ' 
+        ToolStripEx4.Dock = DockStyle.None
+        ToolStripEx4.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx4.ForeColor = Color.MidnightBlue
+        ToolStripEx4.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx4.Image = Nothing
+        ToolStripEx4.Location = New Point(324, 1)
+        ToolStripEx4.Name = "ToolStripEx4"
+        ToolStripEx4.Office12Mode = False
+        ToolStripEx4.RightToLeft = RightToLeft.No
+        ToolStripEx4.Size = New Size(106, 124)
+        ToolStripEx4.TabIndex = 4
+        ToolStripEx4.Text = "Customers"
+        ' 
+        ' ToolStripEx5
+        ' 
+        ToolStripEx5.Dock = DockStyle.None
+        ToolStripEx5.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx5.ForeColor = Color.MidnightBlue
+        ToolStripEx5.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx5.Image = Nothing
+        ToolStripEx5.Location = New Point(432, 1)
+        ToolStripEx5.Name = "ToolStripEx5"
+        ToolStripEx5.Office12Mode = False
+        ToolStripEx5.RightToLeft = RightToLeft.No
+        ToolStripEx5.Size = New Size(106, 124)
+        ToolStripEx5.TabIndex = 5
+        ToolStripEx5.Text = "Logout"
+        ' 
+        ' ToolStripTabItem2
+        ' 
+        ToolStripTabItem2.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripTabItem2.Name = "ToolStripTabItem2"
+        ' 
+        ' RibbonControlAdv1.RibbonPanel2
+        ' 
+        ToolStripTabItem2.Panel.Controls.Add(ToolStripEx6)
+        ToolStripTabItem2.Panel.Controls.Add(ToolStripEx7)
+        ToolStripTabItem2.Panel.Controls.Add(ToolStripEx8)
+        ToolStripTabItem2.Panel.Controls.Add(ToolStripEx9)
+        ToolStripTabItem2.Panel.Name = "RibbonPanel2"
+        ToolStripTabItem2.Panel.ScrollPosition = 0
+        ToolStripTabItem2.Panel.TabIndex = 3
+        ToolStripTabItem2.Panel.Text = "Products"
+        ToolStripTabItem2.Position = 1
+        ToolStripTabItem2.Size = New Size(82, 25)
+        RibbonControlAdv1.TabGroups.SetTabGroup(ToolStripTabItem2, Nothing)
+        ToolStripTabItem2.Tag = "2"
+        ToolStripTabItem2.Text = "Products"
+        ' 
+        ' ToolStripEx6
+        ' 
+        ToolStripEx6.CaptionFont = New Font("Calibri", 11.25F)
+        ToolStripEx6.Dock = DockStyle.None
+        ToolStripEx6.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx6.ForeColor = Color.MidnightBlue
+        ToolStripEx6.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx6.Image = Nothing
+        ToolStripEx6.Location = New Point(0, 1)
+        ToolStripEx6.Name = "ToolStripEx6"
+        ToolStripEx6.Office12Mode = False
+        ToolStripEx6.RightToLeft = RightToLeft.No
+        ToolStripEx6.Size = New Size(38, 124)
+        ToolStripEx6.TabIndex = 1
+        ToolStripEx6.Text = "Products"
+        ' 
+        ' ToolStripEx7
+        ' 
+        ToolStripEx7.CaptionFont = New Font("Calibri", 11.25F)
+        ToolStripEx7.Dock = DockStyle.None
+        ToolStripEx7.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx7.ForeColor = Color.MidnightBlue
+        ToolStripEx7.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx7.Image = Nothing
+        ToolStripEx7.Location = New Point(40, 1)
+        ToolStripEx7.Name = "ToolStripEx7"
+        ToolStripEx7.Office12Mode = False
+        ToolStripEx7.RightToLeft = RightToLeft.No
+        ToolStripEx7.Size = New Size(106, 124)
+        ToolStripEx7.TabIndex = 2
+        ToolStripEx7.Text = "Product Organization"
+        ' 
+        ' ToolStripEx8
+        ' 
+        ToolStripEx8.CaptionFont = New Font("Calibri", 11.25F)
+        ToolStripEx8.Dock = DockStyle.None
+        ToolStripEx8.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx8.ForeColor = Color.MidnightBlue
+        ToolStripEx8.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx8.Image = Nothing
+        ToolStripEx8.Location = New Point(148, 1)
+        ToolStripEx8.Name = "ToolStripEx8"
+        ToolStripEx8.Office12Mode = False
+        ToolStripEx8.RightToLeft = RightToLeft.No
+        ToolStripEx8.Size = New Size(106, 124)
+        ToolStripEx8.TabIndex = 3
+        ToolStripEx8.Text = "Inputs"
+        ' 
+        ' ToolStripEx9
+        ' 
+        ToolStripEx9.CaptionFont = New Font("Calibri", 11.25F)
+        ToolStripEx9.Dock = DockStyle.None
+        ToolStripEx9.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx9.ForeColor = Color.MidnightBlue
+        ToolStripEx9.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx9.Image = Nothing
+        ToolStripEx9.Location = New Point(256, 1)
+        ToolStripEx9.Name = "ToolStripEx9"
+        ToolStripEx9.Office12Mode = False
+        ToolStripEx9.RightToLeft = RightToLeft.No
+        ToolStripEx9.Size = New Size(106, 124)
+        ToolStripEx9.TabIndex = 4
+        ToolStripEx9.Text = "Stock"
+        ' 
+        ' ToolStripTabItem3
+        ' 
+        ToolStripTabItem3.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripTabItem3.Name = "ToolStripTabItem3"
+        ' 
+        ' RibbonControlAdv1.RibbonPanel3
+        ' 
+        ToolStripTabItem3.Panel.Controls.Add(ToolStripEx10)
+        ToolStripTabItem3.Panel.Controls.Add(ToolStripEx11)
+        ToolStripTabItem3.Panel.Name = "RibbonPanel3"
+        ToolStripTabItem3.Panel.ScrollPosition = 0
+        ToolStripTabItem3.Panel.TabIndex = 4
+        ToolStripTabItem3.Panel.Text = "Marketing"
+        ToolStripTabItem3.Position = 2
+        ToolStripTabItem3.Size = New Size(90, 25)
+        RibbonControlAdv1.TabGroups.SetTabGroup(ToolStripTabItem3, Nothing)
+        ToolStripTabItem3.Tag = "3"
+        ToolStripTabItem3.Text = "Marketing"
+        ' 
+        ' ToolStripEx10
+        ' 
+        ToolStripEx10.CaptionFont = New Font("Calibri", 11.25F)
+        ToolStripEx10.Dock = DockStyle.None
+        ToolStripEx10.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx10.ForeColor = Color.MidnightBlue
+        ToolStripEx10.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx10.Image = Nothing
+        ToolStripEx10.Location = New Point(0, 1)
+        ToolStripEx10.Name = "ToolStripEx10"
+        ToolStripEx10.Office12Mode = False
+        ToolStripEx10.RightToLeft = RightToLeft.No
+        ToolStripEx10.Size = New Size(38, 124)
+        ToolStripEx10.TabIndex = 1
+        ToolStripEx10.Text = "Benefits"
+        ' 
+        ' ToolStripEx11
+        ' 
+        ToolStripEx11.CaptionFont = New Font("Calibri", 11.25F)
+        ToolStripEx11.Dock = DockStyle.None
+        ToolStripEx11.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx11.ForeColor = Color.MidnightBlue
+        ToolStripEx11.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx11.Image = Nothing
+        ToolStripEx11.Location = New Point(40, 1)
+        ToolStripEx11.Name = "ToolStripEx11"
+        ToolStripEx11.Office12Mode = False
+        ToolStripEx11.RightToLeft = RightToLeft.No
+        ToolStripEx11.Size = New Size(106, 124)
+        ToolStripEx11.TabIndex = 2
+        ToolStripEx11.Text = "Loyalty"
+        ' 
+        ' ToolStripTabItem4
+        ' 
+        ToolStripTabItem4.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripTabItem4.Name = "ToolStripTabItem4"
+        ' 
+        ' RibbonControlAdv1.RibbonPanel4
+        ' 
+        ToolStripTabItem4.Panel.Controls.Add(ToolStripEx12)
+        ToolStripTabItem4.Panel.Controls.Add(ToolStripEx13)
+        ToolStripTabItem4.Panel.Controls.Add(ToolStripEx14)
+        ToolStripTabItem4.Panel.Controls.Add(ToolStripEx15)
+        ToolStripTabItem4.Panel.Name = "RibbonPanel4"
+        ToolStripTabItem4.Panel.ScrollPosition = 0
+        ToolStripTabItem4.Panel.TabIndex = 5
+        ToolStripTabItem4.Panel.Text = "Reports"
+        ToolStripTabItem4.Position = 3
+        ToolStripTabItem4.Size = New Size(76, 25)
+        RibbonControlAdv1.TabGroups.SetTabGroup(ToolStripTabItem4, Nothing)
+        ToolStripTabItem4.Tag = "4"
+        ToolStripTabItem4.Text = "Reports"
+        ' 
+        ' ToolStripEx12
+        ' 
+        ToolStripEx12.CaptionFont = New Font("Calibri", 11.25F)
+        ToolStripEx12.Dock = DockStyle.None
+        ToolStripEx12.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx12.ForeColor = Color.MidnightBlue
+        ToolStripEx12.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx12.Image = Nothing
+        ToolStripEx12.Location = New Point(0, 1)
+        ToolStripEx12.Name = "ToolStripEx12"
+        ToolStripEx12.Office12Mode = False
+        ToolStripEx12.RightToLeft = RightToLeft.No
+        ToolStripEx12.Size = New Size(106, 124)
+        ToolStripEx12.TabIndex = 1
+        ToolStripEx12.Text = "Sales"
+        ' 
+        ' ToolStripEx13
+        ' 
+        ToolStripEx13.CaptionFont = New Font("Calibri", 11.25F)
+        ToolStripEx13.Dock = DockStyle.None
+        ToolStripEx13.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx13.ForeColor = Color.MidnightBlue
+        ToolStripEx13.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx13.Image = Nothing
+        ToolStripEx13.Location = New Point(108, 1)
+        ToolStripEx13.Name = "ToolStripEx13"
+        ToolStripEx13.Office12Mode = False
+        ToolStripEx13.RightToLeft = RightToLeft.No
+        ToolStripEx13.Size = New Size(106, 124)
+        ToolStripEx13.TabIndex = 2
+        ToolStripEx13.Text = "Performance"
+        ' 
+        ' ToolStripEx14
+        ' 
+        ToolStripEx14.CaptionFont = New Font("Calibri", 11.25F)
+        ToolStripEx14.Dock = DockStyle.None
+        ToolStripEx14.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx14.ForeColor = Color.MidnightBlue
+        ToolStripEx14.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx14.Image = Nothing
+        ToolStripEx14.Location = New Point(216, 1)
+        ToolStripEx14.Name = "ToolStripEx14"
+        ToolStripEx14.Office12Mode = False
+        ToolStripEx14.RightToLeft = RightToLeft.No
+        ToolStripEx14.Size = New Size(106, 124)
+        ToolStripEx14.TabIndex = 3
+        ToolStripEx14.Text = "Finance"
+        ' 
+        ' ToolStripEx15
+        ' 
+        ToolStripEx15.CaptionFont = New Font("Calibri", 11.25F)
+        ToolStripEx15.Dock = DockStyle.None
+        ToolStripEx15.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx15.ForeColor = Color.MidnightBlue
+        ToolStripEx15.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx15.Image = Nothing
+        ToolStripEx15.Location = New Point(324, 1)
+        ToolStripEx15.Name = "ToolStripEx15"
+        ToolStripEx15.Office12Mode = False
+        ToolStripEx15.RightToLeft = RightToLeft.No
+        ToolStripEx15.Size = New Size(106, 124)
+        ToolStripEx15.TabIndex = 4
+        ToolStripEx15.Text = "Stock"
+        ' 
+        ' ToolStripTabItem5
+        ' 
+        ToolStripTabItem5.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripTabItem5.Name = "ToolStripTabItem5"
+        ' 
+        ' RibbonControlAdv1.RibbonPanel5
+        ' 
+        ToolStripTabItem5.Panel.Controls.Add(ToolStripEx16)
+        ToolStripTabItem5.Panel.Controls.Add(ToolStripEx17)
+        ToolStripTabItem5.Panel.Controls.Add(ToolStripEx18)
+        ToolStripTabItem5.Panel.Name = "RibbonPanel5"
+        ToolStripTabItem5.Panel.ScrollPosition = 0
+        ToolStripTabItem5.Panel.TabIndex = 6
+        ToolStripTabItem5.Panel.Text = "Config"
+        ToolStripTabItem5.Position = 4
+        ToolStripTabItem5.Size = New Size(67, 25)
+        RibbonControlAdv1.TabGroups.SetTabGroup(ToolStripTabItem5, Nothing)
+        ToolStripTabItem5.Tag = "5"
+        ToolStripTabItem5.Text = "Config"
+        ' 
+        ' ToolStripEx16
+        ' 
+        ToolStripEx16.CaptionFont = New Font("Calibri", 11.25F)
+        ToolStripEx16.Dock = DockStyle.None
+        ToolStripEx16.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx16.ForeColor = Color.MidnightBlue
+        ToolStripEx16.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx16.Image = Nothing
+        ToolStripEx16.Location = New Point(0, 1)
+        ToolStripEx16.Name = "ToolStripEx16"
+        ToolStripEx16.Office12Mode = False
+        ToolStripEx16.RightToLeft = RightToLeft.No
+        ToolStripEx16.Size = New Size(106, 124)
+        ToolStripEx16.TabIndex = 1
+        ToolStripEx16.Text = "Operational"
+        ' 
+        ' ToolStripEx17
+        ' 
+        ToolStripEx17.CaptionFont = New Font("Calibri", 11.25F)
+        ToolStripEx17.Dock = DockStyle.None
+        ToolStripEx17.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx17.ForeColor = Color.MidnightBlue
+        ToolStripEx17.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx17.Image = Nothing
+        ToolStripEx17.Location = New Point(108, 1)
+        ToolStripEx17.Name = "ToolStripEx17"
+        ToolStripEx17.Office12Mode = False
+        ToolStripEx17.RightToLeft = RightToLeft.No
+        ToolStripEx17.Size = New Size(106, 124)
+        ToolStripEx17.TabIndex = 2
+        ToolStripEx17.Text = "Personal"
+        ' 
+        ' ToolStripEx18
+        ' 
+        ToolStripEx18.CaptionFont = New Font("Calibri", 11.25F)
+        ToolStripEx18.Dock = DockStyle.None
+        ToolStripEx18.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ToolStripEx18.ForeColor = Color.MidnightBlue
+        ToolStripEx18.GripStyle = ToolStripGripStyle.Hidden
+        ToolStripEx18.Image = Nothing
+        ToolStripEx18.Location = New Point(216, 1)
+        ToolStripEx18.Name = "ToolStripEx18"
+        ToolStripEx18.Office12Mode = False
+        ToolStripEx18.RightToLeft = RightToLeft.No
+        ToolStripEx18.Size = New Size(106, 124)
+        ToolStripEx18.TabIndex = 3
+        ToolStripEx18.Text = "General"
+        ' 
         ' Frm_02_00_LandingResto
         ' 
         AutoScaleDimensions = New SizeF(8.0F, 18.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1380, 784)
-        Controls.Add(Logo_01)
+        Controls.Add(RibbonControlAdv1)
         Controls.Add(TabControl1)
+        Controls.Add(Logo_01)
         Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         IsMdiContainer = True
@@ -1489,6 +1942,19 @@ Partial Class Frm_02_00_LandingResto
         Ts_Config_02_Personal.PerformLayout()
         Ts_Config_04_Operational.ResumeLayout(False)
         Ts_Config_04_Operational.PerformLayout()
+        CType(RibbonControlAdv1, ComponentModel.ISupportInitialize).EndInit()
+        RibbonControlAdv1.ResumeLayout(False)
+        RibbonControlAdv1.PerformLayout()
+        ToolStripTabItem1.Panel.ResumeLayout(False)
+        ToolStripTabItem1.Panel.PerformLayout()
+        ToolStripTabItem2.Panel.ResumeLayout(False)
+        ToolStripTabItem2.Panel.PerformLayout()
+        ToolStripTabItem3.Panel.ResumeLayout(False)
+        ToolStripTabItem3.Panel.PerformLayout()
+        ToolStripTabItem4.Panel.ResumeLayout(False)
+        ToolStripTabItem4.Panel.PerformLayout()
+        ToolStripTabItem5.Panel.ResumeLayout(False)
+        ToolStripTabItem5.Panel.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -1614,5 +2080,29 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents Config_Lbl_01_Language As ToolStripLabel
     Friend WithEvents Config_Cbox_01_Language As ToolStripComboBox
     Friend WithEvents Config_Btn_07_Operational_Logs As ToolStripButton
+    Friend WithEvents RibbonControlAdv1 As Syncfusion.Windows.Forms.Tools.RibbonControlAdv
+    Friend WithEvents ToolStripTabItem1 As Syncfusion.Windows.Forms.Tools.ToolStripTabItem
+    Friend WithEvents ToolStripEx1 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripEx2 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripEx3 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripEx4 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripEx5 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripTabItem2 As Syncfusion.Windows.Forms.Tools.ToolStripTabItem
+    Friend WithEvents ToolStripEx6 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripEx7 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripEx8 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripEx9 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripTabItem5 As Syncfusion.Windows.Forms.Tools.ToolStripTabItem
+    Friend WithEvents ToolStripEx16 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripEx17 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripEx18 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripTabItem3 As Syncfusion.Windows.Forms.Tools.ToolStripTabItem
+    Friend WithEvents ToolStripEx10 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripEx11 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripTabItem4 As Syncfusion.Windows.Forms.Tools.ToolStripTabItem
+    Friend WithEvents ToolStripEx12 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripEx13 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripEx14 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents ToolStripEx15 As Syncfusion.Windows.Forms.Tools.ToolStripEx
 
 End Class
