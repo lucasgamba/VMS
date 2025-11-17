@@ -60,37 +60,37 @@ Partial Class Frm_02_00_LandingResto
         Ts_Prod_04_Stock = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Prod_Btn_08_Stock_BatchChange = New ToolStripButton()
         Ts_Tab_03_Marketing = New Syncfusion.Windows.Forms.Tools.ToolStripTabItem()
-        ToolStripEx10 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Ts_Mkt_01_Benefits = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Mkt_Btn_01_Benefits_Promotions = New ToolStripButton()
         Mkt_Btn_02_Benefits_Vouchers = New ToolStripButton()
-        ToolStripEx11 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Ts_Mkt_02_Loyalty = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Mkt_Btn_03_Loyalty_Campaigns = New ToolStripButton()
         Mkt_Btn_04_Loyalty_Program = New ToolStripButton()
         Mkt_Btn_05_Loyalty_Birthdays = New ToolStripButton()
         Ts_Tab_04_Reports = New Syncfusion.Windows.Forms.Tools.ToolStripTabItem()
-        ToolStripEx12 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Ts_Report_01_Sales = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Report_Btn_01_Sales_Ranking = New ToolStripDropDownButton()
         ProductRankingToolStripMenuItem = New ToolStripMenuItem()
         ServiceRankingToolStripMenuItem = New ToolStripMenuItem()
         Report_Btn_02_Sales_History = New ToolStripDropDownButton()
         OrderHistoryToolStripMenuItem = New ToolStripMenuItem()
         ItemsSoldToolStripMenuItem1 = New ToolStripMenuItem()
-        ToolStripEx13 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Ts_Report_02_Performance = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Report_Btn_03_Performance_Dashboard = New ToolStripButton()
-        ToolStripEx14 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Ts_Report_03_Finance = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Report_Btn_04_Finance_Summary = New ToolStripButton()
         Report_Btn_05_Finance_CashHistory = New ToolStripButton()
-        ToolStripEx15 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Ts_Report_04_Stock = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Report_Btn_06_Stock_InputsOutputs = New ToolStripButton()
         Report_Btn_07_Stock_PositionByDate = New ToolStripButton()
         Ts_Tab_05_Config = New Syncfusion.Windows.Forms.Tools.ToolStripTabItem()
-        ToolStripEx16 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Ts_Config_01_Operational = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Config_Btn_01_General_Tables = New ToolStripButton()
         Config_Btn_02_General_Units = New ToolStripButton()
-        ToolStripEx17 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Ts_Config_02_Personal = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Config_Btn_03_Personal_Employee = New ToolStripButton()
         Config_Btn_04_Personal_Password = New ToolStripButton()
-        ToolStripEx18 = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
+        Ts_Config_03_General = New Syncfusion.Windows.Forms.Tools.ToolStripEx()
         Config_Btn_05_Operational_System = New ToolStripButton()
         Config_Btn_06_Operational_Printers = New ToolStripButton()
         Config_Btn_07_Operational_Logs = New ToolStripButton()
@@ -111,17 +111,17 @@ Partial Class Frm_02_00_LandingResto
         Ts_Prod_03_Inputs.SuspendLayout()
         Ts_Prod_04_Stock.SuspendLayout()
         Ts_Tab_03_Marketing.Panel.SuspendLayout()
-        ToolStripEx10.SuspendLayout()
-        ToolStripEx11.SuspendLayout()
+        Ts_Mkt_01_Benefits.SuspendLayout()
+        Ts_Mkt_02_Loyalty.SuspendLayout()
         Ts_Tab_04_Reports.Panel.SuspendLayout()
-        ToolStripEx12.SuspendLayout()
-        ToolStripEx13.SuspendLayout()
-        ToolStripEx14.SuspendLayout()
-        ToolStripEx15.SuspendLayout()
+        Ts_Report_01_Sales.SuspendLayout()
+        Ts_Report_02_Performance.SuspendLayout()
+        Ts_Report_03_Finance.SuspendLayout()
+        Ts_Report_04_Stock.SuspendLayout()
         Ts_Tab_05_Config.Panel.SuspendLayout()
-        ToolStripEx16.SuspendLayout()
-        ToolStripEx17.SuspendLayout()
-        ToolStripEx18.SuspendLayout()
+        Ts_Config_01_Operational.SuspendLayout()
+        Ts_Config_02_Personal.SuspendLayout()
+        Ts_Config_03_General.SuspendLayout()
         SuspendLayout()
         ' 
         ' Logo_01
@@ -231,7 +231,7 @@ Partial Class Frm_02_00_LandingResto
         RibbonControlAdv1.QuickPanelImageLayout = PictureBoxSizeMode.StretchImage
         RibbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None
         RibbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2013
-        RibbonControlAdv1.SelectedTab = Ts_Tab_02_Products
+        RibbonControlAdv1.SelectedTab = Ts_Tab_05_Config
         RibbonControlAdv1.ShowRibbonDisplayOptionButton = True
         RibbonControlAdv1.Size = New Size(1380, 180)
         RibbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu"
@@ -630,7 +630,7 @@ Partial Class Frm_02_00_LandingResto
         Ts_Prod_04_Stock.Name = "Ts_Prod_04_Stock"
         Ts_Prod_04_Stock.Office12Mode = False
         Ts_Prod_04_Stock.RightToLeft = RightToLeft.No
-        Ts_Prod_04_Stock.Size = New Size(173, 124)
+        Ts_Prod_04_Stock.Size = New Size(142, 124)
         Ts_Prod_04_Stock.TabIndex = 4
         Ts_Prod_04_Stock.Text = "Stock"
         ' 
@@ -655,8 +655,8 @@ Partial Class Frm_02_00_LandingResto
         ' 
         ' RibbonControlAdv1.RibbonPanel3
         ' 
-        Ts_Tab_03_Marketing.Panel.Controls.Add(ToolStripEx10)
-        Ts_Tab_03_Marketing.Panel.Controls.Add(ToolStripEx11)
+        Ts_Tab_03_Marketing.Panel.Controls.Add(Ts_Mkt_01_Benefits)
+        Ts_Tab_03_Marketing.Panel.Controls.Add(Ts_Mkt_02_Loyalty)
         Ts_Tab_03_Marketing.Panel.Name = "RibbonPanel3"
         Ts_Tab_03_Marketing.Panel.ScrollPosition = 0
         Ts_Tab_03_Marketing.Panel.TabIndex = 4
@@ -667,22 +667,22 @@ Partial Class Frm_02_00_LandingResto
         Ts_Tab_03_Marketing.Tag = "3"
         Ts_Tab_03_Marketing.Text = "Marketing"
         ' 
-        ' ToolStripEx10
+        ' Ts_Mkt_01_Benefits
         ' 
-        ToolStripEx10.CaptionFont = New Font("Calibri", 11.25F)
-        ToolStripEx10.Dock = DockStyle.None
-        ToolStripEx10.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripEx10.ForeColor = Color.MidnightBlue
-        ToolStripEx10.GripStyle = ToolStripGripStyle.Hidden
-        ToolStripEx10.Image = Nothing
-        ToolStripEx10.Items.AddRange(New ToolStripItem() {Mkt_Btn_01_Benefits_Promotions, Mkt_Btn_02_Benefits_Vouchers})
-        ToolStripEx10.Location = New Point(0, 1)
-        ToolStripEx10.Name = "ToolStripEx10"
-        ToolStripEx10.Office12Mode = False
-        ToolStripEx10.RightToLeft = RightToLeft.No
-        ToolStripEx10.Size = New Size(40, 124)
-        ToolStripEx10.TabIndex = 1
-        ToolStripEx10.Text = "Benefits"
+        Ts_Mkt_01_Benefits.CaptionFont = New Font("Calibri", 11.25F)
+        Ts_Mkt_01_Benefits.Dock = DockStyle.None
+        Ts_Mkt_01_Benefits.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Ts_Mkt_01_Benefits.ForeColor = Color.MidnightBlue
+        Ts_Mkt_01_Benefits.GripStyle = ToolStripGripStyle.Hidden
+        Ts_Mkt_01_Benefits.Image = Nothing
+        Ts_Mkt_01_Benefits.Items.AddRange(New ToolStripItem() {Mkt_Btn_01_Benefits_Promotions, Mkt_Btn_02_Benefits_Vouchers})
+        Ts_Mkt_01_Benefits.Location = New Point(0, 1)
+        Ts_Mkt_01_Benefits.Name = "Ts_Mkt_01_Benefits"
+        Ts_Mkt_01_Benefits.Office12Mode = False
+        Ts_Mkt_01_Benefits.RightToLeft = RightToLeft.No
+        Ts_Mkt_01_Benefits.Size = New Size(239, 124)
+        Ts_Mkt_01_Benefits.TabIndex = 1
+        Ts_Mkt_01_Benefits.Text = "Benefits"
         ' 
         ' Mkt_Btn_01_Benefits_Promotions
         ' 
@@ -693,7 +693,7 @@ Partial Class Frm_02_00_LandingResto
         Mkt_Btn_01_Benefits_Promotions.Margin = New Padding(5, 2, 5, 2)
         Mkt_Btn_01_Benefits_Promotions.Name = "Mkt_Btn_01_Benefits_Promotions"
         Mkt_Btn_01_Benefits_Promotions.Padding = New Padding(15, 0, 15, 0)
-        Mkt_Btn_01_Benefits_Promotions.Size = New Size(113, 86)
+        Mkt_Btn_01_Benefits_Promotions.Size = New Size(113, 102)
         Mkt_Btn_01_Benefits_Promotions.Text = "Promotions"
         Mkt_Btn_01_Benefits_Promotions.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -706,26 +706,26 @@ Partial Class Frm_02_00_LandingResto
         Mkt_Btn_02_Benefits_Vouchers.Margin = New Padding(5, 2, 5, 2)
         Mkt_Btn_02_Benefits_Vouchers.Name = "Mkt_Btn_02_Benefits_Vouchers"
         Mkt_Btn_02_Benefits_Vouchers.Padding = New Padding(15, 0, 15, 0)
-        Mkt_Btn_02_Benefits_Vouchers.Size = New Size(99, 86)
+        Mkt_Btn_02_Benefits_Vouchers.Size = New Size(99, 102)
         Mkt_Btn_02_Benefits_Vouchers.Text = "Vouchers"
         Mkt_Btn_02_Benefits_Vouchers.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripEx11
+        ' Ts_Mkt_02_Loyalty
         ' 
-        ToolStripEx11.CaptionFont = New Font("Calibri", 11.25F)
-        ToolStripEx11.Dock = DockStyle.None
-        ToolStripEx11.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripEx11.ForeColor = Color.MidnightBlue
-        ToolStripEx11.GripStyle = ToolStripGripStyle.Hidden
-        ToolStripEx11.Image = Nothing
-        ToolStripEx11.Items.AddRange(New ToolStripItem() {Mkt_Btn_03_Loyalty_Campaigns, Mkt_Btn_04_Loyalty_Program, Mkt_Btn_05_Loyalty_Birthdays})
-        ToolStripEx11.Location = New Point(42, 1)
-        ToolStripEx11.Name = "ToolStripEx11"
-        ToolStripEx11.Office12Mode = False
-        ToolStripEx11.RightToLeft = RightToLeft.No
-        ToolStripEx11.Size = New Size(40, 124)
-        ToolStripEx11.TabIndex = 2
-        ToolStripEx11.Text = "Loyalty"
+        Ts_Mkt_02_Loyalty.CaptionFont = New Font("Calibri", 11.25F)
+        Ts_Mkt_02_Loyalty.Dock = DockStyle.None
+        Ts_Mkt_02_Loyalty.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Ts_Mkt_02_Loyalty.ForeColor = Color.MidnightBlue
+        Ts_Mkt_02_Loyalty.GripStyle = ToolStripGripStyle.Hidden
+        Ts_Mkt_02_Loyalty.Image = Nothing
+        Ts_Mkt_02_Loyalty.Items.AddRange(New ToolStripItem() {Mkt_Btn_03_Loyalty_Campaigns, Mkt_Btn_04_Loyalty_Program, Mkt_Btn_05_Loyalty_Birthdays})
+        Ts_Mkt_02_Loyalty.Location = New Point(241, 1)
+        Ts_Mkt_02_Loyalty.Name = "Ts_Mkt_02_Loyalty"
+        Ts_Mkt_02_Loyalty.Office12Mode = False
+        Ts_Mkt_02_Loyalty.RightToLeft = RightToLeft.No
+        Ts_Mkt_02_Loyalty.Size = New Size(375, 124)
+        Ts_Mkt_02_Loyalty.TabIndex = 2
+        Ts_Mkt_02_Loyalty.Text = "Loyalty"
         ' 
         ' Mkt_Btn_03_Loyalty_Campaigns
         ' 
@@ -736,7 +736,7 @@ Partial Class Frm_02_00_LandingResto
         Mkt_Btn_03_Loyalty_Campaigns.Margin = New Padding(5, 2, 5, 2)
         Mkt_Btn_03_Loyalty_Campaigns.Name = "Mkt_Btn_03_Loyalty_Campaigns"
         Mkt_Btn_03_Loyalty_Campaigns.Padding = New Padding(15, 0, 15, 0)
-        Mkt_Btn_03_Loyalty_Campaigns.Size = New Size(109, 86)
+        Mkt_Btn_03_Loyalty_Campaigns.Size = New Size(109, 102)
         Mkt_Btn_03_Loyalty_Campaigns.Text = "Campaigns"
         Mkt_Btn_03_Loyalty_Campaigns.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -749,7 +749,7 @@ Partial Class Frm_02_00_LandingResto
         Mkt_Btn_04_Loyalty_Program.Margin = New Padding(5, 2, 5, 2)
         Mkt_Btn_04_Loyalty_Program.Name = "Mkt_Btn_04_Loyalty_Program"
         Mkt_Btn_04_Loyalty_Program.Padding = New Padding(15, 0, 15, 0)
-        Mkt_Btn_04_Loyalty_Program.Size = New Size(98, 86)
+        Mkt_Btn_04_Loyalty_Program.Size = New Size(98, 102)
         Mkt_Btn_04_Loyalty_Program.Text = "Loyalty"
         Mkt_Btn_04_Loyalty_Program.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -762,7 +762,7 @@ Partial Class Frm_02_00_LandingResto
         Mkt_Btn_05_Loyalty_Birthdays.Margin = New Padding(5, 2, 5, 2)
         Mkt_Btn_05_Loyalty_Birthdays.Name = "Mkt_Btn_05_Loyalty_Birthdays"
         Mkt_Btn_05_Loyalty_Birthdays.Padding = New Padding(15, 0, 15, 0)
-        Mkt_Btn_05_Loyalty_Birthdays.Size = New Size(100, 86)
+        Mkt_Btn_05_Loyalty_Birthdays.Size = New Size(100, 102)
         Mkt_Btn_05_Loyalty_Birthdays.Text = "Birthdays"
         Mkt_Btn_05_Loyalty_Birthdays.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -773,10 +773,10 @@ Partial Class Frm_02_00_LandingResto
         ' 
         ' RibbonControlAdv1.RibbonPanel4
         ' 
-        Ts_Tab_04_Reports.Panel.Controls.Add(ToolStripEx12)
-        Ts_Tab_04_Reports.Panel.Controls.Add(ToolStripEx13)
-        Ts_Tab_04_Reports.Panel.Controls.Add(ToolStripEx14)
-        Ts_Tab_04_Reports.Panel.Controls.Add(ToolStripEx15)
+        Ts_Tab_04_Reports.Panel.Controls.Add(Ts_Report_01_Sales)
+        Ts_Tab_04_Reports.Panel.Controls.Add(Ts_Report_02_Performance)
+        Ts_Tab_04_Reports.Panel.Controls.Add(Ts_Report_03_Finance)
+        Ts_Tab_04_Reports.Panel.Controls.Add(Ts_Report_04_Stock)
         Ts_Tab_04_Reports.Panel.Name = "RibbonPanel4"
         Ts_Tab_04_Reports.Panel.ScrollPosition = 0
         Ts_Tab_04_Reports.Panel.TabIndex = 5
@@ -787,22 +787,22 @@ Partial Class Frm_02_00_LandingResto
         Ts_Tab_04_Reports.Tag = "4"
         Ts_Tab_04_Reports.Text = "Reports"
         ' 
-        ' ToolStripEx12
+        ' Ts_Report_01_Sales
         ' 
-        ToolStripEx12.CaptionFont = New Font("Calibri", 11.25F)
-        ToolStripEx12.Dock = DockStyle.None
-        ToolStripEx12.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripEx12.ForeColor = Color.MidnightBlue
-        ToolStripEx12.GripStyle = ToolStripGripStyle.Hidden
-        ToolStripEx12.Image = Nothing
-        ToolStripEx12.Items.AddRange(New ToolStripItem() {Report_Btn_01_Sales_Ranking, Report_Btn_02_Sales_History})
-        ToolStripEx12.Location = New Point(0, 1)
-        ToolStripEx12.Name = "ToolStripEx12"
-        ToolStripEx12.Office12Mode = False
-        ToolStripEx12.RightToLeft = RightToLeft.No
-        ToolStripEx12.Size = New Size(40, 124)
-        ToolStripEx12.TabIndex = 1
-        ToolStripEx12.Text = "Sales"
+        Ts_Report_01_Sales.CaptionFont = New Font("Calibri", 11.25F)
+        Ts_Report_01_Sales.Dock = DockStyle.None
+        Ts_Report_01_Sales.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Ts_Report_01_Sales.ForeColor = Color.MidnightBlue
+        Ts_Report_01_Sales.GripStyle = ToolStripGripStyle.Hidden
+        Ts_Report_01_Sales.Image = Nothing
+        Ts_Report_01_Sales.Items.AddRange(New ToolStripItem() {Report_Btn_01_Sales_Ranking, Report_Btn_02_Sales_History})
+        Ts_Report_01_Sales.Location = New Point(0, 1)
+        Ts_Report_01_Sales.Name = "Ts_Report_01_Sales"
+        Ts_Report_01_Sales.Office12Mode = False
+        Ts_Report_01_Sales.RightToLeft = RightToLeft.No
+        Ts_Report_01_Sales.Size = New Size(241, 124)
+        Ts_Report_01_Sales.TabIndex = 1
+        Ts_Report_01_Sales.Text = "Sales"
         ' 
         ' Report_Btn_01_Sales_Ranking
         ' 
@@ -814,7 +814,7 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_01_Sales_Ranking.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_01_Sales_Ranking.Name = "Report_Btn_01_Sales_Ranking"
         Report_Btn_01_Sales_Ranking.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_01_Sales_Ranking.Size = New Size(107, 86)
+        Report_Btn_01_Sales_Ranking.Size = New Size(107, 102)
         Report_Btn_01_Sales_Ranking.Text = "Ranking"
         Report_Btn_01_Sales_Ranking.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -840,7 +840,7 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_02_Sales_History.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_02_Sales_History.Name = "Report_Btn_02_Sales_History"
         Report_Btn_02_Sales_History.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_02_Sales_History.Size = New Size(107, 86)
+        Report_Btn_02_Sales_History.Size = New Size(107, 102)
         Report_Btn_02_Sales_History.Text = "History"
         Report_Btn_02_Sales_History.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -856,22 +856,22 @@ Partial Class Frm_02_00_LandingResto
         ItemsSoldToolStripMenuItem1.Size = New Size(159, 22)
         ItemsSoldToolStripMenuItem1.Text = "Items Sold"
         ' 
-        ' ToolStripEx13
+        ' Ts_Report_02_Performance
         ' 
-        ToolStripEx13.CaptionFont = New Font("Calibri", 11.25F)
-        ToolStripEx13.Dock = DockStyle.None
-        ToolStripEx13.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripEx13.ForeColor = Color.MidnightBlue
-        ToolStripEx13.GripStyle = ToolStripGripStyle.Hidden
-        ToolStripEx13.Image = Nothing
-        ToolStripEx13.Items.AddRange(New ToolStripItem() {Report_Btn_03_Performance_Dashboard})
-        ToolStripEx13.Location = New Point(42, 1)
-        ToolStripEx13.Name = "ToolStripEx13"
-        ToolStripEx13.Office12Mode = False
-        ToolStripEx13.RightToLeft = RightToLeft.No
-        ToolStripEx13.Size = New Size(40, 124)
-        ToolStripEx13.TabIndex = 2
-        ToolStripEx13.Text = "Performance"
+        Ts_Report_02_Performance.CaptionFont = New Font("Calibri", 11.25F)
+        Ts_Report_02_Performance.Dock = DockStyle.None
+        Ts_Report_02_Performance.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Ts_Report_02_Performance.ForeColor = Color.MidnightBlue
+        Ts_Report_02_Performance.GripStyle = ToolStripGripStyle.Hidden
+        Ts_Report_02_Performance.Image = Nothing
+        Ts_Report_02_Performance.Items.AddRange(New ToolStripItem() {Report_Btn_03_Performance_Dashboard})
+        Ts_Report_02_Performance.Location = New Point(243, 1)
+        Ts_Report_02_Performance.Name = "Ts_Report_02_Performance"
+        Ts_Report_02_Performance.Office12Mode = False
+        Ts_Report_02_Performance.RightToLeft = RightToLeft.No
+        Ts_Report_02_Performance.Size = New Size(125, 124)
+        Ts_Report_02_Performance.TabIndex = 2
+        Ts_Report_02_Performance.Text = "Performance"
         ' 
         ' Report_Btn_03_Performance_Dashboard
         ' 
@@ -882,26 +882,26 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_03_Performance_Dashboard.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_03_Performance_Dashboard.Name = "Report_Btn_03_Performance_Dashboard"
         Report_Btn_03_Performance_Dashboard.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_03_Performance_Dashboard.Size = New Size(108, 86)
+        Report_Btn_03_Performance_Dashboard.Size = New Size(108, 102)
         Report_Btn_03_Performance_Dashboard.Text = "Dashboard"
         Report_Btn_03_Performance_Dashboard.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripEx14
+        ' Ts_Report_03_Finance
         ' 
-        ToolStripEx14.CaptionFont = New Font("Calibri", 11.25F)
-        ToolStripEx14.Dock = DockStyle.None
-        ToolStripEx14.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripEx14.ForeColor = Color.MidnightBlue
-        ToolStripEx14.GripStyle = ToolStripGripStyle.Hidden
-        ToolStripEx14.Image = Nothing
-        ToolStripEx14.Items.AddRange(New ToolStripItem() {Report_Btn_04_Finance_Summary, Report_Btn_05_Finance_CashHistory})
-        ToolStripEx14.Location = New Point(84, 1)
-        ToolStripEx14.Name = "ToolStripEx14"
-        ToolStripEx14.Office12Mode = False
-        ToolStripEx14.RightToLeft = RightToLeft.No
-        ToolStripEx14.Size = New Size(40, 124)
-        ToolStripEx14.TabIndex = 3
-        ToolStripEx14.Text = "Finance"
+        Ts_Report_03_Finance.CaptionFont = New Font("Calibri", 11.25F)
+        Ts_Report_03_Finance.Dock = DockStyle.None
+        Ts_Report_03_Finance.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Ts_Report_03_Finance.ForeColor = Color.MidnightBlue
+        Ts_Report_03_Finance.GripStyle = ToolStripGripStyle.Hidden
+        Ts_Report_03_Finance.Image = Nothing
+        Ts_Report_03_Finance.Items.AddRange(New ToolStripItem() {Report_Btn_04_Finance_Summary, Report_Btn_05_Finance_CashHistory})
+        Ts_Report_03_Finance.Location = New Point(370, 1)
+        Ts_Report_03_Finance.Name = "Ts_Report_03_Finance"
+        Ts_Report_03_Finance.Office12Mode = False
+        Ts_Report_03_Finance.RightToLeft = RightToLeft.No
+        Ts_Report_03_Finance.Size = New Size(303, 124)
+        Ts_Report_03_Finance.TabIndex = 3
+        Ts_Report_03_Finance.Text = "Finance"
         ' 
         ' Report_Btn_04_Finance_Summary
         ' 
@@ -912,7 +912,7 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_04_Finance_Summary.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_04_Finance_Summary.Name = "Report_Btn_04_Finance_Summary"
         Report_Btn_04_Finance_Summary.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_04_Finance_Summary.Size = New Size(158, 86)
+        Report_Btn_04_Finance_Summary.Size = New Size(158, 102)
         Report_Btn_04_Finance_Summary.Text = "Financial Summary"
         Report_Btn_04_Finance_Summary.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -925,26 +925,26 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_05_Finance_CashHistory.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_05_Finance_CashHistory.Name = "Report_Btn_05_Finance_CashHistory"
         Report_Btn_05_Finance_CashHistory.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_05_Finance_CashHistory.Size = New Size(118, 86)
+        Report_Btn_05_Finance_CashHistory.Size = New Size(118, 102)
         Report_Btn_05_Finance_CashHistory.Text = "Cash History"
         Report_Btn_05_Finance_CashHistory.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripEx15
+        ' Ts_Report_04_Stock
         ' 
-        ToolStripEx15.CaptionFont = New Font("Calibri", 11.25F)
-        ToolStripEx15.Dock = DockStyle.None
-        ToolStripEx15.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripEx15.ForeColor = Color.MidnightBlue
-        ToolStripEx15.GripStyle = ToolStripGripStyle.Hidden
-        ToolStripEx15.Image = Nothing
-        ToolStripEx15.Items.AddRange(New ToolStripItem() {Report_Btn_06_Stock_InputsOutputs, Report_Btn_07_Stock_PositionByDate})
-        ToolStripEx15.Location = New Point(126, 1)
-        ToolStripEx15.Name = "ToolStripEx15"
-        ToolStripEx15.Office12Mode = False
-        ToolStripEx15.RightToLeft = RightToLeft.No
-        ToolStripEx15.Size = New Size(40, 124)
-        ToolStripEx15.TabIndex = 4
-        ToolStripEx15.Text = "Stock"
+        Ts_Report_04_Stock.CaptionFont = New Font("Calibri", 11.25F)
+        Ts_Report_04_Stock.Dock = DockStyle.None
+        Ts_Report_04_Stock.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Ts_Report_04_Stock.ForeColor = Color.MidnightBlue
+        Ts_Report_04_Stock.GripStyle = ToolStripGripStyle.Hidden
+        Ts_Report_04_Stock.Image = Nothing
+        Ts_Report_04_Stock.Items.AddRange(New ToolStripItem() {Report_Btn_06_Stock_InputsOutputs, Report_Btn_07_Stock_PositionByDate})
+        Ts_Report_04_Stock.Location = New Point(675, 1)
+        Ts_Report_04_Stock.Name = "Ts_Report_04_Stock"
+        Ts_Report_04_Stock.Office12Mode = False
+        Ts_Report_04_Stock.RightToLeft = RightToLeft.No
+        Ts_Report_04_Stock.Size = New Size(335, 124)
+        Ts_Report_04_Stock.TabIndex = 4
+        Ts_Report_04_Stock.Text = "Stock"
         ' 
         ' Report_Btn_06_Stock_InputsOutputs
         ' 
@@ -956,7 +956,7 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_06_Stock_InputsOutputs.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_06_Stock_InputsOutputs.Name = "Report_Btn_06_Stock_InputsOutputs"
         Report_Btn_06_Stock_InputsOutputs.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_06_Stock_InputsOutputs.Size = New Size(136, 86)
+        Report_Btn_06_Stock_InputsOutputs.Size = New Size(136, 102)
         Report_Btn_06_Stock_InputsOutputs.Text = "Inputs-Outputs"
         Report_Btn_06_Stock_InputsOutputs.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -970,7 +970,7 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_07_Stock_PositionByDate.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_07_Stock_PositionByDate.Name = "Report_Btn_07_Stock_PositionByDate"
         Report_Btn_07_Stock_PositionByDate.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_07_Stock_PositionByDate.Size = New Size(141, 86)
+        Report_Btn_07_Stock_PositionByDate.Size = New Size(141, 102)
         Report_Btn_07_Stock_PositionByDate.Text = "Position by date"
         Report_Btn_07_Stock_PositionByDate.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -981,9 +981,9 @@ Partial Class Frm_02_00_LandingResto
         ' 
         ' RibbonControlAdv1.RibbonPanel5
         ' 
-        Ts_Tab_05_Config.Panel.Controls.Add(ToolStripEx16)
-        Ts_Tab_05_Config.Panel.Controls.Add(ToolStripEx17)
-        Ts_Tab_05_Config.Panel.Controls.Add(ToolStripEx18)
+        Ts_Tab_05_Config.Panel.Controls.Add(Ts_Config_01_Operational)
+        Ts_Tab_05_Config.Panel.Controls.Add(Ts_Config_02_Personal)
+        Ts_Tab_05_Config.Panel.Controls.Add(Ts_Config_03_General)
         Ts_Tab_05_Config.Panel.Name = "RibbonPanel5"
         Ts_Tab_05_Config.Panel.ScrollPosition = 0
         Ts_Tab_05_Config.Panel.TabIndex = 6
@@ -994,22 +994,22 @@ Partial Class Frm_02_00_LandingResto
         Ts_Tab_05_Config.Tag = "5"
         Ts_Tab_05_Config.Text = "Config"
         ' 
-        ' ToolStripEx16
+        ' Ts_Config_01_Operational
         ' 
-        ToolStripEx16.CaptionFont = New Font("Calibri", 11.25F)
-        ToolStripEx16.Dock = DockStyle.None
-        ToolStripEx16.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripEx16.ForeColor = Color.MidnightBlue
-        ToolStripEx16.GripStyle = ToolStripGripStyle.Hidden
-        ToolStripEx16.Image = Nothing
-        ToolStripEx16.Items.AddRange(New ToolStripItem() {Config_Btn_01_General_Tables, Config_Btn_02_General_Units})
-        ToolStripEx16.Location = New Point(0, 1)
-        ToolStripEx16.Name = "ToolStripEx16"
-        ToolStripEx16.Office12Mode = False
-        ToolStripEx16.RightToLeft = RightToLeft.No
-        ToolStripEx16.Size = New Size(40, 124)
-        ToolStripEx16.TabIndex = 1
-        ToolStripEx16.Text = "Operational"
+        Ts_Config_01_Operational.CaptionFont = New Font("Calibri", 11.25F)
+        Ts_Config_01_Operational.Dock = DockStyle.None
+        Ts_Config_01_Operational.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Ts_Config_01_Operational.ForeColor = Color.MidnightBlue
+        Ts_Config_01_Operational.GripStyle = ToolStripGripStyle.Hidden
+        Ts_Config_01_Operational.Image = Nothing
+        Ts_Config_01_Operational.Items.AddRange(New ToolStripItem() {Config_Btn_01_General_Tables, Config_Btn_02_General_Units})
+        Ts_Config_01_Operational.Location = New Point(0, 1)
+        Ts_Config_01_Operational.Name = "Ts_Config_01_Operational"
+        Ts_Config_01_Operational.Office12Mode = False
+        Ts_Config_01_Operational.RightToLeft = RightToLeft.No
+        Ts_Config_01_Operational.Size = New Size(223, 124)
+        Ts_Config_01_Operational.TabIndex = 1
+        Ts_Config_01_Operational.Text = "Operational"
         ' 
         ' Config_Btn_01_General_Tables
         ' 
@@ -1020,7 +1020,7 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_01_General_Tables.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_01_General_Tables.Name = "Config_Btn_01_General_Tables"
         Config_Btn_01_General_Tables.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_01_General_Tables.Size = New Size(98, 86)
+        Config_Btn_01_General_Tables.Size = New Size(98, 102)
         Config_Btn_01_General_Tables.Text = "Tables"
         Config_Btn_01_General_Tables.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1034,26 +1034,26 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_02_General_Units.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_02_General_Units.Name = "Config_Btn_02_General_Units"
         Config_Btn_02_General_Units.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_02_General_Units.Size = New Size(98, 86)
+        Config_Btn_02_General_Units.Size = New Size(98, 102)
         Config_Btn_02_General_Units.Text = "Units"
         Config_Btn_02_General_Units.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripEx17
+        ' Ts_Config_02_Personal
         ' 
-        ToolStripEx17.CaptionFont = New Font("Calibri", 11.25F)
-        ToolStripEx17.Dock = DockStyle.None
-        ToolStripEx17.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripEx17.ForeColor = Color.MidnightBlue
-        ToolStripEx17.GripStyle = ToolStripGripStyle.Hidden
-        ToolStripEx17.Image = Nothing
-        ToolStripEx17.Items.AddRange(New ToolStripItem() {Config_Btn_03_Personal_Employee, Config_Btn_04_Personal_Password})
-        ToolStripEx17.Location = New Point(42, 1)
-        ToolStripEx17.Name = "ToolStripEx17"
-        ToolStripEx17.Office12Mode = False
-        ToolStripEx17.RightToLeft = RightToLeft.No
-        ToolStripEx17.Size = New Size(40, 124)
-        ToolStripEx17.TabIndex = 2
-        ToolStripEx17.Text = "Personal"
+        Ts_Config_02_Personal.CaptionFont = New Font("Calibri", 11.25F)
+        Ts_Config_02_Personal.Dock = DockStyle.None
+        Ts_Config_02_Personal.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Ts_Config_02_Personal.ForeColor = Color.MidnightBlue
+        Ts_Config_02_Personal.GripStyle = ToolStripGripStyle.Hidden
+        Ts_Config_02_Personal.Image = Nothing
+        Ts_Config_02_Personal.Items.AddRange(New ToolStripItem() {Config_Btn_03_Personal_Employee, Config_Btn_04_Personal_Password})
+        Ts_Config_02_Personal.Location = New Point(225, 1)
+        Ts_Config_02_Personal.Name = "Ts_Config_02_Personal"
+        Ts_Config_02_Personal.Office12Mode = False
+        Ts_Config_02_Personal.RightToLeft = RightToLeft.No
+        Ts_Config_02_Personal.Size = New Size(232, 124)
+        Ts_Config_02_Personal.TabIndex = 2
+        Ts_Config_02_Personal.Text = "Personal"
         ' 
         ' Config_Btn_03_Personal_Employee
         ' 
@@ -1064,7 +1064,7 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_03_Personal_Employee.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_03_Personal_Employee.Name = "Config_Btn_03_Personal_Employee"
         Config_Btn_03_Personal_Employee.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_03_Personal_Employee.Size = New Size(104, 86)
+        Config_Btn_03_Personal_Employee.Size = New Size(104, 102)
         Config_Btn_03_Personal_Employee.Text = "Employee"
         Config_Btn_03_Personal_Employee.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1077,26 +1077,26 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_04_Personal_Password.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_04_Personal_Password.Name = "Config_Btn_04_Personal_Password"
         Config_Btn_04_Personal_Password.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_04_Personal_Password.Size = New Size(101, 86)
+        Config_Btn_04_Personal_Password.Size = New Size(101, 102)
         Config_Btn_04_Personal_Password.Text = "Password"
         Config_Btn_04_Personal_Password.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
-        ' ToolStripEx18
+        ' Ts_Config_03_General
         ' 
-        ToolStripEx18.CaptionFont = New Font("Calibri", 11.25F)
-        ToolStripEx18.Dock = DockStyle.None
-        ToolStripEx18.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ToolStripEx18.ForeColor = Color.MidnightBlue
-        ToolStripEx18.GripStyle = ToolStripGripStyle.Hidden
-        ToolStripEx18.Image = Nothing
-        ToolStripEx18.Items.AddRange(New ToolStripItem() {Config_Btn_05_Operational_System, Config_Btn_06_Operational_Printers, Config_Btn_07_Operational_Logs, Config_Lbl_01_Language, Config_Cbox_01_Language})
-        ToolStripEx18.Location = New Point(84, 1)
-        ToolStripEx18.Name = "ToolStripEx18"
-        ToolStripEx18.Office12Mode = False
-        ToolStripEx18.RightToLeft = RightToLeft.No
-        ToolStripEx18.Size = New Size(40, 124)
-        ToolStripEx18.TabIndex = 3
-        ToolStripEx18.Text = "General"
+        Ts_Config_03_General.CaptionFont = New Font("Calibri", 11.25F)
+        Ts_Config_03_General.Dock = DockStyle.None
+        Ts_Config_03_General.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Ts_Config_03_General.ForeColor = Color.MidnightBlue
+        Ts_Config_03_General.GripStyle = ToolStripGripStyle.Hidden
+        Ts_Config_03_General.Image = Nothing
+        Ts_Config_03_General.Items.AddRange(New ToolStripItem() {Config_Btn_05_Operational_System, Config_Btn_06_Operational_Printers, Config_Btn_07_Operational_Logs, Config_Lbl_01_Language, Config_Cbox_01_Language})
+        Ts_Config_03_General.Location = New Point(459, 1)
+        Ts_Config_03_General.Name = "Ts_Config_03_General"
+        Ts_Config_03_General.Office12Mode = False
+        Ts_Config_03_General.RightToLeft = RightToLeft.No
+        Ts_Config_03_General.Size = New Size(555, 124)
+        Ts_Config_03_General.TabIndex = 3
+        Ts_Config_03_General.Text = "General"
         ' 
         ' Config_Btn_05_Operational_System
         ' 
@@ -1107,7 +1107,7 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_05_Operational_System.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_05_Operational_System.Name = "Config_Btn_05_Operational_System"
         Config_Btn_05_Operational_System.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_05_Operational_System.Size = New Size(98, 86)
+        Config_Btn_05_Operational_System.Size = New Size(98, 102)
         Config_Btn_05_Operational_System.Text = "System"
         Config_Btn_05_Operational_System.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1120,7 +1120,7 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_06_Operational_Printers.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_06_Operational_Printers.Name = "Config_Btn_06_Operational_Printers"
         Config_Btn_06_Operational_Printers.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_06_Operational_Printers.Size = New Size(98, 86)
+        Config_Btn_06_Operational_Printers.Size = New Size(98, 102)
         Config_Btn_06_Operational_Printers.Text = "Printers"
         Config_Btn_06_Operational_Printers.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1133,7 +1133,7 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_07_Operational_Logs.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_07_Operational_Logs.Name = "Config_Btn_07_Operational_Logs"
         Config_Btn_07_Operational_Logs.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_07_Operational_Logs.Size = New Size(98, 86)
+        Config_Btn_07_Operational_Logs.Size = New Size(98, 102)
         Config_Btn_07_Operational_Logs.Text = "Logs"
         Config_Btn_07_Operational_Logs.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1141,14 +1141,14 @@ Partial Class Frm_02_00_LandingResto
         ' 
         Config_Lbl_01_Language.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Config_Lbl_01_Language.Name = "Config_Lbl_01_Language"
-        Config_Lbl_01_Language.Size = New Size(70, 18)
+        Config_Lbl_01_Language.Size = New Size(70, 103)
         Config_Lbl_01_Language.Text = "Language:"
         ' 
         ' Config_Cbox_01_Language
         ' 
         Config_Cbox_01_Language.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Config_Cbox_01_Language.Name = "Config_Cbox_01_Language"
-        Config_Cbox_01_Language.Size = New Size(121, 26)
+        Config_Cbox_01_Language.Size = New Size(121, 106)
         ' 
         ' Frm_02_00_LandingResto
         ' 
@@ -1192,28 +1192,28 @@ Partial Class Frm_02_00_LandingResto
         Ts_Prod_04_Stock.PerformLayout()
         Ts_Tab_03_Marketing.Panel.ResumeLayout(False)
         Ts_Tab_03_Marketing.Panel.PerformLayout()
-        ToolStripEx10.ResumeLayout(False)
-        ToolStripEx10.PerformLayout()
-        ToolStripEx11.ResumeLayout(False)
-        ToolStripEx11.PerformLayout()
+        Ts_Mkt_01_Benefits.ResumeLayout(False)
+        Ts_Mkt_01_Benefits.PerformLayout()
+        Ts_Mkt_02_Loyalty.ResumeLayout(False)
+        Ts_Mkt_02_Loyalty.PerformLayout()
         Ts_Tab_04_Reports.Panel.ResumeLayout(False)
         Ts_Tab_04_Reports.Panel.PerformLayout()
-        ToolStripEx12.ResumeLayout(False)
-        ToolStripEx12.PerformLayout()
-        ToolStripEx13.ResumeLayout(False)
-        ToolStripEx13.PerformLayout()
-        ToolStripEx14.ResumeLayout(False)
-        ToolStripEx14.PerformLayout()
-        ToolStripEx15.ResumeLayout(False)
-        ToolStripEx15.PerformLayout()
+        Ts_Report_01_Sales.ResumeLayout(False)
+        Ts_Report_01_Sales.PerformLayout()
+        Ts_Report_02_Performance.ResumeLayout(False)
+        Ts_Report_02_Performance.PerformLayout()
+        Ts_Report_03_Finance.ResumeLayout(False)
+        Ts_Report_03_Finance.PerformLayout()
+        Ts_Report_04_Stock.ResumeLayout(False)
+        Ts_Report_04_Stock.PerformLayout()
         Ts_Tab_05_Config.Panel.ResumeLayout(False)
         Ts_Tab_05_Config.Panel.PerformLayout()
-        ToolStripEx16.ResumeLayout(False)
-        ToolStripEx16.PerformLayout()
-        ToolStripEx17.ResumeLayout(False)
-        ToolStripEx17.PerformLayout()
-        ToolStripEx18.ResumeLayout(False)
-        ToolStripEx18.PerformLayout()
+        Ts_Config_01_Operational.ResumeLayout(False)
+        Ts_Config_01_Operational.PerformLayout()
+        Ts_Config_02_Personal.ResumeLayout(False)
+        Ts_Config_02_Personal.PerformLayout()
+        Ts_Config_03_General.ResumeLayout(False)
+        Ts_Config_03_General.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -1264,17 +1264,17 @@ Partial Class Frm_02_00_LandingResto
     Friend WithEvents Ts_Prod_03_Inputs As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents Ts_Prod_04_Stock As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents Ts_Tab_05_Config As Syncfusion.Windows.Forms.Tools.ToolStripTabItem
-    Friend WithEvents ToolStripEx16 As Syncfusion.Windows.Forms.Tools.ToolStripEx
-    Friend WithEvents ToolStripEx17 As Syncfusion.Windows.Forms.Tools.ToolStripEx
-    Friend WithEvents ToolStripEx18 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents Ts_Config_01_Operational As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents Ts_Config_02_Personal As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents Ts_Config_03_General As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents Ts_Tab_03_Marketing As Syncfusion.Windows.Forms.Tools.ToolStripTabItem
-    Friend WithEvents ToolStripEx10 As Syncfusion.Windows.Forms.Tools.ToolStripEx
-    Friend WithEvents ToolStripEx11 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents Ts_Mkt_01_Benefits As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents Ts_Mkt_02_Loyalty As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents Ts_Tab_04_Reports As Syncfusion.Windows.Forms.Tools.ToolStripTabItem
-    Friend WithEvents ToolStripEx12 As Syncfusion.Windows.Forms.Tools.ToolStripEx
-    Friend WithEvents ToolStripEx13 As Syncfusion.Windows.Forms.Tools.ToolStripEx
-    Friend WithEvents ToolStripEx14 As Syncfusion.Windows.Forms.Tools.ToolStripEx
-    Friend WithEvents ToolStripEx15 As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents Ts_Report_01_Sales As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents Ts_Report_02_Performance As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents Ts_Report_03_Finance As Syncfusion.Windows.Forms.Tools.ToolStripEx
+    Friend WithEvents Ts_Report_04_Stock As Syncfusion.Windows.Forms.Tools.ToolStripEx
     Friend WithEvents Main_Btn_01_Cashier_OpenClose As ToolStripButton
     Friend WithEvents Main_Btn_02_Orders_Tables As ToolStripButton
     Friend WithEvents Main_Btn_03_Orders_Delivery As ToolStripButton
