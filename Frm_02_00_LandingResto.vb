@@ -24,7 +24,7 @@
         Frm_00_01_Landing.Show()
     End Sub
 
-    Private Sub Main_Btn_01_Cashier_OpenClose_Click(sender As Object, e As EventArgs) Handles Main_Btn_01_Cashier_OpenClose.Click
+    Private Sub Main_Btn_01_Cashier_OpenClose_Click(sender As Object, e As EventArgs)
         MsgBox("This feature is not yet implemented.", MsgBoxStyle.Information, "Info")
     End Sub
 
