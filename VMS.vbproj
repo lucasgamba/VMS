@@ -99,9 +99,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Update="RibbonMarkup.xml">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </None>
     <None Update="VMS_Local.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -109,6 +106,7 @@
 
   <ItemGroup>
     <Folder Include="bkp\" />
+    <Folder Include="Controls\" />
   </ItemGroup>
 
   <ItemGroup>

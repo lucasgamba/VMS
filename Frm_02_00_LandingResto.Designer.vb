@@ -218,6 +218,7 @@ Partial Class Frm_02_00_LandingResto
         RibbonControlAdv1.Location = New Point(0, 0)
         RibbonControlAdv1.MenuButtonFont = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         RibbonControlAdv1.MenuButtonText = ""
+        RibbonControlAdv1.MenuButtonVisible = False
         RibbonControlAdv1.MenuButtonWidth = 56
         RibbonControlAdv1.MenuColor = Color.FromArgb(CByte(0), CByte(114), CByte(198))
         RibbonControlAdv1.Name = "RibbonControlAdv1"
@@ -231,7 +232,8 @@ Partial Class Frm_02_00_LandingResto
         RibbonControlAdv1.QuickPanelImageLayout = PictureBoxSizeMode.StretchImage
         RibbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None
         RibbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2013
-        RibbonControlAdv1.SelectedTab = Ts_Tab_05_Config
+        RibbonControlAdv1.SelectedTab = Ts_Tab_01_Main
+        RibbonControlAdv1.ShowQuickItemsDropDownButton = False
         RibbonControlAdv1.ShowRibbonDisplayOptionButton = True
         RibbonControlAdv1.Size = New Size(1380, 180)
         RibbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu"
@@ -274,8 +276,9 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_01_Cashier.Location = New Point(0, 1)
         Ts_Main_01_Cashier.Name = "Ts_Main_01_Cashier"
         Ts_Main_01_Cashier.Office12Mode = False
+        Ts_Main_01_Cashier.Padding = New Padding(3, 0, 0, 0)
         Ts_Main_01_Cashier.RightToLeft = RightToLeft.No
-        Ts_Main_01_Cashier.Size = New Size(139, 124)
+        Ts_Main_01_Cashier.Size = New Size(141, 124)
         Ts_Main_01_Cashier.TabIndex = 1
         Ts_Main_01_Cashier.Text = "Cashier"
         ' 
@@ -301,11 +304,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_02_Orders.GripStyle = ToolStripGripStyle.Hidden
         Ts_Main_02_Orders.Image = Nothing
         Ts_Main_02_Orders.Items.AddRange(New ToolStripItem() {Main_Btn_02_Orders_Tables, Main_Btn_03_Orders_Delivery, Main_Btn_04_Orders_DirectSales, Main_Btn_05_Orders_ClientOrder})
-        Ts_Main_02_Orders.Location = New Point(141, 1)
+        Ts_Main_02_Orders.Location = New Point(143, 1)
         Ts_Main_02_Orders.Name = "Ts_Main_02_Orders"
         Ts_Main_02_Orders.Office12Mode = False
+        Ts_Main_02_Orders.Padding = New Padding(3, 0, 0, 0)
         Ts_Main_02_Orders.RightToLeft = RightToLeft.No
-        Ts_Main_02_Orders.Size = New Size(474, 124)
+        Ts_Main_02_Orders.Size = New Size(476, 124)
         Ts_Main_02_Orders.TabIndex = 2
         Ts_Main_02_Orders.Text = "Orders"
         ' 
@@ -373,11 +377,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_03_Reservation.GripStyle = ToolStripGripStyle.Hidden
         Ts_Main_03_Reservation.Image = Nothing
         Ts_Main_03_Reservation.Items.AddRange(New ToolStripItem() {Main_Btn_06_Reservation_Calendar})
-        Ts_Main_03_Reservation.Location = New Point(617, 1)
+        Ts_Main_03_Reservation.Location = New Point(621, 1)
         Ts_Main_03_Reservation.Name = "Ts_Main_03_Reservation"
         Ts_Main_03_Reservation.Office12Mode = False
+        Ts_Main_03_Reservation.Padding = New Padding(3, 0, 0, 0)
         Ts_Main_03_Reservation.RightToLeft = RightToLeft.No
-        Ts_Main_03_Reservation.Size = New Size(115, 124)
+        Ts_Main_03_Reservation.Size = New Size(117, 124)
         Ts_Main_03_Reservation.TabIndex = 3
         Ts_Main_03_Reservation.Text = "Reservation"
         ' 
@@ -403,11 +408,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_04_Customers.GripStyle = ToolStripGripStyle.Hidden
         Ts_Main_04_Customers.Image = Nothing
         Ts_Main_04_Customers.Items.AddRange(New ToolStripItem() {Main_Btn_07_Customers_Clients})
-        Ts_Main_04_Customers.Location = New Point(734, 1)
+        Ts_Main_04_Customers.Location = New Point(740, 1)
         Ts_Main_04_Customers.Name = "Ts_Main_04_Customers"
         Ts_Main_04_Customers.Office12Mode = False
+        Ts_Main_04_Customers.Padding = New Padding(3, 0, 0, 0)
         Ts_Main_04_Customers.RightToLeft = RightToLeft.No
-        Ts_Main_04_Customers.Size = New Size(115, 124)
+        Ts_Main_04_Customers.Size = New Size(117, 124)
         Ts_Main_04_Customers.TabIndex = 4
         Ts_Main_04_Customers.Text = "Customers"
         ' 
@@ -433,11 +439,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Main_05_Logout.GripStyle = ToolStripGripStyle.Hidden
         Ts_Main_05_Logout.Image = Nothing
         Ts_Main_05_Logout.Items.AddRange(New ToolStripItem() {Main_Btn_08_Logout})
-        Ts_Main_05_Logout.Location = New Point(851, 1)
+        Ts_Main_05_Logout.Location = New Point(859, 1)
         Ts_Main_05_Logout.Name = "Ts_Main_05_Logout"
         Ts_Main_05_Logout.Office12Mode = False
+        Ts_Main_05_Logout.Padding = New Padding(3, 0, 0, 0)
         Ts_Main_05_Logout.RightToLeft = RightToLeft.No
-        Ts_Main_05_Logout.Size = New Size(115, 124)
+        Ts_Main_05_Logout.Size = New Size(117, 124)
         Ts_Main_05_Logout.TabIndex = 5
         Ts_Main_05_Logout.Text = "Logout"
         ' 
@@ -487,8 +494,9 @@ Partial Class Frm_02_00_LandingResto
         Ts_Prod_01_Products.Location = New Point(0, 1)
         Ts_Prod_01_Products.Name = "Ts_Prod_01_Products"
         Ts_Prod_01_Products.Office12Mode = False
+        Ts_Prod_01_Products.Padding = New Padding(3, 0, 0, 0)
         Ts_Prod_01_Products.RightToLeft = RightToLeft.No
-        Ts_Prod_01_Products.Size = New Size(115, 124)
+        Ts_Prod_01_Products.Size = New Size(42, 121)
         Ts_Prod_01_Products.TabIndex = 1
         Ts_Prod_01_Products.Text = "Products"
         ' 
@@ -501,7 +509,7 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_01_Products.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_01_Products.Name = "Prod_Btn_01_Products"
         Prod_Btn_01_Products.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_01_Products.Size = New Size(98, 102)
+        Prod_Btn_01_Products.Size = New Size(98, 86)
         Prod_Btn_01_Products.Text = "Products"
         Prod_Btn_01_Products.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -514,11 +522,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Prod_02_ProdOrg.GripStyle = ToolStripGripStyle.Hidden
         Ts_Prod_02_ProdOrg.Image = Nothing
         Ts_Prod_02_ProdOrg.Items.AddRange(New ToolStripItem() {Prod_Btn_02_ProdOrg_AddOn, Prod_Btn_03_ProdOrg_Comments, Prod_Btn_04_ProdOrg_Category, Prod_Btn_05_ProdOrg_TypesSizes})
-        Ts_Prod_02_ProdOrg.Location = New Point(117, 1)
+        Ts_Prod_02_ProdOrg.Location = New Point(44, 1)
         Ts_Prod_02_ProdOrg.Name = "Ts_Prod_02_ProdOrg"
         Ts_Prod_02_ProdOrg.Office12Mode = False
+        Ts_Prod_02_ProdOrg.Padding = New Padding(3, 0, 0, 0)
         Ts_Prod_02_ProdOrg.RightToLeft = RightToLeft.No
-        Ts_Prod_02_ProdOrg.Size = New Size(463, 124)
+        Ts_Prod_02_ProdOrg.Size = New Size(42, 121)
         Ts_Prod_02_ProdOrg.TabIndex = 2
         Ts_Prod_02_ProdOrg.Text = "Product Organization"
         ' 
@@ -531,7 +540,7 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_02_ProdOrg_AddOn.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_02_ProdOrg_AddOn.Name = "Prod_Btn_02_ProdOrg_AddOn"
         Prod_Btn_02_ProdOrg_AddOn.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_02_ProdOrg_AddOn.Size = New Size(98, 102)
+        Prod_Btn_02_ProdOrg_AddOn.Size = New Size(98, 86)
         Prod_Btn_02_ProdOrg_AddOn.Text = "Add-on"
         Prod_Btn_02_ProdOrg_AddOn.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -544,7 +553,7 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_03_ProdOrg_Comments.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_03_ProdOrg_Comments.Name = "Prod_Btn_03_ProdOrg_Comments"
         Prod_Btn_03_ProdOrg_Comments.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_03_ProdOrg_Comments.Size = New Size(109, 102)
+        Prod_Btn_03_ProdOrg_Comments.Size = New Size(109, 86)
         Prod_Btn_03_ProdOrg_Comments.Text = "Comments"
         Prod_Btn_03_ProdOrg_Comments.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -557,7 +566,7 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_04_ProdOrg_Category.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_04_ProdOrg_Category.Name = "Prod_Btn_04_ProdOrg_Category"
         Prod_Btn_04_ProdOrg_Category.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_04_ProdOrg_Category.Size = New Size(98, 102)
+        Prod_Btn_04_ProdOrg_Category.Size = New Size(98, 86)
         Prod_Btn_04_ProdOrg_Category.Text = "Category"
         Prod_Btn_04_ProdOrg_Category.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -570,7 +579,7 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_05_ProdOrg_TypesSizes.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_05_ProdOrg_TypesSizes.Name = "Prod_Btn_05_ProdOrg_TypesSizes"
         Prod_Btn_05_ProdOrg_TypesSizes.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_05_ProdOrg_TypesSizes.Size = New Size(111, 102)
+        Prod_Btn_05_ProdOrg_TypesSizes.Size = New Size(111, 86)
         Prod_Btn_05_ProdOrg_TypesSizes.Text = "Types Sizes"
         Prod_Btn_05_ProdOrg_TypesSizes.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -583,11 +592,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Prod_03_Inputs.GripStyle = ToolStripGripStyle.Hidden
         Ts_Prod_03_Inputs.Image = Nothing
         Ts_Prod_03_Inputs.Items.AddRange(New ToolStripItem() {Prod_Btn_06_Inputs, Prod_Btn_07_Inputs_Category})
-        Ts_Prod_03_Inputs.Location = New Point(582, 1)
+        Ts_Prod_03_Inputs.Location = New Point(88, 1)
         Ts_Prod_03_Inputs.Name = "Ts_Prod_03_Inputs"
         Ts_Prod_03_Inputs.Office12Mode = False
+        Ts_Prod_03_Inputs.Padding = New Padding(3, 0, 0, 0)
         Ts_Prod_03_Inputs.RightToLeft = RightToLeft.No
-        Ts_Prod_03_Inputs.Size = New Size(223, 124)
+        Ts_Prod_03_Inputs.Size = New Size(42, 121)
         Ts_Prod_03_Inputs.TabIndex = 3
         Ts_Prod_03_Inputs.Text = "Inputs"
         ' 
@@ -600,7 +610,7 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_06_Inputs.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_06_Inputs.Name = "Prod_Btn_06_Inputs"
         Prod_Btn_06_Inputs.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_06_Inputs.Size = New Size(98, 102)
+        Prod_Btn_06_Inputs.Size = New Size(98, 86)
         Prod_Btn_06_Inputs.Text = "Inuts"
         Prod_Btn_06_Inputs.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -613,7 +623,7 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_07_Inputs_Category.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_07_Inputs_Category.Name = "Prod_Btn_07_Inputs_Category"
         Prod_Btn_07_Inputs_Category.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_07_Inputs_Category.Size = New Size(98, 102)
+        Prod_Btn_07_Inputs_Category.Size = New Size(98, 86)
         Prod_Btn_07_Inputs_Category.Text = "Category"
         Prod_Btn_07_Inputs_Category.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -626,11 +636,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Prod_04_Stock.GripStyle = ToolStripGripStyle.Hidden
         Ts_Prod_04_Stock.Image = Nothing
         Ts_Prod_04_Stock.Items.AddRange(New ToolStripItem() {Prod_Btn_08_Stock_BatchChange})
-        Ts_Prod_04_Stock.Location = New Point(807, 1)
+        Ts_Prod_04_Stock.Location = New Point(132, 1)
         Ts_Prod_04_Stock.Name = "Ts_Prod_04_Stock"
         Ts_Prod_04_Stock.Office12Mode = False
+        Ts_Prod_04_Stock.Padding = New Padding(3, 0, 0, 0)
         Ts_Prod_04_Stock.RightToLeft = RightToLeft.No
-        Ts_Prod_04_Stock.Size = New Size(142, 124)
+        Ts_Prod_04_Stock.Size = New Size(42, 121)
         Ts_Prod_04_Stock.TabIndex = 4
         Ts_Prod_04_Stock.Text = "Stock"
         ' 
@@ -644,7 +655,7 @@ Partial Class Frm_02_00_LandingResto
         Prod_Btn_08_Stock_BatchChange.Margin = New Padding(5, 2, 5, 2)
         Prod_Btn_08_Stock_BatchChange.Name = "Prod_Btn_08_Stock_BatchChange"
         Prod_Btn_08_Stock_BatchChange.Padding = New Padding(15, 0, 15, 0)
-        Prod_Btn_08_Stock_BatchChange.Size = New Size(125, 102)
+        Prod_Btn_08_Stock_BatchChange.Size = New Size(125, 86)
         Prod_Btn_08_Stock_BatchChange.Text = "Batch Cahnge"
         Prod_Btn_08_Stock_BatchChange.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -679,8 +690,9 @@ Partial Class Frm_02_00_LandingResto
         Ts_Mkt_01_Benefits.Location = New Point(0, 1)
         Ts_Mkt_01_Benefits.Name = "Ts_Mkt_01_Benefits"
         Ts_Mkt_01_Benefits.Office12Mode = False
+        Ts_Mkt_01_Benefits.Padding = New Padding(3, 0, 0, 0)
         Ts_Mkt_01_Benefits.RightToLeft = RightToLeft.No
-        Ts_Mkt_01_Benefits.Size = New Size(239, 124)
+        Ts_Mkt_01_Benefits.Size = New Size(42, 124)
         Ts_Mkt_01_Benefits.TabIndex = 1
         Ts_Mkt_01_Benefits.Text = "Benefits"
         ' 
@@ -693,7 +705,7 @@ Partial Class Frm_02_00_LandingResto
         Mkt_Btn_01_Benefits_Promotions.Margin = New Padding(5, 2, 5, 2)
         Mkt_Btn_01_Benefits_Promotions.Name = "Mkt_Btn_01_Benefits_Promotions"
         Mkt_Btn_01_Benefits_Promotions.Padding = New Padding(15, 0, 15, 0)
-        Mkt_Btn_01_Benefits_Promotions.Size = New Size(113, 102)
+        Mkt_Btn_01_Benefits_Promotions.Size = New Size(113, 86)
         Mkt_Btn_01_Benefits_Promotions.Text = "Promotions"
         Mkt_Btn_01_Benefits_Promotions.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -706,7 +718,7 @@ Partial Class Frm_02_00_LandingResto
         Mkt_Btn_02_Benefits_Vouchers.Margin = New Padding(5, 2, 5, 2)
         Mkt_Btn_02_Benefits_Vouchers.Name = "Mkt_Btn_02_Benefits_Vouchers"
         Mkt_Btn_02_Benefits_Vouchers.Padding = New Padding(15, 0, 15, 0)
-        Mkt_Btn_02_Benefits_Vouchers.Size = New Size(99, 102)
+        Mkt_Btn_02_Benefits_Vouchers.Size = New Size(99, 86)
         Mkt_Btn_02_Benefits_Vouchers.Text = "Vouchers"
         Mkt_Btn_02_Benefits_Vouchers.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -719,11 +731,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Mkt_02_Loyalty.GripStyle = ToolStripGripStyle.Hidden
         Ts_Mkt_02_Loyalty.Image = Nothing
         Ts_Mkt_02_Loyalty.Items.AddRange(New ToolStripItem() {Mkt_Btn_03_Loyalty_Campaigns, Mkt_Btn_04_Loyalty_Program, Mkt_Btn_05_Loyalty_Birthdays})
-        Ts_Mkt_02_Loyalty.Location = New Point(241, 1)
+        Ts_Mkt_02_Loyalty.Location = New Point(44, 1)
         Ts_Mkt_02_Loyalty.Name = "Ts_Mkt_02_Loyalty"
         Ts_Mkt_02_Loyalty.Office12Mode = False
+        Ts_Mkt_02_Loyalty.Padding = New Padding(3, 0, 0, 0)
         Ts_Mkt_02_Loyalty.RightToLeft = RightToLeft.No
-        Ts_Mkt_02_Loyalty.Size = New Size(375, 124)
+        Ts_Mkt_02_Loyalty.Size = New Size(42, 124)
         Ts_Mkt_02_Loyalty.TabIndex = 2
         Ts_Mkt_02_Loyalty.Text = "Loyalty"
         ' 
@@ -736,7 +749,7 @@ Partial Class Frm_02_00_LandingResto
         Mkt_Btn_03_Loyalty_Campaigns.Margin = New Padding(5, 2, 5, 2)
         Mkt_Btn_03_Loyalty_Campaigns.Name = "Mkt_Btn_03_Loyalty_Campaigns"
         Mkt_Btn_03_Loyalty_Campaigns.Padding = New Padding(15, 0, 15, 0)
-        Mkt_Btn_03_Loyalty_Campaigns.Size = New Size(109, 102)
+        Mkt_Btn_03_Loyalty_Campaigns.Size = New Size(109, 86)
         Mkt_Btn_03_Loyalty_Campaigns.Text = "Campaigns"
         Mkt_Btn_03_Loyalty_Campaigns.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -749,7 +762,7 @@ Partial Class Frm_02_00_LandingResto
         Mkt_Btn_04_Loyalty_Program.Margin = New Padding(5, 2, 5, 2)
         Mkt_Btn_04_Loyalty_Program.Name = "Mkt_Btn_04_Loyalty_Program"
         Mkt_Btn_04_Loyalty_Program.Padding = New Padding(15, 0, 15, 0)
-        Mkt_Btn_04_Loyalty_Program.Size = New Size(98, 102)
+        Mkt_Btn_04_Loyalty_Program.Size = New Size(98, 86)
         Mkt_Btn_04_Loyalty_Program.Text = "Loyalty"
         Mkt_Btn_04_Loyalty_Program.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -762,7 +775,7 @@ Partial Class Frm_02_00_LandingResto
         Mkt_Btn_05_Loyalty_Birthdays.Margin = New Padding(5, 2, 5, 2)
         Mkt_Btn_05_Loyalty_Birthdays.Name = "Mkt_Btn_05_Loyalty_Birthdays"
         Mkt_Btn_05_Loyalty_Birthdays.Padding = New Padding(15, 0, 15, 0)
-        Mkt_Btn_05_Loyalty_Birthdays.Size = New Size(100, 102)
+        Mkt_Btn_05_Loyalty_Birthdays.Size = New Size(100, 86)
         Mkt_Btn_05_Loyalty_Birthdays.Text = "Birthdays"
         Mkt_Btn_05_Loyalty_Birthdays.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -799,8 +812,9 @@ Partial Class Frm_02_00_LandingResto
         Ts_Report_01_Sales.Location = New Point(0, 1)
         Ts_Report_01_Sales.Name = "Ts_Report_01_Sales"
         Ts_Report_01_Sales.Office12Mode = False
+        Ts_Report_01_Sales.Padding = New Padding(3, 0, 0, 0)
         Ts_Report_01_Sales.RightToLeft = RightToLeft.No
-        Ts_Report_01_Sales.Size = New Size(241, 124)
+        Ts_Report_01_Sales.Size = New Size(42, 124)
         Ts_Report_01_Sales.TabIndex = 1
         Ts_Report_01_Sales.Text = "Sales"
         ' 
@@ -814,7 +828,7 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_01_Sales_Ranking.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_01_Sales_Ranking.Name = "Report_Btn_01_Sales_Ranking"
         Report_Btn_01_Sales_Ranking.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_01_Sales_Ranking.Size = New Size(107, 102)
+        Report_Btn_01_Sales_Ranking.Size = New Size(107, 86)
         Report_Btn_01_Sales_Ranking.Text = "Ranking"
         Report_Btn_01_Sales_Ranking.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -840,7 +854,7 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_02_Sales_History.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_02_Sales_History.Name = "Report_Btn_02_Sales_History"
         Report_Btn_02_Sales_History.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_02_Sales_History.Size = New Size(107, 102)
+        Report_Btn_02_Sales_History.Size = New Size(107, 86)
         Report_Btn_02_Sales_History.Text = "History"
         Report_Btn_02_Sales_History.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -865,11 +879,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Report_02_Performance.GripStyle = ToolStripGripStyle.Hidden
         Ts_Report_02_Performance.Image = Nothing
         Ts_Report_02_Performance.Items.AddRange(New ToolStripItem() {Report_Btn_03_Performance_Dashboard})
-        Ts_Report_02_Performance.Location = New Point(243, 1)
+        Ts_Report_02_Performance.Location = New Point(44, 1)
         Ts_Report_02_Performance.Name = "Ts_Report_02_Performance"
         Ts_Report_02_Performance.Office12Mode = False
+        Ts_Report_02_Performance.Padding = New Padding(3, 0, 0, 0)
         Ts_Report_02_Performance.RightToLeft = RightToLeft.No
-        Ts_Report_02_Performance.Size = New Size(125, 124)
+        Ts_Report_02_Performance.Size = New Size(42, 124)
         Ts_Report_02_Performance.TabIndex = 2
         Ts_Report_02_Performance.Text = "Performance"
         ' 
@@ -882,7 +897,7 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_03_Performance_Dashboard.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_03_Performance_Dashboard.Name = "Report_Btn_03_Performance_Dashboard"
         Report_Btn_03_Performance_Dashboard.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_03_Performance_Dashboard.Size = New Size(108, 102)
+        Report_Btn_03_Performance_Dashboard.Size = New Size(108, 86)
         Report_Btn_03_Performance_Dashboard.Text = "Dashboard"
         Report_Btn_03_Performance_Dashboard.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -895,11 +910,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Report_03_Finance.GripStyle = ToolStripGripStyle.Hidden
         Ts_Report_03_Finance.Image = Nothing
         Ts_Report_03_Finance.Items.AddRange(New ToolStripItem() {Report_Btn_04_Finance_Summary, Report_Btn_05_Finance_CashHistory})
-        Ts_Report_03_Finance.Location = New Point(370, 1)
+        Ts_Report_03_Finance.Location = New Point(88, 1)
         Ts_Report_03_Finance.Name = "Ts_Report_03_Finance"
         Ts_Report_03_Finance.Office12Mode = False
+        Ts_Report_03_Finance.Padding = New Padding(3, 0, 0, 0)
         Ts_Report_03_Finance.RightToLeft = RightToLeft.No
-        Ts_Report_03_Finance.Size = New Size(303, 124)
+        Ts_Report_03_Finance.Size = New Size(42, 124)
         Ts_Report_03_Finance.TabIndex = 3
         Ts_Report_03_Finance.Text = "Finance"
         ' 
@@ -912,7 +928,7 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_04_Finance_Summary.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_04_Finance_Summary.Name = "Report_Btn_04_Finance_Summary"
         Report_Btn_04_Finance_Summary.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_04_Finance_Summary.Size = New Size(158, 102)
+        Report_Btn_04_Finance_Summary.Size = New Size(158, 86)
         Report_Btn_04_Finance_Summary.Text = "Financial Summary"
         Report_Btn_04_Finance_Summary.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -925,7 +941,7 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_05_Finance_CashHistory.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_05_Finance_CashHistory.Name = "Report_Btn_05_Finance_CashHistory"
         Report_Btn_05_Finance_CashHistory.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_05_Finance_CashHistory.Size = New Size(118, 102)
+        Report_Btn_05_Finance_CashHistory.Size = New Size(118, 86)
         Report_Btn_05_Finance_CashHistory.Text = "Cash History"
         Report_Btn_05_Finance_CashHistory.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -938,11 +954,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Report_04_Stock.GripStyle = ToolStripGripStyle.Hidden
         Ts_Report_04_Stock.Image = Nothing
         Ts_Report_04_Stock.Items.AddRange(New ToolStripItem() {Report_Btn_06_Stock_InputsOutputs, Report_Btn_07_Stock_PositionByDate})
-        Ts_Report_04_Stock.Location = New Point(675, 1)
+        Ts_Report_04_Stock.Location = New Point(132, 1)
         Ts_Report_04_Stock.Name = "Ts_Report_04_Stock"
         Ts_Report_04_Stock.Office12Mode = False
+        Ts_Report_04_Stock.Padding = New Padding(3, 0, 0, 0)
         Ts_Report_04_Stock.RightToLeft = RightToLeft.No
-        Ts_Report_04_Stock.Size = New Size(335, 124)
+        Ts_Report_04_Stock.Size = New Size(42, 124)
         Ts_Report_04_Stock.TabIndex = 4
         Ts_Report_04_Stock.Text = "Stock"
         ' 
@@ -956,7 +973,7 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_06_Stock_InputsOutputs.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_06_Stock_InputsOutputs.Name = "Report_Btn_06_Stock_InputsOutputs"
         Report_Btn_06_Stock_InputsOutputs.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_06_Stock_InputsOutputs.Size = New Size(136, 102)
+        Report_Btn_06_Stock_InputsOutputs.Size = New Size(136, 86)
         Report_Btn_06_Stock_InputsOutputs.Text = "Inputs-Outputs"
         Report_Btn_06_Stock_InputsOutputs.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -970,7 +987,7 @@ Partial Class Frm_02_00_LandingResto
         Report_Btn_07_Stock_PositionByDate.Margin = New Padding(5, 2, 5, 2)
         Report_Btn_07_Stock_PositionByDate.Name = "Report_Btn_07_Stock_PositionByDate"
         Report_Btn_07_Stock_PositionByDate.Padding = New Padding(15, 0, 15, 0)
-        Report_Btn_07_Stock_PositionByDate.Size = New Size(141, 102)
+        Report_Btn_07_Stock_PositionByDate.Size = New Size(141, 86)
         Report_Btn_07_Stock_PositionByDate.Text = "Position by date"
         Report_Btn_07_Stock_PositionByDate.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1006,8 +1023,9 @@ Partial Class Frm_02_00_LandingResto
         Ts_Config_01_Operational.Location = New Point(0, 1)
         Ts_Config_01_Operational.Name = "Ts_Config_01_Operational"
         Ts_Config_01_Operational.Office12Mode = False
+        Ts_Config_01_Operational.Padding = New Padding(3, 0, 0, 0)
         Ts_Config_01_Operational.RightToLeft = RightToLeft.No
-        Ts_Config_01_Operational.Size = New Size(223, 124)
+        Ts_Config_01_Operational.Size = New Size(42, 124)
         Ts_Config_01_Operational.TabIndex = 1
         Ts_Config_01_Operational.Text = "Operational"
         ' 
@@ -1020,7 +1038,7 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_01_General_Tables.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_01_General_Tables.Name = "Config_Btn_01_General_Tables"
         Config_Btn_01_General_Tables.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_01_General_Tables.Size = New Size(98, 102)
+        Config_Btn_01_General_Tables.Size = New Size(98, 86)
         Config_Btn_01_General_Tables.Text = "Tables"
         Config_Btn_01_General_Tables.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1034,7 +1052,7 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_02_General_Units.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_02_General_Units.Name = "Config_Btn_02_General_Units"
         Config_Btn_02_General_Units.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_02_General_Units.Size = New Size(98, 102)
+        Config_Btn_02_General_Units.Size = New Size(98, 86)
         Config_Btn_02_General_Units.Text = "Units"
         Config_Btn_02_General_Units.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1047,11 +1065,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Config_02_Personal.GripStyle = ToolStripGripStyle.Hidden
         Ts_Config_02_Personal.Image = Nothing
         Ts_Config_02_Personal.Items.AddRange(New ToolStripItem() {Config_Btn_03_Personal_Employee, Config_Btn_04_Personal_Password})
-        Ts_Config_02_Personal.Location = New Point(225, 1)
+        Ts_Config_02_Personal.Location = New Point(44, 1)
         Ts_Config_02_Personal.Name = "Ts_Config_02_Personal"
         Ts_Config_02_Personal.Office12Mode = False
+        Ts_Config_02_Personal.Padding = New Padding(3, 0, 0, 0)
         Ts_Config_02_Personal.RightToLeft = RightToLeft.No
-        Ts_Config_02_Personal.Size = New Size(232, 124)
+        Ts_Config_02_Personal.Size = New Size(42, 124)
         Ts_Config_02_Personal.TabIndex = 2
         Ts_Config_02_Personal.Text = "Personal"
         ' 
@@ -1064,7 +1083,7 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_03_Personal_Employee.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_03_Personal_Employee.Name = "Config_Btn_03_Personal_Employee"
         Config_Btn_03_Personal_Employee.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_03_Personal_Employee.Size = New Size(104, 102)
+        Config_Btn_03_Personal_Employee.Size = New Size(104, 86)
         Config_Btn_03_Personal_Employee.Text = "Employee"
         Config_Btn_03_Personal_Employee.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1077,7 +1096,7 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_04_Personal_Password.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_04_Personal_Password.Name = "Config_Btn_04_Personal_Password"
         Config_Btn_04_Personal_Password.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_04_Personal_Password.Size = New Size(101, 102)
+        Config_Btn_04_Personal_Password.Size = New Size(101, 86)
         Config_Btn_04_Personal_Password.Text = "Password"
         Config_Btn_04_Personal_Password.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1090,11 +1109,12 @@ Partial Class Frm_02_00_LandingResto
         Ts_Config_03_General.GripStyle = ToolStripGripStyle.Hidden
         Ts_Config_03_General.Image = Nothing
         Ts_Config_03_General.Items.AddRange(New ToolStripItem() {Config_Btn_05_Operational_System, Config_Btn_06_Operational_Printers, Config_Btn_07_Operational_Logs, Config_Lbl_01_Language, Config_Cbox_01_Language})
-        Ts_Config_03_General.Location = New Point(459, 1)
+        Ts_Config_03_General.Location = New Point(88, 1)
         Ts_Config_03_General.Name = "Ts_Config_03_General"
         Ts_Config_03_General.Office12Mode = False
+        Ts_Config_03_General.Padding = New Padding(3, 0, 0, 0)
         Ts_Config_03_General.RightToLeft = RightToLeft.No
-        Ts_Config_03_General.Size = New Size(555, 124)
+        Ts_Config_03_General.Size = New Size(42, 124)
         Ts_Config_03_General.TabIndex = 3
         Ts_Config_03_General.Text = "General"
         ' 
@@ -1107,7 +1127,7 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_05_Operational_System.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_05_Operational_System.Name = "Config_Btn_05_Operational_System"
         Config_Btn_05_Operational_System.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_05_Operational_System.Size = New Size(98, 102)
+        Config_Btn_05_Operational_System.Size = New Size(98, 86)
         Config_Btn_05_Operational_System.Text = "System"
         Config_Btn_05_Operational_System.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1120,7 +1140,7 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_06_Operational_Printers.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_06_Operational_Printers.Name = "Config_Btn_06_Operational_Printers"
         Config_Btn_06_Operational_Printers.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_06_Operational_Printers.Size = New Size(98, 102)
+        Config_Btn_06_Operational_Printers.Size = New Size(98, 86)
         Config_Btn_06_Operational_Printers.Text = "Printers"
         Config_Btn_06_Operational_Printers.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1133,7 +1153,7 @@ Partial Class Frm_02_00_LandingResto
         Config_Btn_07_Operational_Logs.Margin = New Padding(5, 2, 5, 2)
         Config_Btn_07_Operational_Logs.Name = "Config_Btn_07_Operational_Logs"
         Config_Btn_07_Operational_Logs.Padding = New Padding(15, 0, 15, 0)
-        Config_Btn_07_Operational_Logs.Size = New Size(98, 102)
+        Config_Btn_07_Operational_Logs.Size = New Size(98, 86)
         Config_Btn_07_Operational_Logs.Text = "Logs"
         Config_Btn_07_Operational_Logs.TextImageRelation = TextImageRelation.ImageAboveText
         ' 
@@ -1141,14 +1161,14 @@ Partial Class Frm_02_00_LandingResto
         ' 
         Config_Lbl_01_Language.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Config_Lbl_01_Language.Name = "Config_Lbl_01_Language"
-        Config_Lbl_01_Language.Size = New Size(70, 103)
+        Config_Lbl_01_Language.Size = New Size(70, 18)
         Config_Lbl_01_Language.Text = "Language:"
         ' 
         ' Config_Cbox_01_Language
         ' 
         Config_Cbox_01_Language.Font = New Font("Calibri", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Config_Cbox_01_Language.Name = "Config_Cbox_01_Language"
-        Config_Cbox_01_Language.Size = New Size(121, 106)
+        Config_Cbox_01_Language.Size = New Size(121, 26)
         ' 
         ' Frm_02_00_LandingResto
         ' 
